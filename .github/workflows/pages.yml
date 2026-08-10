@@ -3,6 +3,10 @@ name: Publicar painel
 on:
   push:
     branches: [main]
+    paths:
+      - index.html
+      - .nojekyll
+      - .github/workflows/pages.yml
   workflow_dispatch:
 
 permissions:
