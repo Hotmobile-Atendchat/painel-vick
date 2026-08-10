@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-10T14:52:59.199Z",
+  "updatedAt": "2026-08-10T16:20:33.062Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -236,6 +236,14 @@
       "done": true,
       "createdAt": "2026-08-10T13:21:05.376Z",
       "completedAt": "2026-08-10T13:25:18.966Z"
+    },
+    {
+      "id": "msnftzvdpgirv",
+      "text": "Enviar a central de ajuda atualizado no grupo de \"Avisos MKT\"",
+      "dueDate": "2026-08-10",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-08-10T16:20:31.321Z"
     }
   ],
   "completionHistory": {
