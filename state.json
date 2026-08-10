@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-10T14:51:40.764Z",
+  "updatedAt": "2026-08-10T14:52:24.717Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -52,7 +52,7 @@
     "diaamigos.9": true,
     "diaamigos.10": true,
     "diaamigos.11": true,
-    "brandkit.0": false
+    "brandkit.0": true
   },
   "notes": {
     "diaamigos.1": "10% OFF em todo o catálogo. Válido de 17 a 20/07.",
@@ -238,6 +238,8 @@
       "completedAt": "2026-08-10T13:25:18.966Z"
     }
   ],
-  "completionHistory": {},
+  "completionHistory": {
+    "brandkit.0": "2026-08-10T14:52:23.033Z"
+  },
   "todayClearedBefore": "2026-08-10T13:00:37.458Z"
 }
