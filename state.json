@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-10T18:25:23.283Z",
+  "updatedAt": "2026-08-10T18:27:23.947Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -75,9 +75,10 @@
     {
       "id": "msdcmf2gl7kld",
       "text": "Agendar o que já tiver pronto do calendário",
-      "list": "today",
+      "list": "progress",
       "done": false,
-      "createdAt": "2026-08-03T14:52:57.160Z"
+      "createdAt": "2026-08-03T14:52:57.160Z",
+      "startedAt": "2026-08-10T18:27:22.163Z"
     },
     {
       "id": "msdcmsq83bcbv",
