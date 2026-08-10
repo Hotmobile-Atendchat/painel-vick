@@ -1,1 +1,242 @@
-{   "version": 1,   "updatedAt": "2026-08-10T14:01:53.468Z",   "checks": {     "3dbgg.0": true,     "3dbgg.1": true,     "3dbgg.2": true,     "3dbgg.3": true,     "3dbgg.4": true,     "3dbgg.5": true,     "eg.0": true,     "eg.1": true,     "eg.2": true,     "eg.3": false,     "eg.4": true,     "otmo.0": true,     "otmo.1": true,     "otmo.2": true,     "otmo.3": true,     "otmo.4": true,     "otmo.5": true,     "diaamigos.0": true,     "diaamigos.1": true,     "diaamigos.2": true,     "diaamigos.3": true,     "diaamigos.4": true,     "diaamigos.5": true,     "diaamigos.6": true,     "diaamigos.7": true,     "diaamigos.8": true,     "diaamigos.9": true,     "diaamigos.10": true,     "diaamigos.11": true,     "blog.0": true,     "blog.1": true,     "email.0": true,     "email.1": true,     "email.2": true,     "ig.0": true,     "lanc.0": true,     "lanc.1": true,     "lanc.2": true,     "lanc.3": true,     "videos.0": true,     "videos.1": true,     "videos.2": false,     "videos.3": false,     "brandkit.0": false,     "central.0": true,     "central.1": true,     "central.2": true   },   "notes": {     "diaamigos.1": "10% OFF em todo o catálogo. Válido de 17 a 20/07.",     "diaamigos.2": "Legenda: Aquele amigo que jura que devolve as miniaturas depois. Cupom AMIGOS10, 10% OFF, válido até 20/07. CTA Organiza a sua mesa → 3dbgg.com.br.",     "diaamigos.3": "Brand kit Canva 3D BGG (kAGY04BoKP8). Arquivo: feed dia dos amigos 3DBGG.png (Downloads).",     "diaamigos.7": "Headline: Presenteie quem nunca guarda as pecas do jogo - 10% OFF com AMIGOS10. Fundo teal #137795, cupom em destaque verde-esmeralda #1ABC9C, ciano #00FFFF so como detalhe pontual. Incluir contador/prazo ate 20/07 e produto em contexto de uso (nunca fundo neutro).",     "diaamigos.8": "Assunto: 🎲 Seu grupo de jogo merece parar de virar bagunca. Corpo: 🎉 cupom AMIGOS10, 10% em tudo, valido 17 a 20/07, CTA 🎲 Organizar a mesa dos amigos.",     "diaamigos.9": "Assunto: ⏳ Ultimas horas - 10% OFF acaba hoje. Reforca que o cupom AMIGOS10 sai do ar a meia-noite ⏰. CTA ⚡ Aproveitar antes que acabe.",     "diaamigos.10": "Alcance, engajamento, cliques no link, cupons resgatados, receita gerada, ticket médio."   },   "dailyTasks": [],   "completionHistory": {},   "todayClearedBefore": "2026-08-10T14:01:53.468Z" }
+{
+  "version": 1,
+  "updatedAt": "2026-08-10T14:26:45.305Z",
+  "checks": {
+    "3dbgg.0": true,
+    "3dbgg.1": true,
+    "3dbgg.2": true,
+    "3dbgg.3": true,
+    "3dbgg.4": true,
+    "3dbgg.5": true,
+    "eg.0": true,
+    "eg.1": true,
+    "eg.2": true,
+    "eg.3": true,
+    "eg.4": true,
+    "otmo.0": true,
+    "otmo.1": true,
+    "otmo.2": true,
+    "otmo.3": true,
+    "otmo.4": true,
+    "otmo.5": true,
+    "blog.0": true,
+    "blog.1": true,
+    "email.0": true,
+    "email.1": true,
+    "email.2": true,
+    "ig.0": true,
+    "lanc.0": true,
+    "lanc.1": true,
+    "lanc.2": true,
+    "lanc.3": true,
+    "videos.0": true,
+    "videos.1": true,
+    "videos.2": false,
+    "videos.3": false,
+    "brand.0": true,
+    "brand.1": false,
+    "brand.2": true,
+    "brand.3": false,
+    "central.0": true,
+    "central.1": true,
+    "central.2": true,
+    "diaamigos.1": true,
+    "diaamigos.0": true,
+    "diaamigos.7": true,
+    "diaamigos.2": true,
+    "diaamigos.3": true,
+    "diaamigos.4": true,
+    "diaamigos.5": true,
+    "diaamigos.6": true,
+    "diaamigos.8": true,
+    "diaamigos.9": true,
+    "diaamigos.10": true,
+    "diaamigos.11": true,
+    "brandkit.0": false
+  },
+  "notes": {
+    "diaamigos.1": "10% OFF em todo o catálogo. Válido de 17 a 20/07.",
+    "diaamigos.2": "Ângulo: presenteie quem nunca guarda as peças do jogo. CTA cupom AMIGOS10.",
+    "diaamigos.3": "Brand kit Canva 3D BGG (kAGY04BoKP8).",
+    "diaamigos.7": "Headline: Presenteie quem nunca guarda as pecas do jogo - 10% OFF com AMIGOS10. Fundo teal #137795, cupom em destaque verde-esmeralda #1ABC9C, ciano #00FFFF so como detalhe pontual. Incluir contador/prazo ate 20/07 e produto em contexto de uso (nunca fundo neutro).",
+    "diaamigos.8": "Assunto: Seu grupo de jogo merece parar de virar bagunca. Corpo: cupom AMIGOS10, 10% em tudo, valido 17 a 20/07, CTA Organizar a mesa dos amigos.",
+    "diaamigos.9": "Assunto: Ultimas horas - 10% OFF acaba hoje. Reforca que o cupom AMIGOS10 sai do ar a meia-noite.",
+    "diaamigos.10": "Alcance, engajamento, cliques no link, cupons resgatados, receita gerada, ticket médio."
+  },
+  "dailyTasks": [
+    {
+      "id": "msdclnsw0a17y",
+      "text": "Criar o calendário editorial do mês de agosto Hotmobile / 3DBGG",
+      "list": "progress",
+      "done": true,
+      "createdAt": "2026-08-03T14:52:21.824Z",
+      "completedAt": "2026-08-10T12:52:26.588Z"
+    },
+    {
+      "id": "msdcmf2gl7kld",
+      "text": "Agendar o que já tiver pronto do calendário",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-08-03T14:52:57.160Z"
+    },
+    {
+      "id": "msdcmsq83bcbv",
+      "text": "Lembrar a Dri de comprar os confetes",
+      "list": "today",
+      "done": true,
+      "createdAt": "2026-08-03T14:53:14.864Z",
+      "completedAt": "2026-08-10T12:52:26.588Z"
+    },
+    {
+      "id": "msepnmamonaoo",
+      "text": "Ajustar a nova apresentação comercial 2026",
+      "list": "today",
+      "done": true,
+      "createdAt": "2026-08-04T13:45:34.366Z",
+      "completedAt": "2026-08-10T12:52:26.588Z"
+    },
+    {
+      "id": "msexa8q9fs7g9",
+      "text": "Apresentação revenda CDL",
+      "list": "today",
+      "done": true,
+      "createdAt": "2026-08-04T17:19:07.185Z",
+      "completedAt": "2026-08-10T12:52:26.588Z"
+    },
+    {
+      "id": "msexawo2cc10m",
+      "text": "Verificar no lovable o motivo de não receber notificação no WhatsApp",
+      "list": "today",
+      "done": true,
+      "createdAt": "2026-08-04T17:19:38.210Z",
+      "completedAt": "2026-08-10T12:52:26.588Z"
+    },
+    {
+      "id": "mseyrhuade5og",
+      "text": "Editar os vídeos da central de ajuda",
+      "list": "progress",
+      "done": false,
+      "createdAt": "2026-08-04T18:00:31.762Z",
+      "startedAt": "2026-08-10T13:34:16.120Z"
+    },
+    {
+      "id": "msg4b1jt4ierb",
+      "text": "Fazer testes de vídeo no GPT",
+      "list": "today",
+      "done": true,
+      "createdAt": "2026-08-05T13:23:28.025Z",
+      "completedAt": "2026-08-10T12:55:12.672Z"
+    },
+    {
+      "id": "msgbjyy6vk975",
+      "text": "Reunião sobre o bot do suporte",
+      "list": "today",
+      "done": true,
+      "createdAt": "2026-08-05T16:46:21.870Z",
+      "completedAt": "2026-08-10T12:55:09.206Z"
+    },
+    {
+      "id": "msghfc1vwk4o6",
+      "text": "elabora card / ideais do dia dos pais",
+      "list": "today",
+      "done": true,
+      "createdAt": "2026-08-05T19:30:43.267Z",
+      "completedAt": "2026-08-10T12:52:26.588Z"
+    },
+    {
+      "id": "msj93l0lgt4pd",
+      "text": "Editar o documento enviado por Bruno sobre a Mera",
+      "list": "today",
+      "done": true,
+      "createdAt": "2026-08-07T18:00:56.613Z",
+      "completedAt": "2026-08-10T12:52:26.588Z"
+    },
+    {
+      "id": "msn7l8clnicio",
+      "text": "Nova central de ajude Hotmobile & Meta",
+      "dueDate": "2026-08-10",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-08-10T12:29:45.477Z"
+    },
+    {
+      "id": "msn7p0o64dru5",
+      "text": "Pesquisar IA para vídeo",
+      "dueDate": "2026-08-10",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-08-10T12:32:42.150Z"
+    },
+    {
+      "id": "msn8nf4yz0ek7",
+      "text": "Configurar o painel comando",
+      "dueDate": "2026-08-11",
+      "list": "progress",
+      "done": false,
+      "createdAt": "2026-08-10T12:59:27.202Z",
+      "startedAt": "2026-08-10T13:34:16.120Z"
+    },
+    {
+      "id": "msn8q3vphe2d1",
+      "text": "Manda mensagem para EG cobrando o feedback do cronograma",
+      "dueDate": "2026-08-10",
+      "list": "today",
+      "done": true,
+      "createdAt": "2026-08-10T13:01:32.582Z",
+      "completedAt": "2026-08-10T13:30:08.163Z"
+    },
+    {
+      "id": "msn8qe6ydrhhw",
+      "text": "Kit marca da HotOS",
+      "dueDate": "2026-08-10",
+      "list": "today",
+      "done": true,
+      "createdAt": "2026-08-10T13:01:45.946Z",
+      "completedAt": "2026-08-10T13:08:25.309Z"
+    },
+    {
+      "id": "msn8t2p8fg5wi",
+      "text": "Conferir os conteúdos da semana",
+      "dueDate": "2026-08-10",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-08-10T13:03:51.020Z"
+    },
+    {
+      "id": "msn8tfkbrsjv9",
+      "text": "Trocar os banner do site da 3DBGG",
+      "dueDate": "2026-08-10",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-08-10T13:04:07.691Z"
+    },
+    {
+      "id": "msn8yvjwxzo1d",
+      "text": "Fazer teste dos botões do site \"me ligue agora\" \"demostração\"",
+      "dueDate": "2026-08-10",
+      "list": "today",
+      "done": true,
+      "createdAt": "2026-08-10T13:08:21.692Z",
+      "completedAt": "2026-08-10T13:30:12.132Z"
+    },
+    {
+      "id": "msn9aw7wg1wb5",
+      "text": "Refazer toda apresentação da Hotmobile com a nova ID",
+      "dueDate": "2026-08-10",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-08-10T13:17:42.428Z"
+    },
+    {
+      "id": "msn9f8tcv2hik",
+      "text": "Verificar o fundo do Google Ads dá 3DBGG",
+      "dueDate": "2026-08-10",
+      "list": "today",
+      "done": true,
+      "createdAt": "2026-08-10T13:21:05.376Z",
+      "completedAt": "2026-08-10T13:25:18.966Z"
+    }
+  ],
+  "completionHistory": {},
+  "todayClearedBefore": "2026-08-10T13:00:37.458Z"
+}
