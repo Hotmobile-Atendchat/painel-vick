@@ -27,6 +27,11 @@
   .sub{color:var(--muted);font-size:13.5px;max-width:640px}
   .live-pill{display:flex;align-items:center;gap:8px;white-space:nowrap;border:1px solid #d8c6e8;background:#f2eafa;color:var(--lilac);padding:7px 11px;border-radius:999px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.7px}
   .live-pill i{width:8px;height:8px;border-radius:50%;background:var(--lilac);box-shadow:0 0 0 0 rgba(199,160,255,.45);animation:livePulse 2s infinite}
+  .access-box{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+  .access-status{font-size:10.5px;font-weight:800;color:var(--muted);background:var(--panel2);border:1px solid var(--line);border-radius:999px;padding:7px 10px;white-space:nowrap}
+  .access-status.editor{color:#fff;background:var(--lilac);border-color:var(--lilac)}
+  .access-btn{border:1px solid var(--lilac);background:#fff;color:var(--lilac);font:800 11px 'Segoe UI',system-ui,sans-serif;padding:7px 11px;border-radius:999px;cursor:pointer}
+  .access-btn:hover{background:var(--mint-bg)}
 
   /* Entregas recentes */
   .activity-summary{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0 0 18px}
@@ -123,6 +128,21 @@
   footer{margin-top:26px;color:var(--muted2);font-size:11.5px;text-align:center;border-top:1px solid var(--line);padding-top:15px}
   .saved{position:fixed;bottom:18px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--lilac-d);color:#fff;font-size:12px;font-weight:600;padding:8px 16px;border-radius:20px;opacity:0;transition:.3s;pointer-events:none;box-shadow:var(--shadow2)}
   .saved.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  body.read-only .day-form,body.read-only .day-actions,body.read-only .day-clear{display:none}
+  body.read-only .trow input[type=checkbox]{pointer-events:none;opacity:.72}
+  body.read-only .note textarea{pointer-events:none;background:var(--panel2)}
+  .auth-modal{position:fixed;inset:0;z-index:100;display:none;place-items:center;padding:20px;background:rgba(38,25,48,.52);backdrop-filter:blur(7px)}
+  .auth-modal.show{display:grid}
+  .auth-card{width:min(470px,100%);background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 26px 80px rgba(37,20,51,.28)}
+  .auth-card h2{font-size:20px;color:var(--lilac-d);margin-bottom:7px}
+  .auth-card p{font-size:12.5px;color:var(--muted);margin-bottom:12px}
+  .auth-card a{color:var(--lilac);font-weight:750}
+  .auth-card input{width:100%;height:42px;border:1px solid var(--line);border-radius:10px;padding:0 12px;font:inherit;outline:none}
+  .auth-card input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(123,66,178,.1)}
+  .auth-error{min-height:18px;color:var(--hot);font-size:11px;margin-top:7px}
+  .auth-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:12px}
+  .auth-actions button{border:1px solid var(--line);border-radius:9px;padding:8px 13px;background:#fff;color:var(--muted);font:750 12px 'Segoe UI',system-ui,sans-serif;cursor:pointer}
+  .auth-actions .primary{border-color:var(--lilac);background:var(--lilac);color:#fff}
 
   /* Meu Dia — área pessoal da Fabrine */
   .dashboard-layout{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:20px;align-items:start}
@@ -183,19 +203,19 @@
   @keyframes taskFinish{0%{background:transparent}35%{background:rgba(112,68,164,.28)}100%{background:transparent}}
   @keyframes finishLabel{0%{opacity:0;transform:translateY(7px) scale(.85)}30%{opacity:1}100%{opacity:0;transform:translateY(-16px) scale(1.04)}}
   @media(max-width:1050px){.dashboard-layout{grid-template-columns:1fr}.day-panel{position:relative;top:auto;grid-row:1}.controls{top:0}.header-row{align-items:flex-start}.live-pill{margin-top:2px}}
-  @media(max-width:620px){body{padding:12px 10px 42px}header{padding:17px}.header-row{display:block}.live-pill{display:inline-flex;margin-top:13px}.activity-summary{grid-template-columns:1fr}.tabs{width:100%;overflow:auto}.tab{white-space:nowrap}.day-form-row{grid-template-columns:1fr}.overall{padding:14px}.chead{padding:12px}.cmeta{white-space:normal}}
+  @media(max-width:620px){body{padding:12px 10px 42px}header{padding:17px}.header-row{display:block}.access-box{justify-content:flex-start;margin-top:13px}.activity-summary{grid-template-columns:1fr}.tabs{width:100%;overflow:auto}.tab{white-space:nowrap}.day-form-row{grid-template-columns:1fr}.overall{padding:14px}.chead{padding:12px}.cmeta{white-space:normal}}
   @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
 </head>
-<body>
+<body class="read-only">
 <header>
   <div class="header-row">
     <div class="header-copy">
       <span class="kicker">Painel da Fabrine · Agência OTMO · <span id="panelDate"></span></span>
       <h1>🧭 Painel de Comando</h1>
-      <p class="sub">Tudo o que já produzimos e o que falta concluir. Marque o que estiver feito, deixe observações no 📝 — fica tudo salvo aqui no navegador.</p>
+      <p class="sub">Painel público e sincronizado. Todos veem o mesmo estado; somente a pessoa autorizada pode editar.</p>
     </div>
-    <span class="live-pill"><i></i>Painel vivo</span>
+    <div class="access-box"><span class="access-status" id="accessStatus">Visualização pública</span><button class="access-btn" id="authBtn" type="button" onclick="openAuth()">Entrar para editar</button></div>
   </div>
 </header>
 
@@ -273,8 +293,18 @@
 </aside>
 </div>
 
-<footer>Painel mantido pela <b>Vick</b> · marcações e observações salvas neste navegador (só neste computador) · <span onclick="resetAll()" style="cursor:pointer;text-decoration:underline">restaurar estado real</span></footer>
+<footer>Painel mantido pela <b>Vick</b> · dados públicos sincronizados pelo GitHub · <span id="resetLink" onclick="resetAll()" style="cursor:pointer;text-decoration:underline;display:none">restaurar estado real</span></footer>
 <div class="saved" id="saved">✓ salvo</div>
+<div class="auth-modal" id="authModal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+  <div class="auth-card">
+    <h2 id="authTitle">Entrar para editar</h2>
+    <p>Cole uma chave de acesso do GitHub limitada ao repositório <b>painel-vick</b>, com permissão de leitura e escrita em “Contents”. A chave fica apenas nesta sessão.</p>
+    <p><a href="https://github.com/settings/personal-access-tokens/new?name=Painel%20Vick&amp;description=Editar%20somente%20o%20estado%20do%20painel&amp;target_name=Hotmobile-Atendchat&amp;expires_in=366&amp;contents=write" target="_blank" rel="noopener">Criar chave restrita no GitHub ↗</a></p>
+    <input id="tokenInput" type="password" autocomplete="off" placeholder="Cole a chave aqui" aria-label="Chave de acesso do GitHub">
+    <div class="auth-error" id="authError"></div>
+    <div class="auth-actions"><button type="button" onclick="closeAuth()">Cancelar</button><button class="primary" id="connectBtn" type="button" onclick="connectEditor()">Conectar</button></div>
+  </div>
+</div>
 
 <script>
 /* ================= DADOS ================= */
@@ -404,14 +434,89 @@ let todayClearedBefore=localStorage.getItem(TCKEY);if(!todayClearedBefore){today
 let migratedDailyHistory=false;dailyTasks.forEach(task=>{if(task.done&&!task.completedAt){task.completedAt=new Date().toISOString();migratedDailyHistory=true;}if(!task.done&&task.list==='progress'&&!task.startedAt){task.startedAt=new Date().toISOString();migratedDailyHistory=true;}});if(migratedDailyHistory)localStorage.setItem(DKEY,JSON.stringify(dailyTasks));
 let curTab='all', allOpen=false, celebrateKey=null;
 
-function saveChecks(){localStorage.setItem(CKEY,JSON.stringify(checks));flash();}
-function saveNotes(){localStorage.setItem(NKEY,JSON.stringify(notes));flash();}
+const REMOTE_REPO='Hotmobile-Atendchat/painel-vick',REMOTE_BRANCH='main',REMOTE_FILE='state.json';
+const REMOTE_RAW=`https://raw.githubusercontent.com/${REMOTE_REPO}/${REMOTE_BRANCH}/${REMOTE_FILE}`;
+const REMOTE_API=`https://api.github.com/repos/${REMOTE_REPO}/contents/${REMOTE_FILE}`;
+let githubToken=sessionStorage.getItem('painel-vick-github-token')||'',isEditor=false,remoteSaveTimer=null,remoteSaveBusy=false,remoteSavePending=false,lastRemoteUpdate='';
+
+function stateSnapshot(){return {version:1,updatedAt:new Date().toISOString(),checks,notes,dailyTasks,completionHistory,todayClearedBefore};}
+function saveStateLocally(){
+  localStorage.setItem(CKEY,JSON.stringify(checks));localStorage.setItem(NKEY,JSON.stringify(notes));
+  localStorage.setItem(DKEY,JSON.stringify(dailyTasks));localStorage.setItem(HKEY,JSON.stringify(completionHistory));
+  localStorage.setItem(TCKEY,todayClearedBefore);
+}
+function applySharedState(state){
+  if(!state||typeof state!=='object')return;
+  if(state.checks&&typeof state.checks==='object')checks=state.checks;
+  if(state.notes&&typeof state.notes==='object')notes=state.notes;
+  if(Array.isArray(state.dailyTasks))dailyTasks=state.dailyTasks;
+  if(state.completionHistory&&typeof state.completionHistory==='object')completionHistory=state.completionHistory;
+  if(state.todayClearedBefore)todayClearedBefore=state.todayClearedBefore;
+  lastRemoteUpdate=state.updatedAt||lastRemoteUpdate;saveStateLocally();render();renderDaily();renderActivity();
+}
+async function loadSharedState(silent=false){
+  try{
+    const response=await fetch(`${REMOTE_RAW}?v=${Date.now()}`,{cache:'no-store'});
+    if(!response.ok)throw new Error('Estado público ainda não foi criado.');
+    const state=await response.json();
+    if(!state.updatedAt||state.updatedAt!==lastRemoteUpdate)applySharedState(state);
+    if(!silent)showStatus('✓ painel público atualizado');
+    return true;
+  }catch(error){if(!silent)showStatus('Não foi possível carregar o painel público');return false;}
+}
+function setEditorMode(enabled){
+  isEditor=enabled;document.body.classList.toggle('read-only',!enabled);
+  const status=document.getElementById('accessStatus'),button=document.getElementById('authBtn');
+  status.textContent=enabled?'Modo edição':'Visualização pública';status.classList.toggle('editor',enabled);
+  button.textContent=enabled?'Sair da edição':'Entrar para editar';document.getElementById('resetLink').style.display=enabled?'inline':'none';
+  render();renderDaily();
+}
+function openAuth(){if(isEditor){sessionStorage.removeItem('painel-vick-github-token');githubToken='';setEditorMode(false);showStatus('Edição encerrada');return;}document.getElementById('authModal').classList.add('show');document.getElementById('authError').textContent='';setTimeout(()=>document.getElementById('tokenInput').focus(),50);}
+function closeAuth(){document.getElementById('authModal').classList.remove('show');document.getElementById('tokenInput').value='';}
+async function verifyEditorToken(token){
+  const response=await fetch(`https://api.github.com/repos/${REMOTE_REPO}`,{headers:{Accept:'application/vnd.github+json',Authorization:`Bearer ${token}`,'X-GitHub-Api-Version':'2022-11-28'}});
+  if(!response.ok)throw new Error('Chave inválida ou sem acesso ao repositório.');
+  const repo=await response.json();if(!repo.permissions||!repo.permissions.push)throw new Error('A chave precisa da permissão Contents: Read and write.');
+}
+async function connectEditor(){
+  const token=document.getElementById('tokenInput').value.trim(),button=document.getElementById('connectBtn'),error=document.getElementById('authError');
+  if(!token){error.textContent='Cole a chave de acesso para continuar.';return;}
+  button.disabled=true;button.textContent='Conectando…';error.textContent='';
+  try{
+    await verifyEditorToken(token);githubToken=token;sessionStorage.setItem('painel-vick-github-token',token);closeAuth();setEditorMode(true);
+    if(location.protocol==='file:'){
+      if(confirm('Publicar agora no painel público as marcações salvas neste computador?'))await publishSharedState(true);else await loadSharedState();
+    }else await loadSharedState(true);
+    showStatus('✓ edição autorizada');
+  }catch(err){error.textContent=err.message;}
+  finally{button.disabled=false;button.textContent='Conectar';}
+}
+function queueSharedSave(){if(!isEditor||!githubToken)return;clearTimeout(remoteSaveTimer);remoteSaveTimer=setTimeout(()=>publishSharedState(),1200);}
+function encodeBase64(text){const bytes=new TextEncoder().encode(text);let binary='';for(let i=0;i<bytes.length;i+=8192)binary+=String.fromCharCode(...bytes.subarray(i,i+8192));return btoa(binary);}
+async function publishSharedState(force=false){
+  if(!githubToken||(!isEditor&&!force))return false;
+  if(remoteSaveBusy){remoteSavePending=true;return false;}remoteSaveBusy=true;showStatus('Sincronizando painel…');
+  try{
+    const headers={Accept:'application/vnd.github+json',Authorization:`Bearer ${githubToken}`,'X-GitHub-Api-Version':'2022-11-28','Content-Type':'application/json'};
+    const current=await fetch(`${REMOTE_API}?ref=${REMOTE_BRANCH}&v=${Date.now()}`,{headers,cache:'no-store'});let sha;
+    if(current.ok)sha=(await current.json()).sha;else if(current.status!==404)throw new Error('Não foi possível consultar o estado público.');
+    const state=stateSnapshot(),payload={message:`Atualiza painel da Vick · ${localISODate()}`,content:encodeBase64(JSON.stringify(state,null,2)),branch:REMOTE_BRANCH};if(sha)payload.sha=sha;
+    const saved=await fetch(REMOTE_API,{method:'PUT',headers,body:JSON.stringify(payload)});if(!saved.ok){const detail=await saved.json().catch(()=>({}));throw new Error(detail.message||'Falha ao publicar o painel.');}
+    lastRemoteUpdate=state.updatedAt;showStatus('✓ painel público sincronizado');return true;
+  }catch(error){showStatus('Falha ao sincronizar');alert(`Não foi possível atualizar o painel público. ${error.message}`);return false;}
+  finally{remoteSaveBusy=false;if(remoteSavePending){remoteSavePending=false;queueSharedSave();}}
+}
+async function restoreEditorSession(){if(!githubToken)return;try{await verifyEditorToken(githubToken);setEditorMode(true);}catch(e){sessionStorage.removeItem('painel-vick-github-token');githubToken='';}}
+
+function saveChecks(){localStorage.setItem(CKEY,JSON.stringify(checks));flash();queueSharedSave();}
+function saveNotes(){localStorage.setItem(NKEY,JSON.stringify(notes));flash();queueSharedSave();}
 function saveOpen(){localStorage.setItem(OKEY,JSON.stringify(openState));}
 let flashT;
-function flash(){const s=document.getElementById('saved');s.classList.add('show');clearTimeout(flashT);flashT=setTimeout(()=>s.classList.remove('show'),900);}
+function showStatus(message){const s=document.getElementById('saved');s.textContent=message;s.classList.add('show');clearTimeout(flashT);flashT=setTimeout(()=>s.classList.remove('show'),1800);}
+function flash(){showStatus(isEditor?'✓ salvo · sincronizando':'✓ salvo neste computador');}
 
-function saveDaily(){localStorage.setItem(DKEY,JSON.stringify(dailyTasks));flash();}
-function saveHistory(){localStorage.setItem(HKEY,JSON.stringify(completionHistory));}
+function saveDaily(){localStorage.setItem(DKEY,JSON.stringify(dailyTasks));flash();queueSharedSave();}
+function saveHistory(){localStorage.setItem(HKEY,JSON.stringify(completionHistory));queueSharedSave();}
 function safeText(v){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function addDailyTask(e){
   e.preventDefault();
@@ -444,7 +549,7 @@ function renderDaily(celebrateId){
   Object.entries(groups).forEach(([type,root])=>{
     const items=dailyTasks.filter(t=>t.list===type).sort((a,b)=>Number(a.done)-Number(b.done)||(a.dueDate||'9999-12-31').localeCompare(b.dueDate||'9999-12-31'));
     root.innerHTML=items.length?items.map(t=>`<div class="day-task ${t.done?'done':''} ${!t.done&&type==='progress'?'in-progress':''} ${t.id===celebrateId?'celebrate':''}">
-      <label><input type="checkbox" ${t.done?'checked':''} onchange="toggleDailyTask('${t.id}')"><span class="day-check">✓</span><span class="day-text">${safeText(t.text)}</span></label>
+      <label><input type="checkbox" ${t.done?'checked':''} ${isEditor?'':'disabled'} onchange="toggleDailyTask('${t.id}')"><span class="day-check">✓</span><span class="day-text">${safeText(t.text)}</span></label>
       <div class="day-actions"><input class="day-task-date" type="date" value="${safeText(t.dueDate||'')}" aria-label="Data de ${safeText(t.text)}" onchange="setDailyDate('${t.id}',this.value)"><select class="day-status" aria-label="Status de ${safeText(t.text)}" onchange="setDailyStatus('${t.id}',this.value)"><option value="today" ${!t.done&&type==='today'?'selected':''}>Hoje</option><option value="progress" ${!t.done&&type==='progress'?'selected':''}>Em andamento</option><option value="pending" ${!t.done&&type==='pending'?'selected':''}>Pendente</option><option value="done" ${t.done?'selected':''}>Concluída</option></select><button type="button" title="Excluir" onclick="deleteDailyTask('${t.id}')">×</button></div>
       ${t.id===celebrateId?'<span class="day-spark">✦ ✧ ✦</span>':''}</div>`).join(''):'<div class="day-empty">Nada por aqui.</div>';
   });
@@ -528,13 +633,13 @@ function render(){
       const fmt=it.fmt?`<span class="fmt ${it.fmt}">${it.fmt}</span>`:'';
       return `<div class="task ${ck?'done':''} ${celebrateKey===k?'just-done':''}">
         <div class="trow">
-          <input type="checkbox" ${ck?'checked':''} onchange="toggle('${k}',this)">
+          <input type="checkbox" ${ck?'checked':''} ${isEditor?'':'disabled'} onchange="toggle('${k}',this)">
           <label class="tlabel" onclick="this.previousElementSibling.click()">${it.t}${fmt}</label>
           <button class="notebtn ${nt?'has':''}" title="Observação" onclick="toggleNote('${k}')">📝</button>
         </div>
         <div class="note ${nt?'show':''}" id="note-${k}">
           <div class="nlbl">Observação</div>
-          <textarea placeholder="Escreva uma nota, link, pendência..." oninput="editNote('${k}',this.value)">${nt.replace(/</g,'&lt;')}</textarea>
+          <textarea placeholder="Escreva uma nota, link, pendência..." ${isEditor?'':'readonly'} oninput="editNote('${k}',this.value)">${nt.replace(/</g,'&lt;')}</textarea>
         </div>
       </div>`;
     }).join('');
@@ -584,7 +689,7 @@ function toggleNote(k){const n=document.getElementById('note-'+k);n.classList.to
 function editNote(k,v){if(v.trim())notes[k]=v;else delete notes[k];saveNotes();
   const btn=document.querySelector(`#note-${k}`).previousElementSibling.querySelector('.notebtn');if(btn)btn.classList.toggle('has',!!v.trim());}
 
-function resetAll(){if(confirm('Restaurar tudo para o estado real atual? Suas marcações e observações personalizadas serão apagadas.')){localStorage.removeItem(CKEY);localStorage.removeItem(NKEY);localStorage.removeItem(OKEY);location.reload();}}
+function resetAll(){if(!isEditor)return;if(confirm('Restaurar tudo para o estado real atual? Suas marcações e observações personalizadas serão apagadas.')){localStorage.removeItem(CKEY);localStorage.removeItem(NKEY);localStorage.removeItem(OKEY);location.reload();}}
 
 function copyPanel(){
   let t=`🧭 PAINEL DE COMANDO — FABRINE · ${currentDateLabel()}\n`+'='.repeat(44)+'\n';
@@ -604,12 +709,18 @@ function copyPanel(){
   .catch(()=>{const ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');btn.textContent='✓ copiado!';}catch(e){}document.body.removeChild(ta);setTimeout(()=>btn.textContent='📋 copiar',1600);});
 }
 
-document.getElementById('panelDate').textContent=currentDateLabel();
-document.getElementById('dayDate').textContent=new Intl.DateTimeFormat('pt-BR',{weekday:'long',day:'2-digit',month:'short'}).format(new Date());
-document.getElementById('dayDueDate').value=localISODate();
-document.getElementById('todayDoneFrom').value=localISODate();document.getElementById('todayDoneTo').value=localISODate();
-document.getElementById('weekDoneFrom').value=weekStartKey();document.getElementById('weekDoneTo').value=localISODate();
-render();renderDaily();renderActivity();
+async function initializePanel(){
+  document.getElementById('panelDate').textContent=currentDateLabel();
+  document.getElementById('dayDate').textContent=new Intl.DateTimeFormat('pt-BR',{weekday:'long',day:'2-digit',month:'short'}).format(new Date());
+  document.getElementById('dayDueDate').value=localISODate();
+  document.getElementById('todayDoneFrom').value=localISODate();document.getElementById('todayDoneTo').value=localISODate();
+  document.getElementById('weekDoneFrom').value=weekStartKey();document.getElementById('weekDoneTo').value=localISODate();
+  render();renderDaily();renderActivity();
+  if(location.protocol!=='file:')await loadSharedState(true);
+  await restoreEditorSession();
+  if(location.protocol!=='file:')setInterval(()=>{if(!isEditor)loadSharedState(true);},60000);
+}
+initializePanel();
 </script>
 </body>
 </html>
