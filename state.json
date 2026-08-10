@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-10T14:39:30.984Z",
+  "updatedAt": "2026-08-10T14:51:40.764Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -207,9 +207,9 @@
       "text": "Trocar os banner do site da 3DBGG",
       "dueDate": "2026-08-10",
       "list": "progress",
-      "done": false,
+      "done": true,
       "createdAt": "2026-08-10T13:04:07.691Z",
-      "startedAt": "2026-08-10T14:39:29.198Z"
+      "completedAt": "2026-08-10T14:51:38.909Z"
     },
     {
       "id": "msn8yvjwxzo1d",
