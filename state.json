@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-10T14:52:24.717Z",
+  "updatedAt": "2026-08-10T14:52:43.039Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -156,8 +156,9 @@
       "text": "Nova central de ajude Hotmobile & Meta",
       "dueDate": "2026-08-10",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-08-10T12:29:45.477Z"
+      "done": true,
+      "createdAt": "2026-08-10T12:29:45.477Z",
+      "completedAt": "2026-08-10T14:52:41.393Z"
     },
     {
       "id": "msn7p0o64dru5",
