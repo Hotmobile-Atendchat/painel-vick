@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-10T18:25:09.211Z",
+  "updatedAt": "2026-08-10T18:25:16.302Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -254,15 +254,6 @@
       "done": true,
       "createdAt": "2026-08-10T18:18:44.478Z",
       "completedAt": "2026-08-10T18:18:55.055Z"
-    },
-    {
-      "id": "msnka4y9j5yvz",
-      "text": "Testar no blog",
-      "dueDate": "2026-08-10",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-10T18:25:02.865Z",
-      "completedAt": "2026-08-10T18:25:07.508Z"
     }
   ],
   "completionHistory": {
