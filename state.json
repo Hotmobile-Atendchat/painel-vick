@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-10T18:27:23.947Z",
+  "updatedAt": "2026-08-10T18:36:18.169Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -255,6 +255,14 @@
       "done": true,
       "createdAt": "2026-08-10T18:18:44.478Z",
       "completedAt": "2026-08-10T18:18:55.055Z"
+    },
+    {
+      "id": "msnkokn1ey8gq",
+      "text": "Testar o nova pág do BLOG https://hotmobile.com.br/admin/blog",
+      "dueDate": "2026-08-10",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-08-10T18:36:16.381Z"
     }
   ],
   "completionHistory": {
