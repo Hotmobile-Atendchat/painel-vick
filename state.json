@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-11T11:54:33.057Z",
+  "updatedAt": "2026-08-11T11:55:48.591Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -277,9 +277,10 @@
       "id": "msolqxefdr73v",
       "text": "Referencias para o novo blog",
       "dueDate": "2026-08-11",
-      "list": "today",
+      "list": "progress",
       "done": false,
-      "createdAt": "2026-08-11T11:53:52.023Z"
+      "createdAt": "2026-08-11T11:53:52.023Z",
+      "startedAt": "2026-08-11T11:55:44.761Z"
     }
   ],
   "completionHistory": {
