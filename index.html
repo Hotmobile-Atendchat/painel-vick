@@ -417,7 +417,7 @@ const DATA=[
 
 /* ================= ESTADO ================= */
 const CKEY='painel-fabrine-v2-checks', NKEY='painel-fabrine-v2-notes', OKEY='painel-fabrine-v2-open';
-const DKEY='painel-fabrine-v3-daily', HKEY='painel-fabrine-v1-completion-history', TCKEY='painel-fabrine-v1-today-cleared-before';
+const DKEY='painel-fabrine-v3-daily', HKEY='painel-fabrine-v1-completion-history', AHKEY='painel-fabrine-v1-daily-activity-history', TCKEY='painel-fabrine-v1-today-cleared-before';
 function id(k,i){return k+'.'+i;}
 let checks=JSON.parse(localStorage.getItem(CKEY)||'null')||{};
 DATA.forEach(d=>d.itens.forEach((it,i)=>{const k=id(d.key,i);if(!(k in checks))checks[k]=!!it.done;}));
@@ -430,6 +430,7 @@ localStorage.setItem(NKEY,JSON.stringify(notes));
 let openState=JSON.parse(localStorage.getItem(OKEY)||'{}');
 let dailyTasks=JSON.parse(localStorage.getItem(DKEY)||'[]');
 let completionHistory=JSON.parse(localStorage.getItem(HKEY)||'{}');
+let dailyActivityHistory=JSON.parse(localStorage.getItem(AHKEY)||'[]');
 let todayClearedBefore=localStorage.getItem(TCKEY);if(!todayClearedBefore){todayClearedBefore=new Date().toISOString();localStorage.setItem(TCKEY,todayClearedBefore);}
 let migratedDailyHistory=false;dailyTasks.forEach(task=>{if(task.done&&!task.completedAt){task.completedAt=new Date().toISOString();migratedDailyHistory=true;}if(!task.done&&task.list==='progress'&&!task.startedAt){task.startedAt=new Date().toISOString();migratedDailyHistory=true;}});if(migratedDailyHistory)localStorage.setItem(DKEY,JSON.stringify(dailyTasks));
 let curTab='all', allOpen=false, celebrateKey=null;
@@ -438,10 +439,10 @@ const REMOTE_REPO='Hotmobile-Atendchat/painel-vick',REMOTE_BRANCH='main',REMOTE_
 const REMOTE_API=`https://api.github.com/repos/${REMOTE_REPO}/contents/${REMOTE_FILE}`;
 let githubToken=sessionStorage.getItem('painel-vick-github-token')||'',isEditor=false,remoteSaveTimer=null,remoteSaveBusy=false,remoteSavePending=false,lastRemoteUpdate='';
 
-function stateSnapshot(){return {version:1,updatedAt:new Date().toISOString(),checks,notes,dailyTasks,completionHistory,todayClearedBefore};}
+function stateSnapshot(){return {version:1,updatedAt:new Date().toISOString(),checks,notes,dailyTasks,completionHistory,dailyActivityHistory,todayClearedBefore};}
 function saveStateLocally(){
   localStorage.setItem(CKEY,JSON.stringify(checks));localStorage.setItem(NKEY,JSON.stringify(notes));
-  localStorage.setItem(DKEY,JSON.stringify(dailyTasks));localStorage.setItem(HKEY,JSON.stringify(completionHistory));
+  localStorage.setItem(DKEY,JSON.stringify(dailyTasks));localStorage.setItem(HKEY,JSON.stringify(completionHistory));localStorage.setItem(AHKEY,JSON.stringify(dailyActivityHistory));
   localStorage.setItem(TCKEY,todayClearedBefore);
 }
 function applySharedState(state){
@@ -450,6 +451,7 @@ function applySharedState(state){
   if(state.notes&&typeof state.notes==='object')notes=state.notes;
   if(Array.isArray(state.dailyTasks))dailyTasks=state.dailyTasks;
   if(state.completionHistory&&typeof state.completionHistory==='object')completionHistory=state.completionHistory;
+  if(Array.isArray(state.dailyActivityHistory))dailyActivityHistory=state.dailyActivityHistory;
   if(state.todayClearedBefore)todayClearedBefore=state.todayClearedBefore;
   lastRemoteUpdate=state.updatedAt||lastRemoteUpdate;saveStateLocally();render();renderDaily();renderActivity();
 }
@@ -515,7 +517,7 @@ function showStatus(message){const s=document.getElementById('saved');s.textCont
 function flash(){showStatus(isEditor?'✓ salvo · sincronizando':'✓ salvo neste computador');}
 
 function saveDaily(){localStorage.setItem(DKEY,JSON.stringify(dailyTasks));flash();queueSharedSave();}
-function saveHistory(){localStorage.setItem(HKEY,JSON.stringify(completionHistory));queueSharedSave();}
+function saveHistory(){localStorage.setItem(HKEY,JSON.stringify(completionHistory));localStorage.setItem(AHKEY,JSON.stringify(dailyActivityHistory));queueSharedSave();}
 function safeText(v){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function addDailyTask(e){
   e.preventDefault();
@@ -541,7 +543,12 @@ function setDailyDate(taskId,value){const task=dailyTasks.find(t=>t.id===taskId)
 function deleteDailyTask(taskId){dailyTasks=dailyTasks.filter(t=>t.id!==taskId);saveDaily();renderDaily();renderActivity();}
 function clearDailyDone(){
   if(!dailyTasks.some(t=>t.done))return;
+  dailyTasks.filter(t=>t.done&&t.completedAt).forEach(t=>{
+    const eventId=`daily:${t.id}:done`;
+    if(!dailyActivityHistory.some(item=>item.id===eventId))dailyActivityHistory.push({id:eventId,text:t.text,source:'Painel do dia · Concluída',completedAt:t.completedAt});
+  });
   dailyTasks=dailyTasks.filter(t=>!t.done);saveDaily();renderDaily();renderActivity();
+  saveHistory();
 }
 function renderDaily(celebrateId){
   const groups={today:document.getElementById('todayList'),progress:document.getElementById('progressList'),pending:document.getElementById('pendingList')};
@@ -576,7 +583,7 @@ function saoPauloDateKey(value){const parts=new Intl.DateTimeFormat('en-CA',{tim
 function weekStartKey(){const today=localISODate(),date=new Date(today+'T12:00:00'),offset=(date.getDay()+6)%7;date.setDate(date.getDate()-offset);return `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;}
 function activityDate(value){return new Intl.DateTimeFormat('pt-BR',{timeZone:'America/Sao_Paulo',day:'2-digit',month:'2-digit',year:'numeric'}).format(new Date(value));}
 function renderActivity(){
-  const entries=[];
+  const entries=dailyActivityHistory.filter(item=>item&&item.text&&item.completedAt).map(item=>({text:item.text,source:item.source||'Painel do dia · Concluída',completedAt:item.completedAt}));
   DATA.forEach(d=>d.itens.forEach((it,i)=>{const k=id(d.key,i),completedAt=completionHistory[k];if(checks[k]&&completedAt)entries.push({text:it.t,source:d.nome,completedAt});}));
   dailyTasks.forEach(t=>{
     if(t.done&&t.completedAt)entries.push({text:t.text,source:'Painel do dia · Concluída',completedAt:t.completedAt});
@@ -587,7 +594,7 @@ function renderActivity(){
   const todayFrom=document.getElementById('todayDoneFrom').value||today,todayTo=document.getElementById('todayDoneTo').value||today;
   const weekFrom=document.getElementById('weekDoneFrom').value||weekStart,weekTo=document.getElementById('weekDoneTo').value||today;
   const between=(entry,from,to)=>{const key=saoPauloDateKey(entry.completedAt);return key>=from&&key<=to;};
-  const groups={today:entries.filter(e=>new Date(e.completedAt)>new Date(todayClearedBefore)&&between(e,todayFrom,todayTo)),week:entries.filter(e=>between(e,weekFrom,weekTo))};
+  const groups={today:entries.filter(e=>between(e,todayFrom,todayTo)),week:entries.filter(e=>between(e,weekFrom,weekTo))};
   [['today','todayDoneList','todayDoneCount'],['week','weekDoneList','weekDoneCount']].forEach(([group,listId,countId])=>{
     const items=groups[group];document.getElementById(countId).textContent=items.length;
     document.getElementById(listId).innerHTML=items.length?items.map(item=>`<div class="activity-item"><span class="activity-check">✓</span><div><div class="activity-text">${safeText(item.text)}</div><div class="activity-meta">${safeText(item.source)} · ${activityDate(item.completedAt)}</div></div></div>`).join(''):'<div class="activity-empty">Nada concluído neste período.</div>';
