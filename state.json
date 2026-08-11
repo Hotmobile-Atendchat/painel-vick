@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-11T11:53:53.784Z",
+  "updatedAt": "2026-08-11T11:54:09.612Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -272,15 +272,6 @@
       "list": "today",
       "done": false,
       "createdAt": "2026-08-10T18:51:59.898Z"
-    },
-    {
-      "id": "msnnlkjupg4hv",
-      "text": "Abrir chamado, referente ao blog para reajustes",
-      "dueDate": "2026-08-10",
-      "list": "progress",
-      "done": false,
-      "createdAt": "2026-08-10T19:57:55.146Z",
-      "startedAt": "2026-08-11T11:50:36.326Z"
     },
     {
       "id": "msolqxefdr73v",
