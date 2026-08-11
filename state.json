@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-11T13:23:07.776Z",
+  "updatedAt": "2026-08-11T13:51:28.823Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -287,8 +287,9 @@
       "text": "Alinhamento/ Ideias com Closer e SDR",
       "dueDate": "2026-08-11",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-08-11T13:23:05.571Z"
+      "done": true,
+      "createdAt": "2026-08-11T13:23:05.571Z",
+      "completedAt": "2026-08-11T13:51:27.060Z"
     }
   ],
   "completionHistory": {
