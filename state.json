@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-12T12:59:38.114Z",
+  "updatedAt": "2026-08-12T13:00:07.335Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -298,6 +298,14 @@
       "list": "today",
       "done": false,
       "createdAt": "2026-08-12T12:59:08.053Z"
+    },
+    {
+      "id": "msq3jy2677ifu",
+      "text": "Colocar links na bio do grupo, aviso de mkt",
+      "dueDate": "2026-08-12",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-08-12T13:00:05.550Z"
     }
   ],
   "completionHistory": {
