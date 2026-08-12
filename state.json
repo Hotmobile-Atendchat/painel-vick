@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-12T18:14:30.757Z",
+  "updatedAt": "2026-08-12T18:15:00.313Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -315,8 +315,9 @@
       "text": "concluir os chamados do MKT",
       "dueDate": "2026-08-12",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-08-12T18:14:28.670Z"
+      "done": true,
+      "createdAt": "2026-08-12T18:14:28.670Z",
+      "completedAt": "2026-08-12T18:14:58.450Z"
     }
   ],
   "completionHistory": {
