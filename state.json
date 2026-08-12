@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-12T18:15:00.313Z",
+  "updatedAt": "2026-08-12T19:37:29.347Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -318,6 +318,14 @@
       "done": true,
       "createdAt": "2026-08-12T18:14:28.670Z",
       "completedAt": "2026-08-12T18:14:58.450Z"
+    },
+    {
+      "id": "msqhqym6h09og",
+      "text": "Foto e video com a equipe",
+      "dueDate": "2026-08-12",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-08-12T19:37:27.486Z"
     }
   ],
   "completionHistory": {
