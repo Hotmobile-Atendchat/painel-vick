@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-13T13:24:08.171Z",
+  "updatedAt": "2026-08-13T13:24:28.057Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -345,6 +345,14 @@
       "list": "today",
       "done": false,
       "createdAt": "2026-08-13T13:24:06.296Z"
+    },
+    {
+      "id": "msrjv3wv037oy",
+      "text": "Realinhar as datas do cronograma da EG",
+      "dueDate": "2026-08-13",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-08-13T13:24:26.383Z"
     }
   ],
   "completionHistory": {
