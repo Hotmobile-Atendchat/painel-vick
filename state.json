@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-13T12:32:38.421Z",
+  "updatedAt": "2026-08-13T13:01:28.571Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -333,9 +333,10 @@
       "id": "msri0ggz7pbzg",
       "text": "Editar foto e vídeos da equipe",
       "dueDate": "2026-08-12",
-      "list": "today",
+      "list": "progress",
       "done": false,
-      "createdAt": "2026-08-13T12:32:36.707Z"
+      "createdAt": "2026-08-13T12:32:36.707Z",
+      "startedAt": "2026-08-13T13:01:26.711Z"
     }
   ],
   "completionHistory": {
