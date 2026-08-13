@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-13T13:24:28.057Z",
+  "updatedAt": "2026-08-13T14:21:36.815Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -343,8 +343,9 @@
       "text": "Fazer a postagem hoje da EG (solicitação do cliente)",
       "dueDate": "2026-08-13",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-08-13T13:24:06.296Z"
+      "done": true,
+      "createdAt": "2026-08-13T13:24:06.296Z",
+      "completedAt": "2026-08-13T14:21:34.849Z"
     },
     {
       "id": "msrjv3wv037oy",
