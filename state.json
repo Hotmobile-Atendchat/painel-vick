@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-14T13:16:56.307Z",
+  "updatedAt": "2026-08-14T13:17:05.294Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -199,9 +199,9 @@
       "text": "Conferir os conteúdos da semana",
       "dueDate": "2026-08-10",
       "list": "progress",
-      "done": false,
+      "done": true,
       "createdAt": "2026-08-10T13:03:51.020Z",
-      "startedAt": "2026-08-13T12:32:05.405Z"
+      "completedAt": "2026-08-14T13:17:03.614Z"
     },
     {
       "id": "msn8tfkbrsjv9",
