@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-14T13:18:03.100Z",
+  "updatedAt": "2026-08-14T13:18:09.570Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -226,10 +226,9 @@
       "id": "msn9aw7wg1wb5",
       "text": "Refazer toda apresentação da Hotmobile com a nova ID",
       "dueDate": "2026-08-10",
-      "list": "progress",
+      "list": "today",
       "done": false,
-      "createdAt": "2026-08-10T13:17:42.428Z",
-      "startedAt": "2026-08-13T12:32:08.283Z"
+      "createdAt": "2026-08-10T13:17:42.428Z"
     },
     {
       "id": "msn9f8tcv2hik",
