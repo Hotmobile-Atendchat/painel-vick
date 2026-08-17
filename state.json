@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-17T14:45:02.802Z",
+  "updatedAt": "2026-08-17T14:50:01.366Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -415,9 +415,9 @@
       "text": "Divulgar novas vagas de SDR e reajustar alguns informações no site",
       "dueDate": "2026-08-17",
       "list": "progress",
-      "done": false,
+      "done": true,
       "createdAt": "2026-08-17T12:33:29.316Z",
-      "startedAt": "2026-08-17T12:33:31.461Z"
+      "completedAt": "2026-08-17T14:49:57.741Z"
     },
     {
       "id": "msx8vd3bj8e5l",
