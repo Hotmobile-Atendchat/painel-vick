@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-17T18:41:19.514Z",
+  "updatedAt": "2026-08-17T18:41:58.825Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -417,6 +417,14 @@
       "list": "today",
       "done": false,
       "createdAt": "2026-08-17T13:03:19.560Z"
+    },
+    {
+      "id": "msxkyu3zmgcjv",
+      "text": "Relatório de tráfego da 3DBGG",
+      "dueDate": "2026-08-17",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-08-17T18:41:56.975Z"
     }
   ],
   "completionHistory": {
