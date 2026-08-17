@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-17T12:09:48.771Z",
+  "updatedAt": "2026-08-17T12:10:52.190Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -373,6 +373,15 @@
       "done": false,
       "createdAt": "2026-08-14T19:56:51.591Z",
       "startedAt": "2026-08-14T19:56:55.591Z"
+    },
+    {
+      "id": "msx6ztku3gvr1",
+      "text": "Alinhar os conteúdos da semana (Hotmobile, 3DBGG)",
+      "dueDate": "2026-08-14",
+      "list": "progress",
+      "done": false,
+      "createdAt": "2026-08-17T12:10:48.318Z",
+      "startedAt": "2026-08-17T12:10:51.186Z"
     }
   ],
   "completionHistory": {
