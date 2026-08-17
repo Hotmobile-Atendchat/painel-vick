@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-17T18:42:07.721Z",
+  "updatedAt": "2026-08-17T18:42:11.673Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -415,8 +415,9 @@
       "text": "Novo painel do chefe",
       "dueDate": "2026-08-17",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-08-17T13:03:19.560Z"
+      "done": true,
+      "createdAt": "2026-08-17T13:03:19.560Z",
+      "completedAt": "2026-08-17T18:42:09.899Z"
     },
     {
       "id": "msxkyu3zmgcjv",
