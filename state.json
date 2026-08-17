@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-17T12:11:36.084Z",
+  "updatedAt": "2026-08-17T12:12:10.145Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -370,9 +370,9 @@
       "text": "Criar novos conteúdos da EG para o próximo cronograma",
       "dueDate": "2026-08-14",
       "list": "progress",
-      "done": false,
+      "done": true,
       "createdAt": "2026-08-14T19:56:51.591Z",
-      "startedAt": "2026-08-14T19:56:55.591Z"
+      "completedAt": "2026-08-17T12:12:06.077Z"
     },
     {
       "id": "msx6ztku3gvr1",
