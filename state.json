@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-17T12:25:14.175Z",
+  "updatedAt": "2026-08-17T12:32:39.498Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -409,14 +409,6 @@
       "done": false,
       "createdAt": "2026-08-17T12:24:41.959Z",
       "startedAt": "2026-08-17T12:24:45.048Z"
-    },
-    {
-      "id": "msx7iccuzgpq4",
-      "text": "Novas publicar vagas para SRD",
-      "dueDate": "2026-08-17",
-      "list": "progress",
-      "done": false,
-      "createdAt": "2026-08-17T12:25:12.462Z"
     }
   ],
   "completionHistory": {
