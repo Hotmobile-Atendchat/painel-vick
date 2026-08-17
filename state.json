@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-17T12:14:32.462Z",
+  "updatedAt": "2026-08-17T12:19:52.743Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -391,6 +391,14 @@
       "done": false,
       "createdAt": "2026-08-17T12:11:15.566Z",
       "startedAt": "2026-08-17T12:14:30.792Z"
+    },
+    {
+      "id": "msx7bga7w42ol",
+      "text": "Mandar p/ Caíque o link do novo site da OTMO E HOTMENU",
+      "dueDate": "2026-08-14",
+      "list": "progress",
+      "done": false,
+      "createdAt": "2026-08-17T12:19:50.959Z"
     }
   ],
   "completionHistory": {
