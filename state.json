@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-17T14:50:01.366Z",
+  "updatedAt": "2026-08-17T18:41:19.514Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -400,15 +400,6 @@
       "done": true,
       "createdAt": "2026-08-17T12:19:50.959Z",
       "completedAt": "2026-08-17T14:44:55.493Z"
-    },
-    {
-      "id": "msx7hotjlceup",
-      "text": "IA p/ verificar trafego da 3DBGG",
-      "dueDate": "2026-08-17",
-      "list": "progress",
-      "done": false,
-      "createdAt": "2026-08-17T12:24:41.959Z",
-      "startedAt": "2026-08-17T12:24:45.048Z"
     },
     {
       "id": "msx7szqbqxej7",
