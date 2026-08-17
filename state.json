@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-17T12:32:39.498Z",
+  "updatedAt": "2026-08-17T13:03:21.586Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -409,6 +409,23 @@
       "done": false,
       "createdAt": "2026-08-17T12:24:41.959Z",
       "startedAt": "2026-08-17T12:24:45.048Z"
+    },
+    {
+      "id": "msx7szqbqxej7",
+      "text": "Divulgar novas vagas de SDR e reajustar alguns informações no site",
+      "dueDate": "2026-08-17",
+      "list": "progress",
+      "done": false,
+      "createdAt": "2026-08-17T12:33:29.316Z",
+      "startedAt": "2026-08-17T12:33:31.461Z"
+    },
+    {
+      "id": "msx8vd3bj8e5l",
+      "text": "Novo painel do chefe",
+      "dueDate": "2026-08-17",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-08-17T13:03:19.560Z"
     }
   ],
   "completionHistory": {
