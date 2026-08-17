@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-17T12:12:10.145Z",
+  "updatedAt": "2026-08-17T12:14:28.354Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -387,7 +387,7 @@
       "id": "msx70elqgsyge",
       "text": "Elaborar o cronograma da EG",
       "dueDate": "2026-08-14",
-      "list": "progress",
+      "list": "today",
       "done": false,
       "createdAt": "2026-08-17T12:11:15.566Z"
     }
