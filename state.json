@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-19T13:19:16.020Z",
+  "updatedAt": "2026-08-19T13:31:43.387Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -427,6 +427,14 @@
       "done": true,
       "createdAt": "2026-08-17T18:41:56.975Z",
       "completedAt": "2026-08-17T18:42:05.504Z"
+    },
+    {
+      "id": "mt04rjpkj3nm8",
+      "text": "Enviar crono da EG (18.08)",
+      "dueDate": "2026-08-17",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-08-19T13:31:41.576Z"
     }
   ],
   "completionHistory": {
