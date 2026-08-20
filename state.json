@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-20T14:39:41.213Z",
+  "updatedAt": "2026-08-20T14:39:48.765Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -468,8 +468,9 @@
       "text": "Enviar e-mail e whatsApp para os candidatos SRD",
       "dueDate": "2026-08-20",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-08-20T13:45:20.222Z"
+      "done": true,
+      "createdAt": "2026-08-20T13:45:20.222Z",
+      "completedAt": "2026-08-20T14:39:47.086Z"
     }
   ],
   "completionHistory": {
