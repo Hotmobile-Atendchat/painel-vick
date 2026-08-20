@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-20T14:39:22.205Z",
+  "updatedAt": "2026-08-20T14:39:29.822Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -163,10 +163,9 @@
       "id": "msn7p0o64dru5",
       "text": "Pesquisar IA para vídeo",
       "dueDate": "2026-08-10",
-      "list": "progress",
+      "list": "today",
       "done": false,
-      "createdAt": "2026-08-10T12:32:42.150Z",
-      "startedAt": "2026-08-14T13:18:01.428Z"
+      "createdAt": "2026-08-10T12:32:42.150Z"
     },
     {
       "id": "msn8nf4yz0ek7",
