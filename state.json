@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-20T14:39:37.842Z",
+  "updatedAt": "2026-08-20T14:39:41.213Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -459,8 +459,9 @@
       "text": "Fazer teste com a plataforma edrone",
       "dueDate": "2026-08-20",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-08-20T13:44:36.068Z"
+      "done": true,
+      "createdAt": "2026-08-20T13:44:36.068Z",
+      "completedAt": "2026-08-20T14:39:39.541Z"
     },
     {
       "id": "mt1koy1qbyjai",
