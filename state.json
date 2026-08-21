@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-20T14:39:54.079Z",
+  "updatedAt": "2026-08-21T16:32:46.529Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -472,6 +472,15 @@
       "done": true,
       "createdAt": "2026-08-20T13:45:20.222Z",
       "completedAt": "2026-08-20T14:39:47.086Z"
+    },
+    {
+      "id": "mt1nmk14fy74i",
+      "text": "criar lange page na tray",
+      "dueDate": "2026-08-20",
+      "list": "progress",
+      "done": false,
+      "createdAt": "2026-08-20T15:07:27.592Z",
+      "startedAt": "2026-08-21T13:53:46.656Z"
     }
   ],
   "completionHistory": {
