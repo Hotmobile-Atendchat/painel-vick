@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-21T16:40:19.516Z",
+  "updatedAt": "2026-08-21T16:49:33.614Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -486,17 +486,19 @@
       "id": "mt3673kcz0byn",
       "text": "Verificar o painel de chamados",
       "dueDate": "2026-08-21",
-      "list": "today",
+      "list": "progress",
       "done": false,
-      "createdAt": "2026-08-21T16:35:05.292Z"
+      "createdAt": "2026-08-21T16:35:05.292Z",
+      "startedAt": "2026-08-21T16:49:31.874Z"
     },
     {
       "id": "mt367jb0z8mim",
       "text": "Chamar novos SDR p/ segunda",
       "dueDate": "2026-08-21",
-      "list": "today",
+      "list": "progress",
       "done": false,
-      "createdAt": "2026-08-21T16:35:25.693Z"
+      "createdAt": "2026-08-21T16:35:25.693Z",
+      "startedAt": "2026-08-21T16:49:33.537Z"
     },
     {
       "id": "mt36dsjyzu3qz",
