@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-21T16:35:27.804Z",
+  "updatedAt": "2026-08-21T16:40:19.516Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -497,6 +497,14 @@
       "list": "today",
       "done": false,
       "createdAt": "2026-08-21T16:35:25.693Z"
+    },
+    {
+      "id": "mt36dsjyzu3qz",
+      "text": "Enviar email p/bruno",
+      "dueDate": "2026-08-21",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-08-21T16:40:17.614Z"
     }
   ],
   "completionHistory": {
