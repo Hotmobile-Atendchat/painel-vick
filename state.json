@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-21T16:32:46.529Z",
+  "updatedAt": "2026-08-21T16:35:09.363Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -481,6 +481,14 @@
       "done": false,
       "createdAt": "2026-08-20T15:07:27.592Z",
       "startedAt": "2026-08-21T13:53:46.656Z"
+    },
+    {
+      "id": "mt3673kcz0byn",
+      "text": "Verificar o painel de chamados",
+      "dueDate": "2026-08-21",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-08-21T16:35:05.292Z"
     }
   ],
   "completionHistory": {
