@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-24T12:44:02.313Z",
+  "updatedAt": "2026-08-24T12:44:06.095Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -494,9 +494,9 @@
       "text": "Chamar novos SDR p/ segunda",
       "dueDate": "2026-08-21",
       "list": "progress",
-      "done": false,
+      "done": true,
       "createdAt": "2026-08-21T16:35:25.693Z",
-      "startedAt": "2026-08-21T16:49:33.537Z"
+      "completedAt": "2026-08-24T12:44:04.393Z"
     },
     {
       "id": "mt36dsjyzu3qz",
