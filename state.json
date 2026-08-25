@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T14:42:47.451Z",
+  "updatedAt": "2026-08-25T14:42:50.353Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -450,9 +450,10 @@
       "id": "mt05x8762gqcs",
       "text": "Verificar a plataforma Edrone p/ 3DBGG",
       "dueDate": "2026-08-17",
-      "list": "today",
+      "list": "progress",
       "done": false,
-      "createdAt": "2026-08-19T14:04:06.210Z"
+      "createdAt": "2026-08-19T14:04:06.210Z",
+      "startedAt": "2026-08-25T14:42:48.701Z"
     },
     {
       "id": "mt1knzz7ys858",
