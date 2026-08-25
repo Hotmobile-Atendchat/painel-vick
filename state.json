@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T14:42:28.439Z",
+  "updatedAt": "2026-08-25T14:42:41.010Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -538,8 +538,9 @@
       "text": "envio de e-mail teste no mailchimp",
       "dueDate": "2026-08-25",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-08-25T14:42:26.738Z"
+      "done": true,
+      "createdAt": "2026-08-25T14:42:26.738Z",
+      "completedAt": "2026-08-25T14:42:39.298Z"
     }
   ],
   "completionHistory": {
