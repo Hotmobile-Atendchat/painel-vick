@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T14:42:44.951Z",
+  "updatedAt": "2026-08-25T14:42:47.451Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -522,8 +522,9 @@
       "text": "agendar posts",
       "dueDate": "2026-08-25",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-08-25T14:41:30.120Z"
+      "done": true,
+      "createdAt": "2026-08-25T14:41:30.120Z",
+      "completedAt": "2026-08-25T14:42:45.659Z"
     },
     {
       "id": "mt8rx9zsgr4rt",
