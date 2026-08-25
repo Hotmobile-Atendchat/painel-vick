@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T14:42:50.353Z",
+  "updatedAt": "2026-08-25T14:55:23.694Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -544,6 +544,14 @@
       "done": true,
       "createdAt": "2026-08-25T14:42:26.738Z",
       "completedAt": "2026-08-25T14:42:39.298Z"
+    },
+    {
+      "id": "mt8se9d0lbjg6",
+      "text": "preparação p/ 15 de setembro dia do cliente,",
+      "dueDate": "2026-08-25",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-08-25T14:55:21.829Z"
     }
   ],
   "completionHistory": {
