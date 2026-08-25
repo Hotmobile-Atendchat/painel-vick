@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T14:41:32.065Z",
+  "updatedAt": "2026-08-25T14:42:11.367Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -524,6 +524,14 @@
       "list": "today",
       "done": false,
       "createdAt": "2026-08-25T14:41:30.120Z"
+    },
+    {
+      "id": "mt8rx9zsgr4rt",
+      "text": "Verficar o merchants 3D",
+      "dueDate": "2026-08-25",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-08-25T14:42:09.496Z"
     }
   ],
   "completionHistory": {
