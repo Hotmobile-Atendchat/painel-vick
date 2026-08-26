@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-26T12:51:53.523Z",
+  "updatedAt": "2026-08-26T12:51:56.010Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -513,9 +513,9 @@
       "text": "Analise do trafego 3dbg 20 á 24/08",
       "dueDate": "2026-08-24",
       "list": "progress",
-      "done": false,
+      "done": true,
       "createdAt": "2026-08-24T12:46:13.181Z",
-      "startedAt": "2026-08-24T12:57:51.387Z"
+      "completedAt": "2026-08-26T12:51:54.358Z"
     },
     {
       "id": "mt8rwfm004orf",
