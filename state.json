@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-26T17:09:55.031Z",
+  "updatedAt": "2026-08-26T17:10:13.059Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -560,6 +560,14 @@
       "done": false,
       "createdAt": "2026-08-26T13:06:18.257Z",
       "startedAt": "2026-08-26T17:09:53.116Z"
+    },
+    {
+      "id": "mtacnhvdg0oed",
+      "text": "atualizar os layouts das novas propostas",
+      "dueDate": "2026-08-26",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-08-26T17:10:11.257Z"
     }
   ],
   "completionHistory": {
