@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-28T14:48:28.898Z",
+  "updatedAt": "2026-08-28T14:48:35.066Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -594,8 +594,9 @@
       "text": "Verificar os chamados MKT",
       "dueDate": "2026-08-28",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-08-28T14:48:27.068Z"
+      "done": true,
+      "createdAt": "2026-08-28T14:48:27.068Z",
+      "completedAt": "2026-08-28T14:48:33.398Z"
     }
   ],
   "completionHistory": {
