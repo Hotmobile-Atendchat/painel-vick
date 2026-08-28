@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-28T19:55:34.050Z",
+  "updatedAt": "2026-08-28T19:55:36.026Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -595,8 +595,9 @@
       "text": "Ideia, dia do cliente 3dbgg OK",
       "dueDate": "2026-08-28",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-08-28T19:55:32.146Z"
+      "done": true,
+      "createdAt": "2026-08-28T19:55:32.146Z",
+      "completedAt": "2026-08-28T19:55:34.389Z"
     }
   ],
   "completionHistory": {
