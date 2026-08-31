@@ -158,6 +158,12 @@
   .day-progress-top b{color:var(--mint-d)}
   .day-track{height:7px;background:var(--line);border-radius:10px;overflow:hidden}
   .day-track span{display:block;width:0;height:100%;border-radius:inherit;background:linear-gradient(90deg,#6f3cc4,var(--accent),#d7b9ff);background-size:200% 100%;box-shadow:0 0 14px rgba(139,92,246,.3);transition:width .45s cubic-bezier(.2,.8,.2,1);animation:dayShimmer 3s linear infinite}
+  .day-filters{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:0 0 14px;padding:5px;background:var(--panel2);border:1px solid var(--line);border-radius:12px}
+  .day-filter{min-width:0;border:1px solid transparent;background:transparent;color:var(--muted);border-radius:8px;padding:7px 5px;font:800 10px/1.2 'Segoe UI',system-ui,sans-serif;cursor:pointer;transition:background .16s,border-color .16s,color .16s,transform .16s}
+  .day-filter:hover{color:var(--lilac);transform:translateY(-1px)}
+  .day-filter.active{background:#fff;border-color:#d5c4e4;color:var(--lilac-d);box-shadow:0 3px 10px rgba(65,42,84,.09)}
+  .day-filter b{display:inline-grid;place-items:center;min-width:18px;height:18px;margin-left:3px;padding:0 5px;border-radius:999px;background:var(--mint-bg);color:var(--mint-d);font-size:9px}
+  .day-section[hidden]{display:none}
   .day-form{display:grid;gap:8px;margin-bottom:18px}
   .day-form input,.day-form select{width:100%;border:1px solid var(--line);background:#fff;color:var(--txt);font:inherit;border-radius:10px;outline:none}
   .day-form input{height:41px;padding:0 12px;font-size:13px}
@@ -269,6 +275,11 @@
     <div class="day-progress-top"><span id="daySummary">0 de 0 concluídas</span><b id="dayPct">0%</b></div>
     <div class="day-track"><span id="dayBar"></span></div>
   </div>
+  <div class="day-filters" role="group" aria-label="Filtrar atividades por status">
+    <button class="day-filter" type="button" data-day-filter="done" aria-pressed="false" onclick="setDailyFilter(this)">Concluídas <b id="doneFilterCount">0</b></button>
+    <button class="day-filter" type="button" data-day-filter="progress" aria-pressed="false" onclick="setDailyFilter(this)">Em andamento <b id="progressFilterCount">0</b></button>
+    <button class="day-filter active" type="button" data-day-filter="pending" aria-pressed="true" onclick="setDailyFilter(this)">Pendências <b id="pendingFilterCount">0</b></button>
+  </div>
   <form class="day-form" onsubmit="addDailyTask(event)">
     <input id="dayInput" type="text" maxlength="180" autocomplete="off" placeholder="O que precisa ser feito?" aria-label="Nova tarefa pessoal">
     <div class="day-form-row">
@@ -277,17 +288,21 @@
       <button class="day-add" type="submit">Adicionar</button>
     </div>
   </form>
-  <section class="day-section">
+  <section class="day-section" data-day-section="pending">
     <div class="day-section-head"><span>☀️ Hoje</span><span class="day-count" id="todayCount">0</span></div>
     <div class="day-list" id="todayList"></div>
   </section>
-  <section class="day-section">
+  <section class="day-section" data-day-section="progress" hidden>
     <div class="day-section-head"><span>◐ Em andamento</span><span class="day-count" id="progressCount">0</span></div>
     <div class="day-list" id="progressList"></div>
   </section>
-  <section class="day-section">
+  <section class="day-section" data-day-section="pending">
     <div class="day-section-head"><span>📌 Pendências</span><span class="day-count" id="pendingCount">0</span></div>
     <div class="day-list" id="pendingList"></div>
+  </section>
+  <section class="day-section" data-day-section="done" hidden>
+    <div class="day-section-head"><span>✓ Atividades concluídas</span><span class="day-count" id="doneCount">0</span></div>
+    <div class="day-list" id="doneList"></div>
   </section>
   <button class="day-clear" type="button" onclick="clearDailyDone()">limpar tarefas concluídas</button>
 </aside>
@@ -433,7 +448,7 @@ let completionHistory=JSON.parse(localStorage.getItem(HKEY)||'{}');
 let dailyActivityHistory=JSON.parse(localStorage.getItem(AHKEY)||'[]');
 let todayClearedBefore=localStorage.getItem(TCKEY);if(!todayClearedBefore){todayClearedBefore=new Date().toISOString();localStorage.setItem(TCKEY,todayClearedBefore);}
 let migratedDailyHistory=false;dailyTasks.forEach(task=>{if(task.done&&!task.completedAt){task.completedAt=new Date().toISOString();migratedDailyHistory=true;}if(!task.done&&task.list==='progress'&&!task.startedAt){task.startedAt=new Date().toISOString();migratedDailyHistory=true;}});if(migratedDailyHistory)localStorage.setItem(DKEY,JSON.stringify(dailyTasks));
-let curTab='all', allOpen=false, celebrateKey=null;
+let curTab='all', dailyFilter='pending', allOpen=false, celebrateKey=null;
 
 const REMOTE_REPO='Hotmobile-Atendchat/painel-vick',REMOTE_BRANCH='main',REMOTE_FILE='state.json';
 const REMOTE_API=`https://api.github.com/repos/${REMOTE_REPO}/contents/${REMOTE_FILE}`;
@@ -519,6 +534,11 @@ function flash(){showStatus(isEditor?'✓ salvo · sincronizando':'✓ salvo nes
 function saveDaily(){localStorage.setItem(DKEY,JSON.stringify(dailyTasks));flash();queueSharedSave();}
 function saveHistory(){localStorage.setItem(HKEY,JSON.stringify(completionHistory));localStorage.setItem(AHKEY,JSON.stringify(dailyActivityHistory));queueSharedSave();}
 function safeText(v){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function setDailyFilter(button){
+  dailyFilter=button.dataset.dayFilter;
+  document.querySelectorAll('.day-filter').forEach(item=>{const active=item===button;item.classList.toggle('active',active);item.setAttribute('aria-pressed',String(active));});
+  renderDaily();
+}
 function addDailyTask(e){
   e.preventDefault();
   const input=document.getElementById('dayInput'),dateInput=document.getElementById('dayDueDate'),text=input.value.trim();
@@ -551,19 +571,24 @@ function clearDailyDone(){
   saveHistory();
 }
 function renderDaily(celebrateId){
-  const groups={today:document.getElementById('todayList'),progress:document.getElementById('progressList'),pending:document.getElementById('pendingList')};
+  const groups={today:document.getElementById('todayList'),progress:document.getElementById('progressList'),pending:document.getElementById('pendingList'),done:document.getElementById('doneList')};
   Object.entries(groups).forEach(([type,root])=>{
-    const items=dailyTasks.filter(t=>t.list===type).sort((a,b)=>Number(a.done)-Number(b.done)||(a.dueDate||'9999-12-31').localeCompare(b.dueDate||'9999-12-31'));
+    const items=dailyTasks.filter(t=>type==='done'?t.done:!t.done&&t.list===type).sort((a,b)=>type==='done'?new Date(b.completedAt||0)-new Date(a.completedAt||0):(a.dueDate||'9999-12-31').localeCompare(b.dueDate||'9999-12-31'));
     root.innerHTML=items.length?items.map(t=>`<div class="day-task ${t.done?'done':''} ${!t.done&&type==='progress'?'in-progress':''} ${t.id===celebrateId?'celebrate':''}">
       <label><input type="checkbox" ${t.done?'checked':''} ${isEditor?'':'disabled'} onchange="toggleDailyTask('${t.id}')"><span class="day-check">✓</span><span class="day-text">${safeText(t.text)}</span></label>
       <div class="day-actions"><input class="day-task-date" type="date" value="${safeText(t.dueDate||'')}" aria-label="Data de ${safeText(t.text)}" onchange="setDailyDate('${t.id}',this.value)"><select class="day-status" aria-label="Status de ${safeText(t.text)}" onchange="setDailyStatus('${t.id}',this.value)"><option value="today" ${!t.done&&type==='today'?'selected':''}>Hoje</option><option value="progress" ${!t.done&&type==='progress'?'selected':''}>Em andamento</option><option value="pending" ${!t.done&&type==='pending'?'selected':''}>Pendente</option><option value="done" ${t.done?'selected':''}>Concluída</option></select><button type="button" title="Excluir" onclick="deleteDailyTask('${t.id}')">×</button></div>
       ${t.id===celebrateId?'<span class="day-spark">✦ ✧ ✦</span>':''}</div>`).join(''):'<div class="day-empty">Nada por aqui.</div>';
   });
+  document.querySelectorAll('[data-day-section]').forEach(section=>section.hidden=section.dataset.daySection!==dailyFilter);
   const done=dailyTasks.filter(t=>t.done).length,total=dailyTasks.length,pct=total?Math.round(done/total*100):0;
-  document.getElementById('todayCount').textContent=dailyTasks.filter(t=>t.list==='today'&&!t.done).length;
-  document.getElementById('progressCount').textContent=dailyTasks.filter(t=>t.list==='progress'&&!t.done).length;
-  document.getElementById('pendingCount').textContent=dailyTasks.filter(t=>t.list==='pending'&&!t.done).length;
-  const inProgress=dailyTasks.filter(t=>t.list==='progress'&&!t.done).length;
+  const today=dailyTasks.filter(t=>t.list==='today'&&!t.done).length,inProgress=dailyTasks.filter(t=>t.list==='progress'&&!t.done).length,pending=dailyTasks.filter(t=>t.list==='pending'&&!t.done).length;
+  document.getElementById('todayCount').textContent=today;
+  document.getElementById('progressCount').textContent=inProgress;
+  document.getElementById('pendingCount').textContent=pending;
+  document.getElementById('doneCount').textContent=done;
+  document.getElementById('doneFilterCount').textContent=done;
+  document.getElementById('progressFilterCount').textContent=inProgress;
+  document.getElementById('pendingFilterCount').textContent=today+pending;
   document.getElementById('daySummary').textContent=`${done} concluídas · ${inProgress} em andamento`;
   document.getElementById('dayPct').textContent=pct+'%';document.getElementById('dayBar').style.width=pct+'%';
 }
