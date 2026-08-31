@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-31T14:00:11.839Z",
+  "updatedAt": "2026-08-31T14:04:07.428Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -616,6 +616,14 @@
       "done": false,
       "createdAt": "2026-08-31T14:00:06.300Z",
       "startedAt": "2026-08-31T14:00:10.144Z"
+    },
+    {
+      "id": "mthb7fr2yudh1",
+      "text": "Alteração no google ads da 3D",
+      "dueDate": "2026-08-31",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-08-31T14:04:05.630Z"
     }
   ],
   "completionHistory": {
