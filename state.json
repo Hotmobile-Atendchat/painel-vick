@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-31T12:49:43.247Z",
+  "updatedAt": "2026-08-31T12:53:33.420Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -598,6 +598,14 @@
       "done": true,
       "createdAt": "2026-08-28T19:55:32.146Z",
       "completedAt": "2026-08-28T19:55:34.389Z"
+    },
+    {
+      "id": "mth8oorolf1sn",
+      "text": "Planejamento do mês de Setembro",
+      "dueDate": "2026-08-31",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-08-31T12:53:31.620Z"
     }
   ],
   "completionHistory": {
