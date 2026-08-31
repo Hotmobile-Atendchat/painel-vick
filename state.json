@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-31T14:17:27.881Z",
+  "updatedAt": "2026-08-31T14:28:31.012Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -65,91 +65,11 @@
   },
   "dailyTasks": [
     {
-      "id": "msdclnsw0a17y",
-      "text": "Criar o calendário editorial do mês de agosto Hotmobile / 3DBGG",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-03T14:52:21.824Z",
-      "completedAt": "2026-08-10T12:52:26.588Z"
-    },
-    {
-      "id": "msdcmf2gl7kld",
-      "text": "Agendar o que já tiver pronto do calendário",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-03T14:52:57.160Z",
-      "completedAt": "2026-08-13T12:31:54.125Z"
-    },
-    {
-      "id": "msdcmsq83bcbv",
-      "text": "Lembrar a Dri de comprar os confetes",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-03T14:53:14.864Z",
-      "completedAt": "2026-08-10T12:52:26.588Z"
-    },
-    {
-      "id": "msepnmamonaoo",
-      "text": "Ajustar a nova apresentação comercial 2026",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-04T13:45:34.366Z",
-      "completedAt": "2026-08-10T12:52:26.588Z"
-    },
-    {
-      "id": "msexa8q9fs7g9",
-      "text": "Apresentação revenda CDL",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-04T17:19:07.185Z",
-      "completedAt": "2026-08-10T12:52:26.588Z"
-    },
-    {
-      "id": "msexawo2cc10m",
-      "text": "Verificar no lovable o motivo de não receber notificação no WhatsApp",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-04T17:19:38.210Z",
-      "completedAt": "2026-08-10T12:52:26.588Z"
-    },
-    {
       "id": "mseyrhuade5og",
       "text": "Editar os vídeos da central de ajuda",
       "list": "today",
       "done": false,
       "createdAt": "2026-08-04T18:00:31.762Z"
-    },
-    {
-      "id": "msg4b1jt4ierb",
-      "text": "Fazer testes de vídeo no GPT",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-05T13:23:28.025Z",
-      "completedAt": "2026-08-10T12:55:12.672Z"
-    },
-    {
-      "id": "msgbjyy6vk975",
-      "text": "Reunião sobre o bot do suporte",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-05T16:46:21.870Z",
-      "completedAt": "2026-08-10T12:55:09.206Z"
-    },
-    {
-      "id": "msghfc1vwk4o6",
-      "text": "elabora card / ideais do dia dos pais",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-05T19:30:43.267Z",
-      "completedAt": "2026-08-10T12:52:26.588Z"
-    },
-    {
-      "id": "msj93l0lgt4pd",
-      "text": "Editar o documento enviado por Bruno sobre a Mera",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-07T18:00:56.613Z",
-      "completedAt": "2026-08-10T12:52:26.588Z"
     },
     {
       "id": "msn7l8clnicio",
@@ -169,381 +89,12 @@
       "startedAt": "2026-08-20T14:39:52.399Z"
     },
     {
-      "id": "msn8nf4yz0ek7",
-      "text": "Configurar o painel comando",
-      "dueDate": "2026-08-11",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-10T12:59:27.202Z",
-      "completedAt": "2026-08-10T18:25:21.604Z"
-    },
-    {
-      "id": "msn8q3vphe2d1",
-      "text": "Manda mensagem para EG cobrando o feedback do cronograma",
-      "dueDate": "2026-08-10",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-10T13:01:32.582Z",
-      "completedAt": "2026-08-10T13:30:08.163Z"
-    },
-    {
-      "id": "msn8qe6ydrhhw",
-      "text": "Kit marca da HotOS",
-      "dueDate": "2026-08-10",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-10T13:01:45.946Z",
-      "completedAt": "2026-08-10T13:08:25.309Z"
-    },
-    {
-      "id": "msn8t2p8fg5wi",
-      "text": "Conferir os conteúdos da semana",
-      "dueDate": "2026-08-10",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-10T13:03:51.020Z",
-      "completedAt": "2026-08-14T13:17:03.614Z"
-    },
-    {
-      "id": "msn8tfkbrsjv9",
-      "text": "Trocar os banner do site da 3DBGG",
-      "dueDate": "2026-08-10",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-10T13:04:07.691Z",
-      "completedAt": "2026-08-10T14:51:38.909Z"
-    },
-    {
-      "id": "msn8yvjwxzo1d",
-      "text": "Fazer teste dos botões do site \"me ligue agora\" \"demostração\"",
-      "dueDate": "2026-08-10",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-10T13:08:21.692Z",
-      "completedAt": "2026-08-10T13:30:12.132Z"
-    },
-    {
-      "id": "msn9aw7wg1wb5",
-      "text": "Refazer toda apresentação da Hotmobile com a nova ID",
-      "dueDate": "2026-08-10",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-10T13:17:42.428Z",
-      "completedAt": "2026-08-14T16:17:10.993Z"
-    },
-    {
-      "id": "msn9f8tcv2hik",
-      "text": "Verificar o fundo do Google Ads dá 3DBGG",
-      "dueDate": "2026-08-10",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-10T13:21:05.376Z",
-      "completedAt": "2026-08-10T13:25:18.966Z"
-    },
-    {
-      "id": "msnftzvdpgirv",
-      "text": "Enviar a central de ajuda atualizado no grupo de \"Avisos MKT\"",
-      "dueDate": "2026-08-10",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-10T16:20:31.321Z",
-      "completedAt": "2026-08-10T18:18:53.753Z"
-    },
-    {
-      "id": "msnk20zhu57kc",
-      "text": "Enviar link do forms de bot com IA no grupo de avisos",
-      "dueDate": "2026-08-10",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-10T18:18:44.478Z",
-      "completedAt": "2026-08-10T18:18:55.055Z"
-    },
-    {
-      "id": "msnkokn1ey8gq",
-      "text": "Testar o nova pág do BLOG https://hotmobile.com.br/admin/blog",
-      "dueDate": "2026-08-10",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-10T18:36:16.381Z",
-      "completedAt": "2026-08-11T12:48:56.020Z"
-    },
-    {
-      "id": "msnl8snuzo2qc",
-      "text": "Links do chamado (uma parte do chamado com todos os links necessário)",
-      "dueDate": "2026-08-10",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-10T18:51:59.898Z",
-      "completedAt": "2026-08-13T12:32:13.831Z"
-    },
-    {
-      "id": "msolqxefdr73v",
-      "text": "Referencias para o novo blog",
-      "dueDate": "2026-08-11",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-11T11:53:52.023Z",
-      "completedAt": "2026-08-11T12:48:41.157Z"
-    },
-    {
-      "id": "msooxo83ra4dx",
-      "text": "Alinhamento/ Ideias com Closer e SDR",
-      "dueDate": "2026-08-11",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-11T13:23:05.571Z",
-      "completedAt": "2026-08-11T13:51:27.060Z"
-    },
-    {
-      "id": "msq3ipp1mbjd9",
-      "text": "Cria uma página nova pagina de concorrente no Notion",
-      "dueDate": "2026-08-12",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-12T12:59:08.053Z",
-      "completedAt": "2026-08-12T16:33:58.789Z"
-    },
-    {
-      "id": "msq3jy2677ifu",
-      "text": "Colocar links na bio do grupo, aviso de mkt",
-      "dueDate": "2026-08-12",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-12T13:00:05.550Z",
-      "completedAt": "2026-08-12T13:00:09.437Z"
-    },
-    {
-      "id": "msqes8xq3ozyt",
-      "text": "concluir os chamados do MKT",
-      "dueDate": "2026-08-12",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-12T18:14:28.670Z",
-      "completedAt": "2026-08-12T18:14:58.450Z"
-    },
-    {
-      "id": "msqhqym6h09og",
-      "text": "Foto e video com a equipe",
-      "dueDate": "2026-08-12",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-12T19:37:27.486Z",
-      "completedAt": "2026-08-13T12:32:17.598Z"
-    },
-    {
       "id": "msri0ggz7pbzg",
       "text": "Editar foto e vídeos da equipe",
       "dueDate": "2026-08-12",
       "list": "today",
       "done": false,
       "createdAt": "2026-08-13T12:32:36.707Z"
-    },
-    {
-      "id": "msrjuoewub68c",
-      "text": "Fazer a postagem hoje da EG (solicitação do cliente)",
-      "dueDate": "2026-08-13",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-13T13:24:06.296Z",
-      "completedAt": "2026-08-13T14:21:34.849Z"
-    },
-    {
-      "id": "msrjv3wv037oy",
-      "text": "Realinhar as datas do cronograma da EG",
-      "dueDate": "2026-08-13",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-13T13:24:26.383Z",
-      "completedAt": "2026-08-14T13:17:51.539Z"
-    },
-    {
-      "id": "mstcbag6zpnun",
-      "text": "Reunião MKT",
-      "dueDate": "2026-08-14",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-14T19:28:36.774Z",
-      "completedAt": "2026-08-14T19:28:39.202Z"
-    },
-    {
-      "id": "mstdbm6f079ma",
-      "text": "Criar novos conteúdos da EG para o próximo cronograma",
-      "dueDate": "2026-08-14",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-14T19:56:51.591Z",
-      "completedAt": "2026-08-17T12:12:06.077Z"
-    },
-    {
-      "id": "msx6ztku3gvr1",
-      "text": "Alinhar os conteúdos da semana (Hotmobile, 3DBGG)",
-      "dueDate": "2026-08-14",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-17T12:10:48.318Z",
-      "completedAt": "2026-08-26T12:51:56.529Z"
-    },
-    {
-      "id": "msx70elqgsyge",
-      "text": "Elaborar o cronograma da EG",
-      "dueDate": "2026-08-14",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-17T12:11:15.566Z",
-      "completedAt": "2026-08-19T13:19:14.288Z"
-    },
-    {
-      "id": "msx7bga7w42ol",
-      "text": "Mandar p/ Caíque o link do novo site da OTMO E HOTMENU",
-      "dueDate": "2026-08-14",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-17T12:19:50.959Z",
-      "completedAt": "2026-08-17T14:44:55.493Z"
-    },
-    {
-      "id": "msx7szqbqxej7",
-      "text": "Divulgar novas vagas de SDR e reajustar alguns informações no site",
-      "dueDate": "2026-08-17",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-17T12:33:29.316Z",
-      "completedAt": "2026-08-17T14:49:57.741Z"
-    },
-    {
-      "id": "msx8vd3bj8e5l",
-      "text": "Novo painel do chefe",
-      "dueDate": "2026-08-17",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-17T13:03:19.560Z",
-      "completedAt": "2026-08-17T18:42:09.899Z"
-    },
-    {
-      "id": "msxkyu3zmgcjv",
-      "text": "Relatório de tráfego da 3DBGG",
-      "dueDate": "2026-08-17",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-17T18:41:56.975Z",
-      "completedAt": "2026-08-17T18:42:05.504Z"
-    },
-    {
-      "id": "mt04rjpkj3nm8",
-      "text": "Enviar crono da EG (18.08)",
-      "dueDate": "2026-08-17",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-19T13:31:41.576Z",
-      "completedAt": "2026-08-19T13:31:44.827Z"
-    },
-    {
-      "id": "mt05w8iez4fnk",
-      "text": "Nova analise de trafego da 3dbgg",
-      "dueDate": "2026-08-17",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-19T14:03:19.959Z",
-      "completedAt": "2026-08-20T14:39:16.276Z"
-    },
-    {
-      "id": "mt05x8762gqcs",
-      "text": "Verificar a plataforma Edrone p/ 3DBGG",
-      "dueDate": "2026-08-17",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-19T14:04:06.210Z",
-      "completedAt": "2026-08-27T14:21:03.091Z"
-    },
-    {
-      "id": "mt1knzz7ys858",
-      "text": "Fazer teste com a plataforma edrone",
-      "dueDate": "2026-08-20",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-20T13:44:36.068Z",
-      "completedAt": "2026-08-20T14:39:39.541Z"
-    },
-    {
-      "id": "mt1koy1qbyjai",
-      "text": "Enviar e-mail e whatsApp para os candidatos SRD",
-      "dueDate": "2026-08-20",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-20T13:45:20.222Z",
-      "completedAt": "2026-08-20T14:39:47.086Z"
-    },
-    {
-      "id": "mt3673kcz0byn",
-      "text": "Verificar o painel de chamados",
-      "dueDate": "2026-08-21",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-21T16:35:05.292Z",
-      "completedAt": "2026-08-24T12:45:14.327Z"
-    },
-    {
-      "id": "mt367jb0z8mim",
-      "text": "Chamar novos SDR p/ segunda",
-      "dueDate": "2026-08-21",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-21T16:35:25.693Z",
-      "completedAt": "2026-08-24T12:44:04.393Z"
-    },
-    {
-      "id": "mt36dsjyzu3qz",
-      "text": "Enviar email p/bruno",
-      "dueDate": "2026-08-21",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-21T16:40:17.614Z",
-      "completedAt": "2026-08-21T16:49:35.564Z"
-    },
-    {
-      "id": "mt78cbstbjwpx",
-      "text": "Analise do trafego 3dbg 20 á 24/08",
-      "dueDate": "2026-08-24",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-24T12:46:13.181Z",
-      "completedAt": "2026-08-26T12:51:54.358Z"
-    },
-    {
-      "id": "mt8rwfm004orf",
-      "text": "agendar posts",
-      "dueDate": "2026-08-25",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-25T14:41:30.120Z",
-      "completedAt": "2026-08-25T14:42:45.659Z"
-    },
-    {
-      "id": "mt8rx9zsgr4rt",
-      "text": "Verficar o merchants 3D",
-      "dueDate": "2026-08-25",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-25T14:42:09.496Z",
-      "completedAt": "2026-08-25T14:42:43.229Z"
-    },
-    {
-      "id": "mt8rxnaqe5x9a",
-      "text": "envio de e-mail teste no mailchimp",
-      "dueDate": "2026-08-25",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-25T14:42:26.738Z",
-      "completedAt": "2026-08-25T14:42:39.298Z"
-    },
-    {
-      "id": "mt8se9d0lbjg6",
-      "text": "preparação p/ 15 de setembro dia do cliente,",
-      "dueDate": "2026-08-25",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-25T14:55:21.829Z",
-      "completedAt": "2026-08-28T14:38:09.847Z"
     },
     {
       "id": "mta3xuz5ly24y",
@@ -553,51 +104,6 @@
       "done": false,
       "createdAt": "2026-08-26T13:06:18.257Z",
       "startedAt": "2026-08-28T14:38:12.205Z"
-    },
-    {
-      "id": "mtacnhvdg0oed",
-      "text": "atualizar os layouts das novas propostas",
-      "dueDate": "2026-08-26",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-26T17:10:11.257Z",
-      "completedAt": "2026-08-28T14:37:52.527Z"
-    },
-    {
-      "id": "mtbmaqirtiq51",
-      "text": "Aviso MKT sobre atualização do chamado",
-      "dueDate": "2026-08-27",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-27T14:27:58.275Z",
-      "completedAt": "2026-08-28T14:37:56.036Z"
-    },
-    {
-      "id": "mtd24z1gfj71m",
-      "text": "Nova analise do tráfego da 3dbgg",
-      "dueDate": "2026-08-28",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-28T14:39:09.412Z",
-      "completedAt": "2026-08-28T14:39:13.448Z"
-    },
-    {
-      "id": "mtd2gxbw3y8d2",
-      "text": "Verificar os chamados MKT",
-      "dueDate": "2026-08-28",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-28T14:48:27.068Z",
-      "completedAt": "2026-08-28T14:48:33.398Z"
-    },
-    {
-      "id": "mtddfu7mg3xaz",
-      "text": "Ideia, dia do cliente 3dbgg OK",
-      "dueDate": "2026-08-28",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-08-28T19:55:32.146Z",
-      "completedAt": "2026-08-28T19:55:34.389Z"
     },
     {
       "id": "mth8oorolf1sn",
@@ -616,20 +122,354 @@
       "done": false,
       "createdAt": "2026-08-31T14:00:06.300Z",
       "startedAt": "2026-08-31T14:00:10.144Z"
-    },
-    {
-      "id": "mthb7fr2yudh1",
-      "text": "Alteração no google ads da 3D",
-      "dueDate": "2026-08-31",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-31T14:04:05.630Z",
-      "completedAt": "2026-08-31T14:17:26.056Z"
     }
   ],
   "completionHistory": {
     "brandkit.0": "2026-08-10T14:52:23.033Z"
   },
-  "dailyActivityHistory": [],
+  "dailyActivityHistory": [
+    {
+      "id": "daily:msdclnsw0a17y:done",
+      "text": "Criar o calendário editorial do mês de agosto Hotmobile / 3DBGG",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-10T12:52:26.588Z"
+    },
+    {
+      "id": "daily:msdcmf2gl7kld:done",
+      "text": "Agendar o que já tiver pronto do calendário",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-13T12:31:54.125Z"
+    },
+    {
+      "id": "daily:msdcmsq83bcbv:done",
+      "text": "Lembrar a Dri de comprar os confetes",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-10T12:52:26.588Z"
+    },
+    {
+      "id": "daily:msepnmamonaoo:done",
+      "text": "Ajustar a nova apresentação comercial 2026",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-10T12:52:26.588Z"
+    },
+    {
+      "id": "daily:msexa8q9fs7g9:done",
+      "text": "Apresentação revenda CDL",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-10T12:52:26.588Z"
+    },
+    {
+      "id": "daily:msexawo2cc10m:done",
+      "text": "Verificar no lovable o motivo de não receber notificação no WhatsApp",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-10T12:52:26.588Z"
+    },
+    {
+      "id": "daily:msg4b1jt4ierb:done",
+      "text": "Fazer testes de vídeo no GPT",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-10T12:55:12.672Z"
+    },
+    {
+      "id": "daily:msgbjyy6vk975:done",
+      "text": "Reunião sobre o bot do suporte",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-10T12:55:09.206Z"
+    },
+    {
+      "id": "daily:msghfc1vwk4o6:done",
+      "text": "elabora card / ideais do dia dos pais",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-10T12:52:26.588Z"
+    },
+    {
+      "id": "daily:msj93l0lgt4pd:done",
+      "text": "Editar o documento enviado por Bruno sobre a Mera",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-10T12:52:26.588Z"
+    },
+    {
+      "id": "daily:msn8nf4yz0ek7:done",
+      "text": "Configurar o painel comando",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-10T18:25:21.604Z"
+    },
+    {
+      "id": "daily:msn8q3vphe2d1:done",
+      "text": "Manda mensagem para EG cobrando o feedback do cronograma",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-10T13:30:08.163Z"
+    },
+    {
+      "id": "daily:msn8qe6ydrhhw:done",
+      "text": "Kit marca da HotOS",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-10T13:08:25.309Z"
+    },
+    {
+      "id": "daily:msn8t2p8fg5wi:done",
+      "text": "Conferir os conteúdos da semana",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-14T13:17:03.614Z"
+    },
+    {
+      "id": "daily:msn8tfkbrsjv9:done",
+      "text": "Trocar os banner do site da 3DBGG",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-10T14:51:38.909Z"
+    },
+    {
+      "id": "daily:msn8yvjwxzo1d:done",
+      "text": "Fazer teste dos botões do site \"me ligue agora\" \"demostração\"",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-10T13:30:12.132Z"
+    },
+    {
+      "id": "daily:msn9aw7wg1wb5:done",
+      "text": "Refazer toda apresentação da Hotmobile com a nova ID",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-14T16:17:10.993Z"
+    },
+    {
+      "id": "daily:msn9f8tcv2hik:done",
+      "text": "Verificar o fundo do Google Ads dá 3DBGG",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-10T13:25:18.966Z"
+    },
+    {
+      "id": "daily:msnftzvdpgirv:done",
+      "text": "Enviar a central de ajuda atualizado no grupo de \"Avisos MKT\"",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-10T18:18:53.753Z"
+    },
+    {
+      "id": "daily:msnk20zhu57kc:done",
+      "text": "Enviar link do forms de bot com IA no grupo de avisos",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-10T18:18:55.055Z"
+    },
+    {
+      "id": "daily:msnkokn1ey8gq:done",
+      "text": "Testar o nova pág do BLOG https://hotmobile.com.br/admin/blog",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-11T12:48:56.020Z"
+    },
+    {
+      "id": "daily:msnl8snuzo2qc:done",
+      "text": "Links do chamado (uma parte do chamado com todos os links necessário)",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-13T12:32:13.831Z"
+    },
+    {
+      "id": "daily:msolqxefdr73v:done",
+      "text": "Referencias para o novo blog",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-11T12:48:41.157Z"
+    },
+    {
+      "id": "daily:msooxo83ra4dx:done",
+      "text": "Alinhamento/ Ideias com Closer e SDR",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-11T13:51:27.060Z"
+    },
+    {
+      "id": "daily:msq3ipp1mbjd9:done",
+      "text": "Cria uma página nova pagina de concorrente no Notion",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-12T16:33:58.789Z"
+    },
+    {
+      "id": "daily:msq3jy2677ifu:done",
+      "text": "Colocar links na bio do grupo, aviso de mkt",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-12T13:00:09.437Z"
+    },
+    {
+      "id": "daily:msqes8xq3ozyt:done",
+      "text": "concluir os chamados do MKT",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-12T18:14:58.450Z"
+    },
+    {
+      "id": "daily:msqhqym6h09og:done",
+      "text": "Foto e video com a equipe",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-13T12:32:17.598Z"
+    },
+    {
+      "id": "daily:msrjuoewub68c:done",
+      "text": "Fazer a postagem hoje da EG (solicitação do cliente)",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-13T14:21:34.849Z"
+    },
+    {
+      "id": "daily:msrjv3wv037oy:done",
+      "text": "Realinhar as datas do cronograma da EG",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-14T13:17:51.539Z"
+    },
+    {
+      "id": "daily:mstcbag6zpnun:done",
+      "text": "Reunião MKT",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-14T19:28:39.202Z"
+    },
+    {
+      "id": "daily:mstdbm6f079ma:done",
+      "text": "Criar novos conteúdos da EG para o próximo cronograma",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-17T12:12:06.077Z"
+    },
+    {
+      "id": "daily:msx6ztku3gvr1:done",
+      "text": "Alinhar os conteúdos da semana (Hotmobile, 3DBGG)",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-26T12:51:56.529Z"
+    },
+    {
+      "id": "daily:msx70elqgsyge:done",
+      "text": "Elaborar o cronograma da EG",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-19T13:19:14.288Z"
+    },
+    {
+      "id": "daily:msx7bga7w42ol:done",
+      "text": "Mandar p/ Caíque o link do novo site da OTMO E HOTMENU",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-17T14:44:55.493Z"
+    },
+    {
+      "id": "daily:msx7szqbqxej7:done",
+      "text": "Divulgar novas vagas de SDR e reajustar alguns informações no site",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-17T14:49:57.741Z"
+    },
+    {
+      "id": "daily:msx8vd3bj8e5l:done",
+      "text": "Novo painel do chefe",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-17T18:42:09.899Z"
+    },
+    {
+      "id": "daily:msxkyu3zmgcjv:done",
+      "text": "Relatório de tráfego da 3DBGG",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-17T18:42:05.504Z"
+    },
+    {
+      "id": "daily:mt04rjpkj3nm8:done",
+      "text": "Enviar crono da EG (18.08)",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-19T13:31:44.827Z"
+    },
+    {
+      "id": "daily:mt05w8iez4fnk:done",
+      "text": "Nova analise de trafego da 3dbgg",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-20T14:39:16.276Z"
+    },
+    {
+      "id": "daily:mt05x8762gqcs:done",
+      "text": "Verificar a plataforma Edrone p/ 3DBGG",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-27T14:21:03.091Z"
+    },
+    {
+      "id": "daily:mt1knzz7ys858:done",
+      "text": "Fazer teste com a plataforma edrone",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-20T14:39:39.541Z"
+    },
+    {
+      "id": "daily:mt1koy1qbyjai:done",
+      "text": "Enviar e-mail e whatsApp para os candidatos SRD",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-20T14:39:47.086Z"
+    },
+    {
+      "id": "daily:mt3673kcz0byn:done",
+      "text": "Verificar o painel de chamados",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-24T12:45:14.327Z"
+    },
+    {
+      "id": "daily:mt367jb0z8mim:done",
+      "text": "Chamar novos SDR p/ segunda",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-24T12:44:04.393Z"
+    },
+    {
+      "id": "daily:mt36dsjyzu3qz:done",
+      "text": "Enviar email p/bruno",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-21T16:49:35.564Z"
+    },
+    {
+      "id": "daily:mt78cbstbjwpx:done",
+      "text": "Analise do trafego 3dbg 20 á 24/08",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-26T12:51:54.358Z"
+    },
+    {
+      "id": "daily:mt8rwfm004orf:done",
+      "text": "agendar posts",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-25T14:42:45.659Z"
+    },
+    {
+      "id": "daily:mt8rx9zsgr4rt:done",
+      "text": "Verficar o merchants 3D",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-25T14:42:43.229Z"
+    },
+    {
+      "id": "daily:mt8rxnaqe5x9a:done",
+      "text": "envio de e-mail teste no mailchimp",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-25T14:42:39.298Z"
+    },
+    {
+      "id": "daily:mt8se9d0lbjg6:done",
+      "text": "preparação p/ 15 de setembro dia do cliente,",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-28T14:38:09.847Z"
+    },
+    {
+      "id": "daily:mtacnhvdg0oed:done",
+      "text": "atualizar os layouts das novas propostas",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-28T14:37:52.527Z"
+    },
+    {
+      "id": "daily:mtbmaqirtiq51:done",
+      "text": "Aviso MKT sobre atualização do chamado",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-28T14:37:56.036Z"
+    },
+    {
+      "id": "daily:mtd24z1gfj71m:done",
+      "text": "Nova analise do tráfego da 3dbgg",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-28T14:39:13.448Z"
+    },
+    {
+      "id": "daily:mtd2gxbw3y8d2:done",
+      "text": "Verificar os chamados MKT",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-28T14:48:33.398Z"
+    },
+    {
+      "id": "daily:mtddfu7mg3xaz:done",
+      "text": "Ideia, dia do cliente 3dbgg OK",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-28T19:55:34.389Z"
+    },
+    {
+      "id": "daily:mthb7fr2yudh1:done",
+      "text": "Alteração no google ads da 3D",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-08-31T14:17:26.056Z"
+    }
+  ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z"
 }
