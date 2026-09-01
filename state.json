@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-01T14:04:43.869Z",
+  "updatedAt": "2026-09-01T14:04:46.683Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -68,8 +68,9 @@
       "id": "mseyrhuade5og",
       "text": "Editar os vídeos da central de ajuda",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-08-04T18:00:31.762Z"
+      "done": true,
+      "createdAt": "2026-08-04T18:00:31.762Z",
+      "completedAt": "2026-09-01T14:04:44.880Z"
     },
     {
       "id": "msn7l8clnicio",
