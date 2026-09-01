@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-01T14:04:20.165Z",
+  "updatedAt": "2026-09-01T14:04:32.759Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -128,9 +128,9 @@
       "text": "retirar o banner de dia do gamer da 3dbgg e colocar banner com os inserts mais procurados",
       "dueDate": "2026-08-31",
       "list": "progress",
-      "done": false,
+      "done": true,
       "createdAt": "2026-08-31T14:51:04.648Z",
-      "startedAt": "2026-08-31T14:51:07.640Z"
+      "completedAt": "2026-09-01T14:04:31.096Z"
     }
   ],
   "completionHistory": {
