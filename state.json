@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-01T14:03:50.069Z",
+  "updatedAt": "2026-09-01T14:04:20.165Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -119,9 +119,9 @@
       "text": "Lembrar a Adri o Feedback da campanha do dia do cliente",
       "dueDate": "2026-08-31",
       "list": "progress",
-      "done": false,
+      "done": true,
       "createdAt": "2026-08-31T14:00:06.300Z",
-      "startedAt": "2026-08-31T14:00:10.144Z"
+      "completedAt": "2026-09-01T14:04:18.504Z"
     },
     {
       "id": "mthcvux3mai30",
