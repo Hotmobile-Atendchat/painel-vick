@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-02T19:46:18.2017117Z",
+  "updatedAt": "2026-09-02T19:47:22.117Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -95,14 +95,15 @@
       "text": "Planejamento dia do cliente 3dbgg",
       "dueDate": "2026-09-02",
       "list": "today",
-      "done": false,
+      "done": true,
       "createdAt": "2026-09-02T19:22:09.782Z",
       "attachment": {
         "name": "Semana_do_Cliente_3DBGG.pdf",
         "path": "attachments/mtkhg4rbab2ih-mtkhg4rc-Semana_do_Cliente_3DBGG.pdf",
         "type": "application/pdf",
         "size": 554225
-      }
+      },
+      "completedAt": "2026-09-02T19:47:19.861Z"
     },
     {
       "id": "fix-validacao-squads-20260902",
