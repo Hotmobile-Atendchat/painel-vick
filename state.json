@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-02T12:28:06.672Z",
+  "updatedAt": "2026-09-02T12:28:40.753Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -85,9 +85,9 @@
       "text": "Pesquisar IA para vídeo",
       "dueDate": "2026-08-10",
       "list": "progress",
-      "done": false,
+      "done": true,
       "createdAt": "2026-08-10T12:32:42.150Z",
-      "startedAt": "2026-08-20T14:39:52.399Z"
+      "completedAt": "2026-09-02T12:28:38.939Z"
     },
     {
       "id": "msri0ggz7pbzg",
