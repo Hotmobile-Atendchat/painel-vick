@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-02T13:02:34.520Z",
+  "updatedAt": "2026-09-02T13:02:39.269Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -104,8 +104,9 @@
       "text": "Fazer o aviso de feriado do dia 07 de Setembro",
       "dueDate": "2026-08-31",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-09-02T12:34:39.024Z"
+      "done": true,
+      "createdAt": "2026-09-02T12:34:39.024Z",
+      "completedAt": "2026-09-02T13:02:37.587Z"
     },
     {
       "id": "mtk3vzftzjpe9",
