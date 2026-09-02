@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-02T19:22:57.181Z",
+  "updatedAt": "2026-09-02T19:24:52.576Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -73,15 +73,6 @@
       "createdAt": "2026-08-10T12:29:45.477Z"
     },
     {
-      "id": "mta3xuz5ly24y",
-      "text": "organizar as novas apresentações na galeria do notion",
-      "dueDate": "2026-08-26",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-26T13:06:18.257Z",
-      "completedAt": "2026-09-02T13:15:05.939Z"
-    },
-    {
       "id": "mth8oorolf1sn",
       "text": "Planejamento do mês de Setembro",
       "dueDate": "2026-08-31",
@@ -89,33 +80,6 @@
       "done": false,
       "createdAt": "2026-08-31T12:53:31.620Z",
       "startedAt": "2026-09-02T12:28:45.240Z"
-    },
-    {
-      "id": "mtk2rr4i2ox3i",
-      "text": "Google Vids (Vídeo)",
-      "dueDate": "2026-08-31",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-02T12:31:15.474Z",
-      "completedAt": "2026-09-02T12:34:16.868Z"
-    },
-    {
-      "id": "mtk2w46o5wwrk",
-      "text": "Fazer o aviso de feriado do dia 07 de Setembro",
-      "dueDate": "2026-08-31",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-02T12:34:39.024Z",
-      "completedAt": "2026-09-02T13:02:37.587Z"
-    },
-    {
-      "id": "mtk3vzftzjpe9",
-      "text": "Responder os direct da 3D",
-      "dueDate": "2026-08-31",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-02T13:02:32.489Z",
-      "completedAt": "2026-09-02T13:02:39.868Z"
     },
     {
       "id": "mtk3wuqy3ol56",
@@ -516,6 +480,30 @@
       "text": "retirar o banner de dia do gamer da 3dbgg e colocar banner com os inserts mais procurados",
       "source": "Painel do dia · Concluída",
       "completedAt": "2026-09-01T14:04:31.096Z"
+    },
+    {
+      "id": "daily:mta3xuz5ly24y:done",
+      "text": "organizar as novas apresentações na galeria do notion",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-09-02T13:15:05.939Z"
+    },
+    {
+      "id": "daily:mtk2rr4i2ox3i:done",
+      "text": "Google Vids (Vídeo)",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-09-02T12:34:16.868Z"
+    },
+    {
+      "id": "daily:mtk2w46o5wwrk:done",
+      "text": "Fazer o aviso de feriado do dia 07 de Setembro",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-09-02T13:02:37.587Z"
+    },
+    {
+      "id": "daily:mtk3vzftzjpe9:done",
+      "text": "Responder os direct da 3D",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-09-02T13:02:39.868Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z"
