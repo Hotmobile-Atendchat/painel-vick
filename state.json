@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-02T12:34:40.784Z",
+  "updatedAt": "2026-09-02T13:02:34.520Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -106,6 +106,14 @@
       "list": "today",
       "done": false,
       "createdAt": "2026-09-02T12:34:39.024Z"
+    },
+    {
+      "id": "mtk3vzftzjpe9",
+      "text": "Responder os direct da 3D",
+      "dueDate": "2026-08-31",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-09-02T13:02:32.489Z"
     }
   ],
   "completionHistory": {
