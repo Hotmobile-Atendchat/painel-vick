@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-02T12:31:17.457Z",
+  "updatedAt": "2026-09-02T12:34:18.701Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -95,8 +95,9 @@
       "text": "Google Vids (Vídeo)",
       "dueDate": "2026-08-31",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-09-02T12:31:15.474Z"
+      "done": true,
+      "createdAt": "2026-09-02T12:31:15.474Z",
+      "completedAt": "2026-09-02T12:34:16.868Z"
     }
   ],
   "completionHistory": {
