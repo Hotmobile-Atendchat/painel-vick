@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-02T12:28:47.023Z",
+  "updatedAt": "2026-09-02T12:28:51.559Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -102,10 +102,9 @@
       "id": "mta3xuz5ly24y",
       "text": "organizar as novas apresentações na galeria do notion",
       "dueDate": "2026-08-26",
-      "list": "progress",
+      "list": "today",
       "done": false,
-      "createdAt": "2026-08-26T13:06:18.257Z",
-      "startedAt": "2026-08-28T14:38:12.205Z"
+      "createdAt": "2026-08-26T13:06:18.257Z"
     },
     {
       "id": "mth8oorolf1sn",
