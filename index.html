@@ -132,7 +132,7 @@
   .saved.show{opacity:1;transform:translateX(-50%) translateY(0)}
   body.read-only .day-form,body.read-only .day-clear{display:none}
   body.read-only .day-actions{display:flex;justify-content:flex-end;opacity:1}
-  body.read-only .day-actions .day-task-date,body.read-only .day-actions .day-status,body.read-only .day-actions .day-delete{display:none}
+  body.read-only .day-actions .day-task-date,body.read-only .day-actions .day-status,body.read-only .day-actions .day-edit,body.read-only .day-actions .day-delete{display:none}
   body.read-only .trow input[type=checkbox]{pointer-events:none;opacity:.72}
   body.read-only .note textarea{pointer-events:none;background:var(--panel2)}
   .auth-modal{position:fixed;inset:0;z-index:100;display:none;place-items:center;padding:20px;background:rgba(38,25,48,.52);backdrop-filter:blur(7px)}
@@ -203,7 +203,7 @@
   .day-attachment-preview img{width:100%;height:100%;object-fit:cover}
   .day-attachment-info{min-width:0}.day-attachment-info b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10.5px}.day-attachment-info small{display:block;margin-top:2px;color:var(--muted2);font-size:9px}
   .day-attachment-open{color:var(--accent);font-size:12px}
-  .day-actions{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) 66px 28px;gap:6px;align-items:center;opacity:.82;transition:opacity .15s}
+  .day-actions{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) 66px 66px 28px;gap:6px;align-items:center;opacity:.82;transition:opacity .15s}
   .day-task:hover .day-actions,.day-task:focus-within .day-actions{opacity:1}
   .day-actions button{width:25px;height:25px;border:1px solid var(--line);border-radius:7px;background:var(--panel2);color:var(--muted);cursor:pointer;font-size:13px}
   .day-actions button:hover{border-color:var(--accent);color:var(--lilac)}
@@ -638,6 +638,15 @@ function setDailyStatus(taskId,status){
   saveDaily();renderDaily(status==='done'?taskId:null);renderActivity();
 }
 function setDailyDate(taskId,value){const task=dailyTasks.find(t=>t.id===taskId);if(!task)return;task.dueDate=value;saveDaily();renderDaily();}
+function editDailyTask(taskId){
+  if(!isEditor){openAuth();return;}
+  const task=dailyTasks.find(t=>t.id===taskId);if(!task)return;
+  const updated=window.prompt('Editar o que precisa ser feito:',task.text);
+  if(updated===null)return;
+  const text=updated.trim();if(!text){alert('A tarefa precisa ter um texto.');return;}
+  if(text===task.text)return;
+  task.text=text;saveDaily();renderDaily();renderActivity();showStatus('✓ tarefa editada');
+}
 function deleteDailyTask(taskId){dailyTasks=dailyTasks.filter(t=>t.id!==taskId);saveDaily();renderDaily();renderActivity();}
 function clearDailyDone(){
   if(!dailyTasks.some(t=>t.done))return;
@@ -655,7 +664,7 @@ function renderDaily(celebrateId){
     root.innerHTML=items.length?items.map(t=>`<div class="day-task ${t.done?'done':''} ${!t.done&&type==='progress'?'in-progress':''} ${t.id===celebrateId?'celebrate':''}">
       <label><input type="checkbox" ${t.done?'checked':''} ${isEditor?'':'disabled'} onchange="toggleDailyTask('${t.id}')"><span class="day-check">✓</span><span class="day-text">${safeText(t.text)}</span></label>
       ${renderDailyAttachment(t.attachment)}
-      <div class="day-actions"><input class="day-task-date" type="date" value="${safeText(t.dueDate||'')}" aria-label="Data de ${safeText(t.text)}" onchange="setDailyDate('${t.id}',this.value)"><select class="day-status" aria-label="Status de ${safeText(t.text)}" onchange="setDailyStatus('${t.id}',this.value)"><option value="today" ${!t.done&&type==='today'?'selected':''}>Hoje</option><option value="progress" ${!t.done&&type==='progress'?'selected':''}>Em andamento</option><option value="pending" ${!t.done&&type==='pending'?'selected':''}>Pendente</option><option value="done" ${t.done?'selected':''}>Concluída</option></select><button class="attach-existing ${t.attachment?'has-attachment':''}" data-attach-task="${t.id}" type="button" aria-label="${t.attachment?'Substituir':'Adicionar'} anexo em ${safeText(t.text)}" title="${t.attachment?'Substituir':'Adicionar'} anexo" onclick="chooseDailyAttachment('${t.id}')">📎 <span>${t.attachment?'Trocar':'Anexar'}</span></button><button class="day-delete" type="button" title="Excluir" aria-label="Excluir ${safeText(t.text)}" onclick="deleteDailyTask('${t.id}')">×</button></div>
+      <div class="day-actions"><input class="day-task-date" type="date" value="${safeText(t.dueDate||'')}" aria-label="Data de ${safeText(t.text)}" onchange="setDailyDate('${t.id}',this.value)"><select class="day-status" aria-label="Status de ${safeText(t.text)}" onchange="setDailyStatus('${t.id}',this.value)"><option value="today" ${!t.done&&type==='today'?'selected':''}>Hoje</option><option value="progress" ${!t.done&&type==='progress'?'selected':''}>Em andamento</option><option value="pending" ${!t.done&&type==='pending'?'selected':''}>Pendente</option><option value="done" ${t.done?'selected':''}>Concluída</option></select><button class="attach-existing ${t.attachment?'has-attachment':''}" data-attach-task="${t.id}" type="button" aria-label="${t.attachment?'Substituir':'Adicionar'} anexo em ${safeText(t.text)}" title="${t.attachment?'Substituir':'Adicionar'} anexo" onclick="chooseDailyAttachment('${t.id}')">📎 <span>${t.attachment?'Trocar':'Anexar'}</span></button><button class="day-edit" type="button" title="Editar tarefa" aria-label="Editar ${safeText(t.text)}" onclick="editDailyTask('${t.id}')">✎</button><button class="day-delete" type="button" title="Excluir" aria-label="Excluir ${safeText(t.text)}" onclick="deleteDailyTask('${t.id}')">×</button></div>
       ${t.id===celebrateId?'<span class="day-spark">✦ ✧ ✦</span>':''}</div>`).join(''):'<div class="day-empty">Nada por aqui.</div>';
   });
   document.querySelectorAll('[data-day-section]').forEach(section=>section.hidden=section.dataset.daySection!==dailyFilter);
