@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-03T13:24:38.967Z",
+  "updatedAt": "2026-09-03T13:38:38.062Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -110,8 +110,9 @@
       "text": "Corrigir validação do repositório: criar ou ajustar as referências dos agentes aline-arte e celia-coesao",
       "dueDate": "2026-09-02",
       "list": "pending",
-      "done": false,
-      "createdAt": "2026-09-02T19:46:18.2017117Z"
+      "done": true,
+      "createdAt": "2026-09-02T19:46:18.2017117Z",
+      "completedAt": "2026-09-03T13:38:37.670Z"
     },
     {
       "id": "mtlhr5y93dr6l",
@@ -127,8 +128,9 @@
       "text": "Criar as landing page: URL após indicação de amigo, após inscrição, indicação de amigo",
       "dueDate": "2026-09-03",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-09-03T13:20:45.591Z"
+      "done": true,
+      "createdAt": "2026-09-03T13:20:45.591Z",
+      "completedAt": "2026-09-03T13:38:35.982Z"
     }
   ],
   "completionHistory": {
