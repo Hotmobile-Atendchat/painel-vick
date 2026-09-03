@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-03T12:45:49.012Z",
+  "updatedAt": "2026-09-03T12:45:54.034Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -126,9 +126,10 @@
       "id": "mtlip0dl65wd6",
       "text": "Começar a elaborar os direcionamento do dia",
       "dueDate": "2026-09-02",
-      "list": "today",
+      "list": "progress",
       "done": false,
-      "createdAt": "2026-09-03T12:44:47.529Z"
+      "createdAt": "2026-09-03T12:44:47.529Z",
+      "startedAt": "2026-09-03T12:45:52.423Z"
     }
   ],
   "completionHistory": {
