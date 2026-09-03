@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-03T12:46:02.866Z",
+  "updatedAt": "2026-09-03T13:20:47.624Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -121,6 +121,14 @@
       "done": false,
       "createdAt": "2026-09-03T12:18:28.449Z",
       "startedAt": "2026-09-03T12:45:47.310Z"
+    },
+    {
+      "id": "mtljz9jr2ri3q",
+      "text": "Criar as landing page",
+      "dueDate": "2026-09-03",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-09-03T13:20:45.591Z"
     }
   ],
   "completionHistory": {
