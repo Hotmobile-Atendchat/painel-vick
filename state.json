@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-03T13:20:47.624Z",
+  "updatedAt": "2026-09-03T13:24:38.967Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -124,7 +124,7 @@
     },
     {
       "id": "mtljz9jr2ri3q",
-      "text": "Criar as landing page",
+      "text": "Criar as landing page: URL após indicação de amigo, após inscrição, indicação de amigo",
       "dueDate": "2026-09-03",
       "list": "today",
       "done": false,
