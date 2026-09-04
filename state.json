@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-04T14:45:27.343Z",
+  "updatedAt": "2026-09-04T18:58:49.577Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -145,8 +145,9 @@
       "text": "Retorno dos chamados",
       "dueDate": "2026-09-03",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-09-04T14:45:24.894Z"
+      "done": true,
+      "createdAt": "2026-09-04T14:45:24.894Z",
+      "completedAt": "2026-09-04T18:58:47.786Z"
     }
   ],
   "completionHistory": {
