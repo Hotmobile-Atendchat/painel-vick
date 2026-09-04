@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-04T18:59:02.908Z",
+  "updatedAt": "2026-09-04T18:59:08.798Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -71,84 +71,6 @@
       "list": "today",
       "done": false,
       "createdAt": "2026-08-10T12:29:45.477Z"
-    },
-    {
-      "id": "mth8oorolf1sn",
-      "text": "Planejamento do mês de Setembro",
-      "dueDate": "2026-08-31",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-31T12:53:31.62Z",
-      "completedAt": "2026-09-03T12:42:45.751Z"
-    },
-    {
-      "id": "mtk3wuqy3ol56",
-      "text": "Enviar e-mail sobre o feriado",
-      "dueDate": "2026-08-31",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-09-02T13:03:13.066Z",
-      "completedAt": "2026-09-03T12:41:04.447Z"
-    },
-    {
-      "id": "mtkhg4rbab2ih",
-      "text": "Planejamento dia do cliente 3dbgg",
-      "dueDate": "2026-09-02",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-02T19:22:09.782Z",
-      "attachment": {
-        "name": "Semana_do_Cliente_3DBGG.pdf",
-        "path": "attachments/mtkhg4rbab2ih-mtkhg4rc-Semana_do_Cliente_3DBGG.pdf",
-        "type": "application/pdf",
-        "size": 554225
-      },
-      "completedAt": "2026-09-02T19:47:19.861Z"
-    },
-    {
-      "id": "fix-validacao-squads-20260902",
-      "text": "Corrigir validação do repositório: criar ou ajustar as referências dos agentes aline-arte e celia-coesao",
-      "dueDate": "2026-09-02",
-      "list": "pending",
-      "done": true,
-      "createdAt": "2026-09-02T19:46:18.2017117Z",
-      "completedAt": "2026-09-03T13:38:37.670Z"
-    },
-    {
-      "id": "mtlhr5y93dr6l",
-      "text": "Elaborar o direcionamento do dia 03/09",
-      "dueDate": "2026-09-02",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-09-03T12:18:28.449Z",
-      "completedAt": "2026-09-04T18:59:01.258Z"
-    },
-    {
-      "id": "mtljz9jr2ri3q",
-      "text": "Criar as landing page: URL após indicação de amigo, após inscrição, indicação de amigo",
-      "dueDate": "2026-09-03",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-03T13:20:45.591Z",
-      "completedAt": "2026-09-03T13:38:35.982Z"
-    },
-    {
-      "id": "mtn11psf7p1b9",
-      "text": "Fazer o direcionamento do dia 04/09",
-      "dueDate": "2026-09-03",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-04T14:06:19.600Z",
-      "completedAt": "2026-09-04T18:58:49.584Z"
-    },
-    {
-      "id": "mtn2fzfhdjm52",
-      "text": "Retorno dos chamados",
-      "dueDate": "2026-09-03",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-04T14:45:24.894Z",
-      "completedAt": "2026-09-04T18:58:47.786Z"
     }
   ],
   "completionHistory": {
@@ -550,6 +472,54 @@
       "text": "Responder os direct da 3D",
       "source": "Painel do dia · Concluída",
       "completedAt": "2026-09-02T13:02:39.868Z"
+    },
+    {
+      "id": "daily:mth8oorolf1sn:done",
+      "text": "Planejamento do mês de Setembro",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-09-03T12:42:45.751Z"
+    },
+    {
+      "id": "daily:mtk3wuqy3ol56:done",
+      "text": "Enviar e-mail sobre o feriado",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-09-03T12:41:04.447Z"
+    },
+    {
+      "id": "daily:mtkhg4rbab2ih:done",
+      "text": "Planejamento dia do cliente 3dbgg",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-09-02T19:47:19.861Z"
+    },
+    {
+      "id": "daily:fix-validacao-squads-20260902:done",
+      "text": "Corrigir validação do repositório: criar ou ajustar as referências dos agentes aline-arte e celia-coesao",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-09-03T13:38:37.670Z"
+    },
+    {
+      "id": "daily:mtlhr5y93dr6l:done",
+      "text": "Elaborar o direcionamento do dia 03/09",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-09-04T18:59:01.258Z"
+    },
+    {
+      "id": "daily:mtljz9jr2ri3q:done",
+      "text": "Criar as landing page: URL após indicação de amigo, após inscrição, indicação de amigo",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-09-03T13:38:35.982Z"
+    },
+    {
+      "id": "daily:mtn11psf7p1b9:done",
+      "text": "Fazer o direcionamento do dia 04/09",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-09-04T18:58:49.584Z"
+    },
+    {
+      "id": "daily:mtn2fzfhdjm52:done",
+      "text": "Retorno dos chamados",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-09-04T18:58:47.786Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z"
