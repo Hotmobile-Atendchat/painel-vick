@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-04T14:06:23.812Z",
+  "updatedAt": "2026-09-04T14:45:27.343Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -139,6 +139,14 @@
       "list": "today",
       "done": false,
       "createdAt": "2026-09-04T14:06:19.600Z"
+    },
+    {
+      "id": "mtn2fzfhdjm52",
+      "text": "Retorno dos chamados",
+      "dueDate": "2026-09-03",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-09-04T14:45:24.894Z"
     }
   ],
   "completionHistory": {
