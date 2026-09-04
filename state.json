@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-04T18:58:51.249Z",
+  "updatedAt": "2026-09-04T18:59:02.908Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -119,9 +119,9 @@
       "text": "Elaborar o direcionamento do dia 03/09",
       "dueDate": "2026-09-02",
       "list": "progress",
-      "done": false,
+      "done": true,
       "createdAt": "2026-09-03T12:18:28.449Z",
-      "startedAt": "2026-09-03T12:45:47.310Z"
+      "completedAt": "2026-09-04T18:59:01.258Z"
     },
     {
       "id": "mtljz9jr2ri3q",
