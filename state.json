@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-03T13:38:40.799Z",
+  "updatedAt": "2026-09-04T14:06:23.812Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -131,6 +131,14 @@
       "done": true,
       "createdAt": "2026-09-03T13:20:45.591Z",
       "completedAt": "2026-09-03T13:38:35.982Z"
+    },
+    {
+      "id": "mtn11psf7p1b9",
+      "text": "Fazer o direcionamento do dia 04/09",
+      "dueDate": "2026-09-03",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-09-04T14:06:19.600Z"
     }
   ],
   "completionHistory": {
