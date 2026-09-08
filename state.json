@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-08T14:03:52.764Z",
+  "updatedAt": "2026-09-08T15:12:43.162Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -81,6 +81,14 @@
       "list": "today",
       "done": false,
       "createdAt": "2026-09-08T14:03:50.434Z"
+    },
+    {
+      "id": "mtst6gpico8sh",
+      "text": "semana do cliente 3dbgg OK",
+      "dueDate": "2026-09-08",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-09-08T15:12:41.238Z"
     }
   ],
   "completionHistory": {
