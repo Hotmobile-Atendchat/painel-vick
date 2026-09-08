@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-08T15:18:14.550Z",
+  "updatedAt": "2026-09-08T15:18:18.471Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -106,8 +106,9 @@
       "text": "Dia do cliente da Hot, mudar mensagem e acrescentar mais dias",
       "dueDate": "2026-09-08",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-09-08T15:18:12.742Z"
+      "done": true,
+      "createdAt": "2026-09-08T15:18:12.742Z",
+      "completedAt": "2026-09-08T15:18:16.806Z"
     }
   ],
   "completionHistory": {
