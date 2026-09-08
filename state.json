@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-08T15:12:43.162Z",
+  "updatedAt": "2026-09-08T15:12:46.107Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -79,8 +79,9 @@
       "text": "Fazer Seleção de Vagas SDR",
       "dueDate": "2026-09-08",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-09-08T14:03:50.434Z"
+      "done": true,
+      "createdAt": "2026-09-08T14:03:50.434Z",
+      "completedAt": "2026-09-08T15:12:44.404Z"
     },
     {
       "id": "mtst6gpico8sh",
