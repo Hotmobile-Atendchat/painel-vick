@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-08T15:12:46.107Z",
+  "updatedAt": "2026-09-08T15:12:48.535Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -88,8 +88,9 @@
       "text": "semana do cliente 3dbgg OK",
       "dueDate": "2026-09-08",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-09-08T15:12:41.238Z"
+      "done": true,
+      "createdAt": "2026-09-08T15:12:41.238Z",
+      "completedAt": "2026-09-08T15:12:46.709Z"
     }
   ],
   "completionHistory": {
