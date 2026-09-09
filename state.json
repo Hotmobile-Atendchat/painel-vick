@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-09T19:18:58.367Z",
+  "updatedAt": "2026-09-09T19:19:50.381Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -115,8 +115,9 @@
       "text": "Retorno dos chamados",
       "dueDate": "2026-09-08",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-09-09T16:30:24.050Z"
+      "done": true,
+      "createdAt": "2026-09-09T16:30:24.050Z",
+      "completedAt": "2026-09-09T19:19:48.538Z"
     },
     {
       "id": "mtucsup1hhpjb",
