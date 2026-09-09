@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-09T19:19:50.381Z",
+  "updatedAt": "2026-09-09T19:19:52.266Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -132,8 +132,9 @@
       "text": "finalizada o direcionamento do dia",
       "dueDate": "2026-09-08",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-09-09T17:14:31.989Z"
+      "done": true,
+      "createdAt": "2026-09-09T17:14:31.989Z",
+      "completedAt": "2026-09-09T19:19:50.588Z"
     }
   ],
   "completionHistory": {
