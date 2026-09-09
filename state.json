@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-09T17:14:33.762Z",
+  "updatedAt": "2026-09-09T18:12:01.486Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -120,7 +120,7 @@
     },
     {
       "id": "mtucsup1hhpjb",
-      "text": "Agendar post",
+      "text": "Agendar post 3D",
       "dueDate": "2026-09-08",
       "list": "today",
       "done": false,
