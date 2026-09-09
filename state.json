@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-09T16:30:25.895Z",
+  "updatedAt": "2026-09-09T17:09:46.656Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -117,6 +117,14 @@
       "list": "today",
       "done": false,
       "createdAt": "2026-09-09T16:30:24.050Z"
+    },
+    {
+      "id": "mtucsup1hhpjb",
+      "text": "Agendar post",
+      "dueDate": "2026-09-08",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-09-09T17:09:44.677Z"
     }
   ],
   "completionHistory": {
