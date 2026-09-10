@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T14:42:52.852Z",
+  "updatedAt": "2026-09-10T14:42:54.910Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -151,8 +151,9 @@
       "text": "Enviar a apresentação e mensagem p/ comercial",
       "dueDate": "2026-09-10",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-09-10T13:32:35.618Z"
+      "done": true,
+      "createdAt": "2026-09-10T13:32:35.618Z",
+      "completedAt": "2026-09-10T14:42:53.256Z"
     }
   ],
   "completionHistory": {
