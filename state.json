@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T13:31:56.141Z",
+  "updatedAt": "2026-09-10T13:31:58.598Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -142,8 +142,9 @@
       "text": "Reunião comercial 'Dia do Cliente'",
       "dueDate": "2026-09-10",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-09-10T13:31:54.458Z"
+      "done": true,
+      "createdAt": "2026-09-10T13:31:54.458Z",
+      "completedAt": "2026-09-10T13:31:56.891Z"
     }
   ],
   "completionHistory": {
