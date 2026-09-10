@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T13:31:58.598Z",
+  "updatedAt": "2026-09-10T13:32:37.424Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -145,6 +145,14 @@
       "done": true,
       "createdAt": "2026-09-10T13:31:54.458Z",
       "completedAt": "2026-09-10T13:31:56.891Z"
+    },
+    {
+      "id": "mtvkhg2qrarzx",
+      "text": "Enviar a apresentação comercial",
+      "dueDate": "2026-09-10",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-09-10T13:32:35.618Z"
     }
   ],
   "completionHistory": {
