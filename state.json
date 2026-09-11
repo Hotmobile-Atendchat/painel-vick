@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T14:31:48.618Z",
+  "updatedAt": "2026-09-11T19:37:06.927Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -172,6 +172,14 @@
       "done": true,
       "createdAt": "2026-09-11T14:31:44.468Z",
       "completedAt": "2026-09-11T14:31:46.964Z"
+    },
+    {
+      "id": "mtxcy1bnh74e4",
+      "text": "ativar a campanha do dia do cliente 3dbgg",
+      "dueDate": "2026-09-11",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-09-11T19:37:05.075Z"
     }
   ],
   "completionHistory": {
