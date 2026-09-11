@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T14:30:49.223Z",
+  "updatedAt": "2026-09-11T14:31:46.292Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -163,6 +163,14 @@
       "done": true,
       "createdAt": "2026-09-11T14:30:35.889Z",
       "completedAt": "2026-09-11T14:30:47.542Z"
+    },
+    {
+      "id": "mtx21d1w2hoxx",
+      "text": "Cancelar e-mail na tray",
+      "dueDate": "2026-09-11",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-09-11T14:31:44.468Z"
     }
   ],
   "completionHistory": {
