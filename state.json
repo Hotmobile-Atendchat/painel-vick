@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T14:30:37.712Z",
+  "updatedAt": "2026-09-11T14:30:47.299Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -157,7 +157,7 @@
     },
     {
       "id": "mtx1zw4xbpjq1",
-      "text": "Reunião MKT x Comercial",
+      "text": "Reunião MKT x Comercial (manhã)",
       "dueDate": "2026-09-11",
       "list": "today",
       "done": false,
