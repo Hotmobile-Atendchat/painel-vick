@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T14:29:42.363Z",
+  "updatedAt": "2026-09-15T14:37:44.465Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -214,8 +214,9 @@
       "text": "Cobrar a EG o cronograma",
       "dueDate": "2026-09-11",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-09-15T14:29:40.508Z"
+      "done": true,
+      "createdAt": "2026-09-15T14:29:40.508Z",
+      "completedAt": "2026-09-15T14:37:42.511Z"
     }
   ],
   "completionHistory": {
