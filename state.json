@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T14:12:06.060Z",
+  "updatedAt": "2026-09-15T14:12:09.559Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -194,7 +194,7 @@
       "id": "mu2r3325dnw8c",
       "text": "Cadastro do produtos 3dbgg",
       "dueDate": "2026-09-11",
-      "list": "today",
+      "list": "pending",
       "done": false,
       "createdAt": "2026-09-15T14:11:46.109Z"
     },
