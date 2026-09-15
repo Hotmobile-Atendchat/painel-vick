@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T14:52:20.666Z",
+  "updatedAt": "2026-09-15T15:00:00.000Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -218,6 +218,24 @@
       "done": true,
       "createdAt": "2026-09-15T14:29:40.508Z",
       "completedAt": "2026-09-15T14:37:42.511Z"
+    },
+    {
+      "id": "daily-otmo-card-20260915",
+      "text": "Criar e finalizar card de agradecimento do Dia do Cliente — Agência OTMO",
+      "dueDate": "2026-09-15",
+      "list": "today",
+      "done": true,
+      "createdAt": "2026-09-15T15:00:00.000Z",
+      "completedAt": "2026-09-15T15:00:00.000Z"
+    },
+    {
+      "id": "daily-otmo-email-20260915",
+      "text": "Preparar e-mail de agradecimento para acompanhar o card da Agência OTMO",
+      "dueDate": "2026-09-15",
+      "list": "today",
+      "done": true,
+      "createdAt": "2026-09-15T15:00:00.000Z",
+      "completedAt": "2026-09-15T15:00:00.000Z"
     }
   ],
   "completionHistory": {
