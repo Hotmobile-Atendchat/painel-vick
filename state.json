@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T14:12:17.594Z",
+  "updatedAt": "2026-09-15T14:12:21.512Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -187,8 +187,9 @@
       "text": "Responder aos chamados",
       "dueDate": "2026-09-11",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-09-11T19:37:23.515Z"
+      "done": true,
+      "createdAt": "2026-09-11T19:37:23.515Z",
+      "completedAt": "2026-09-15T14:12:19.718Z"
     },
     {
       "id": "mu2r3325dnw8c",
