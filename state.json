@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-16T19:29:34.937Z",
+  "updatedAt": "2026-09-16T19:29:37.875Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -242,8 +242,9 @@
       "text": "Abrir chamado para Rebeca",
       "dueDate": "2026-09-15",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-09-16T18:55:40.730Z"
+      "done": true,
+      "createdAt": "2026-09-16T18:55:40.730Z",
+      "completedAt": "2026-09-16T19:29:36.077Z"
     },
     {
       "id": "mu4goiobi0fvj",
