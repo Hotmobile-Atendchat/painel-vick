@@ -21,6 +21,9 @@
   header{margin-bottom:18px;background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:20px;padding:20px 22px;box-shadow:0 18px 52px rgba(65,42,84,.10);backdrop-filter:blur(16px);position:relative;overflow:hidden}
   header::after{content:'';position:absolute;width:210px;height:210px;right:-90px;top:-125px;border-radius:50%;background:linear-gradient(135deg,rgba(155,96,245,.42),rgba(199,160,255,.1));filter:blur(2px);animation:headerOrb 7s ease-in-out infinite}
   .header-row{display:flex;align-items:center;justify-content:space-between;gap:20px;position:relative;z-index:1}
+  .panel-nav{display:flex;justify-content:flex-end;margin-bottom:12px;position:relative;z-index:2}
+  .panel-nav a{display:inline-flex;align-items:center;gap:7px;padding:8px 13px;border:1px solid #d5c4e4;border-radius:999px;background:#fff;color:var(--lilac-d);font-size:11px;font-weight:800;text-decoration:none;box-shadow:0 4px 12px rgba(65,42,84,.08);transition:transform .16s,border-color .16s,background .16s}
+  .panel-nav a:hover{transform:translateY(-1px);border-color:var(--accent);background:var(--mint-bg)}
   .header-copy{min-width:0}
   .kicker{font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:var(--lilac);font-weight:700}
   h1{font-size:27px;font-weight:800;margin:5px 0 3px;letter-spacing:-.5px;color:var(--lilac);display:flex;align-items:center;gap:9px}
@@ -235,6 +238,7 @@
 </head>
 <body class="read-only">
 <header>
+  <nav class="panel-nav" aria-label="Navegação entre painéis"><a href="https://painel-comando-adriana.agencia62993.chatgpt.site/fabrine" target="_blank" rel="noopener noreferrer">↗ Painel da Adriana</a></nav>
   <div class="header-row">
     <div class="header-copy">
       <span class="kicker">Painel da Fabrine · Agência OTMO · <span id="panelDate"></span></span>
