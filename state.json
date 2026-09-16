@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-16T18:56:40.342Z",
+  "updatedAt": "2026-09-16T18:57:12.284Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -260,6 +260,14 @@
       "list": "today",
       "done": false,
       "createdAt": "2026-09-16T18:56:38.057Z"
+    },
+    {
+      "id": "mu4gpyohqlvle",
+      "text": "Criar vídeo na IA e fazer pesquisa sobre a nova cobrança da META",
+      "dueDate": "2026-09-15",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-09-16T18:57:10.097Z"
     }
   ],
   "completionHistory": {
