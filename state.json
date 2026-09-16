@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-16T18:55:42.374Z",
+  "updatedAt": "2026-09-16T18:56:04.450Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -244,6 +244,14 @@
       "list": "today",
       "done": false,
       "createdAt": "2026-09-16T18:55:40.730Z"
+    },
+    {
+      "id": "mu4goiobi0fvj",
+      "text": "Alinhamento MKT para novas pesquisas de mercado",
+      "dueDate": "2026-09-15",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-09-16T18:56:02.699Z"
     }
   ],
   "completionHistory": {
