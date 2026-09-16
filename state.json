@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-16T18:57:12.284Z",
+  "updatedAt": "2026-09-16T18:58:10.343Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -250,8 +250,9 @@
       "text": "Alinhamento MKT para novas pesquisas de mercado",
       "dueDate": "2026-09-15",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-09-16T18:56:02.699Z"
+      "done": true,
+      "createdAt": "2026-09-16T18:56:02.699Z",
+      "completedAt": "2026-09-16T18:58:10.296Z"
     },
     {
       "id": "mu4gp9yhsghme",
@@ -266,8 +267,9 @@
       "text": "Criar vídeo na IA e fazer pesquisa sobre a nova cobrança da META",
       "dueDate": "2026-09-15",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-09-16T18:57:10.097Z"
+      "done": true,
+      "createdAt": "2026-09-16T18:57:10.097Z",
+      "completedAt": "2026-09-16T18:58:08.433Z"
     }
   ],
   "completionHistory": {
