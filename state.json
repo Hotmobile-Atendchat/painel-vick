@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-16T18:56:04.450Z",
+  "updatedAt": "2026-09-16T18:56:40.342Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -252,6 +252,14 @@
       "list": "today",
       "done": false,
       "createdAt": "2026-09-16T18:56:02.699Z"
+    },
+    {
+      "id": "mu4gp9yhsghme",
+      "text": "Atualizar painel do dia, add botão para o novo painel de direcionamento",
+      "dueDate": "2026-09-15",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-09-16T18:56:38.057Z"
     }
   ],
   "completionHistory": {
