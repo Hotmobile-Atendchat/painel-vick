@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T14:09:52.101Z",
+  "updatedAt": "2026-09-17T14:09:54.687Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -294,9 +294,10 @@
       "id": "mu5lwaz5aqixp",
       "text": "Criar guia completo regras de cobrança da meta",
       "dueDate": "2026-09-16",
-      "list": "today",
+      "list": "progress",
       "done": false,
-      "createdAt": "2026-09-17T14:09:50.225Z"
+      "createdAt": "2026-09-17T14:09:50.225Z",
+      "startedAt": "2026-09-17T14:09:53.005Z"
     }
   ],
   "completionHistory": {
