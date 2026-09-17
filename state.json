@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T14:10:26.712Z",
+  "updatedAt": "2026-09-17T14:10:29.614Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -305,8 +305,9 @@
       "text": "Verificar o direcionamento",
       "dueDate": "2026-09-16",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-09-17T14:10:24.861Z"
+      "done": true,
+      "createdAt": "2026-09-17T14:10:24.861Z",
+      "completedAt": "2026-09-17T14:10:27.762Z"
     }
   ],
   "completionHistory": {
