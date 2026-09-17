@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-16T19:45:56.352Z",
+  "updatedAt": "2026-09-17T14:09:02.240Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -281,6 +281,14 @@
       "done": false,
       "createdAt": "2026-09-16T19:45:41.740Z",
       "startedAt": "2026-09-16T19:45:53.179Z"
+    },
+    {
+      "id": "mu5lv8284pob6",
+      "text": "Demandas do calendário editorial",
+      "dueDate": "2026-09-16",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-09-17T14:08:59.792Z"
     }
   ],
   "completionHistory": {
