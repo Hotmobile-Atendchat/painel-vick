@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T18:07:54.728Z",
+  "updatedAt": "2026-09-18T18:07:59.278Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -331,9 +331,10 @@
       "id": "mu79uacfuukoq",
       "text": "Ajustar os produtos do site",
       "dueDate": "2026-09-16",
-      "list": "today",
+      "list": "progress",
       "done": false,
-      "createdAt": "2026-09-18T18:07:53.055Z"
+      "createdAt": "2026-09-18T18:07:53.055Z",
+      "startedAt": "2026-09-18T18:07:57.424Z"
     }
   ],
   "completionHistory": {
