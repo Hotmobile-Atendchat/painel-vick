@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T18:46:59.766Z",
+  "updatedAt": "2026-09-18T18:47:01.628Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -340,9 +340,10 @@
       "id": "mu7b8jniflluv",
       "text": "Gerar relatório de trafego da 3D e reajuste na  Merchant Center",
       "dueDate": "2026-09-16",
-      "list": "today",
+      "list": "progress",
       "done": false,
-      "createdAt": "2026-09-18T18:46:57.918Z"
+      "createdAt": "2026-09-18T18:46:57.918Z",
+      "startedAt": "2026-09-18T18:46:59.961Z"
     }
   ],
   "completionHistory": {
