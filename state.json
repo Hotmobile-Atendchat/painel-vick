@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T17:06:18.078Z",
+  "updatedAt": "2026-09-18T17:06:38.664Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -308,6 +308,14 @@
       "done": true,
       "createdAt": "2026-09-17T14:10:24.861Z",
       "completedAt": "2026-09-17T14:10:27.762Z"
+    },
+    {
+      "id": "mu77nhv6sxvi5",
+      "text": "Reunião MKT",
+      "dueDate": "2026-09-16",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-09-18T17:06:36.978Z"
     }
   ],
   "completionHistory": {
