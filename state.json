@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T13:29:50.088Z",
+  "updatedAt": "2026-09-21T13:30:08.175Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -349,9 +349,10 @@
       "id": "muba888zeolm6",
       "text": "Agendar os post da semana",
       "dueDate": "2026-09-21",
-      "list": "today",
+      "list": "progress",
       "done": false,
-      "createdAt": "2026-09-21T13:29:48.227Z"
+      "createdAt": "2026-09-21T13:29:48.227Z",
+      "startedAt": "2026-09-21T13:30:06.353Z"
     }
   ],
   "completionHistory": {
