@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T12:07:39.945Z",
+  "updatedAt": "2026-09-21T12:08:05.361Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -278,9 +278,9 @@
       "text": "Projeto \"Atualização da Meta\"",
       "dueDate": "2026-09-16",
       "list": "progress",
-      "done": false,
+      "done": true,
       "createdAt": "2026-09-16T19:45:41.740Z",
-      "startedAt": "2026-09-16T19:45:53.179Z"
+      "completedAt": "2026-09-21T12:08:03.560Z"
     },
     {
       "id": "mu5lv8284pob6",
