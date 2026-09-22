@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-22T14:03:13.586Z",
+  "updatedAt": "2026-09-22T14:37:46.772Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -406,6 +406,14 @@
       "done": true,
       "createdAt": "2026-09-22T13:46:20.641Z",
       "completedAt": "2026-09-22T14:03:11.601Z"
+    },
+    {
+      "id": "mucs3gjpnter1",
+      "text": "Fazer teste de envio de email no otos",
+      "dueDate": "2026-09-21",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-09-22T14:37:44.965Z"
     }
   ],
   "completionHistory": {
