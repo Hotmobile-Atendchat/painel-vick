@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-22T13:46:01.858Z",
+  "updatedAt": "2026-09-22T13:46:22.335Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -397,6 +397,14 @@
       "done": true,
       "createdAt": "2026-09-22T13:45:42.298Z",
       "completedAt": "2026-09-22T13:46:00.185Z"
+    },
+    {
+      "id": "mucq9co04edbo",
+      "text": "Criar um novo card para vaga de SDR",
+      "dueDate": "2026-09-21",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-09-22T13:46:20.641Z"
     }
   ],
   "completionHistory": {
