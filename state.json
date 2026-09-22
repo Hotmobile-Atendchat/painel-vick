@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-22T13:45:04.169Z",
+  "updatedAt": "2026-09-22T13:45:44.103Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -388,6 +388,14 @@
       "list": "today",
       "done": false,
       "createdAt": "2026-09-22T13:45:02.332Z"
+    },
+    {
+      "id": "mucq8j2yv8o7m",
+      "text": "Passar dados do forms antigo para Adri, reformular a pagina de vagas",
+      "dueDate": "2026-09-21",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-09-22T13:45:42.298Z"
     }
   ],
   "completionHistory": {
