@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-22T14:37:46.772Z",
+  "updatedAt": "2026-09-22T14:37:54.272Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -409,7 +409,7 @@
     },
     {
       "id": "mucs3gjpnter1",
-      "text": "Fazer teste de envio de email no otos",
+      "text": "Fazer teste de envio de email no Hotos",
       "dueDate": "2026-09-21",
       "list": "today",
       "done": false,
