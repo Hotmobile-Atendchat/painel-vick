@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-23T19:42:28.474Z",
+  "updatedAt": "2026-09-23T20:10:00.000Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -451,6 +451,60 @@
       "done": false,
       "createdAt": "2026-09-23T19:42:23.493Z",
       "startedAt": "2026-09-23T19:42:25.309Z"
+    },
+    {
+      "id": "daily-radar-banco-temas-20260923",
+      "text": "Atualizar e publicar o Banco de Temas com o radar organizado por data",
+      "dueDate": "2026-09-23",
+      "list": "today",
+      "done": true,
+      "createdAt": "2026-09-23T20:00:00.000Z",
+      "completedAt": "2026-09-23T20:00:00.000Z"
+    },
+    {
+      "id": "daily-analise-yup-instagram-20260923",
+      "text": "Analisar o Instagram da Yup Chat e identificar temas, formatos e oportunidades",
+      "dueDate": "2026-09-23",
+      "list": "today",
+      "done": true,
+      "createdAt": "2026-09-23T20:01:00.000Z",
+      "completedAt": "2026-09-23T20:01:00.000Z"
+    },
+    {
+      "id": "daily-referencia-yup-planejamento-20260923",
+      "text": "Salvar a análise da Yup Chat como referência do squad de planejamento editorial",
+      "dueDate": "2026-09-23",
+      "list": "today",
+      "done": true,
+      "createdAt": "2026-09-23T20:02:00.000Z",
+      "completedAt": "2026-09-23T20:02:00.000Z"
+    },
+    {
+      "id": "daily-conteudo-custo-conversa-20260923",
+      "text": "Definir o conteúdo Hotmobile sobre custo por conversa resolvida em dois slides",
+      "dueDate": "2026-09-23",
+      "list": "today",
+      "done": true,
+      "createdAt": "2026-09-23T20:03:00.000Z",
+      "completedAt": "2026-09-23T20:03:00.000Z"
+    },
+    {
+      "id": "daily-carrossel-whatsapp-v3-20260923",
+      "text": "Criar e revisar o carrossel Hotmobile com mockups de conversa do WhatsApp — versão 3",
+      "dueDate": "2026-09-23",
+      "list": "today",
+      "done": true,
+      "createdAt": "2026-09-23T20:04:00.000Z",
+      "completedAt": "2026-09-23T20:04:00.000Z"
+    },
+    {
+      "id": "daily-qa-carrossel-whatsapp-20260923",
+      "text": "Concluir o QA visual dos dois slides e preservar os arquivos editáveis",
+      "dueDate": "2026-09-23",
+      "list": "today",
+      "done": true,
+      "createdAt": "2026-09-23T20:05:00.000Z",
+      "completedAt": "2026-09-23T20:05:00.000Z"
     }
   ],
   "completionHistory": {
