@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-23T19:41:56.576Z",
+  "updatedAt": "2026-09-23T19:42:25.178Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -442,6 +442,14 @@
       "done": true,
       "createdAt": "2026-09-23T19:39:13.173Z",
       "completedAt": "2026-09-23T19:41:53.325Z"
+    },
+    {
+      "id": "mueif30lnmmrr",
+      "text": "ajustar o Google Merchant Center da 3dbgg",
+      "dueDate": "2026-09-21",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-09-23T19:42:23.493Z"
     }
   ],
   "completionHistory": {
