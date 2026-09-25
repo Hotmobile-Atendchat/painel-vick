@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-24T13:29:53.466Z",
+  "updatedAt": "2026-09-25T19:10:01.282Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -53,9 +53,15 @@
     "diaamigos.10": true,
     "diaamigos.11": true,
     "brandkit.0": true,
-    "diacliente3dbgg.0": true,
-    "diacliente3dbgg.3": false,
-    "diacliente3dbgg.1": true
+    "diacliente3dbgg.0": false,
+    "diacliente3dbgg.1": false,
+    "diacliente3dbgg.2": false,
+    "feriasfabrine.0": false,
+    "feriasfabrine.1": false,
+    "feriasfabrine.2": false,
+    "feriasfabrine.3": false,
+    "feriasfabrine.4": false,
+    "feriasfabrine.5": false
   },
   "notes": {
     "diaamigos.1": "10% OFF em todo o catálogo. Válido de 17 a 20/07.",
@@ -64,7 +70,13 @@
     "diaamigos.7": "Headline: Presenteie quem nunca guarda as pecas do jogo - 10% OFF com AMIGOS10. Fundo teal #137795, cupom em destaque verde-esmeralda #1ABC9C, ciano #00FFFF so como detalhe pontual. Incluir contador/prazo ate 20/07 e produto em contexto de uso (nunca fundo neutro).",
     "diaamigos.8": "Assunto: Seu grupo de jogo merece parar de virar bagunca. Corpo: cupom AMIGOS10, 10% em tudo, valido 17 a 20/07, CTA Organizar a mesa dos amigos.",
     "diaamigos.9": "Assunto: Ultimas horas - 10% OFF acaba hoje. Reforca que o cupom AMIGOS10 sai do ar a meia-noite.",
-    "diaamigos.10": "Alcance, engajamento, cliques no link, cupons resgatados, receita gerada, ticket médio."
+    "diaamigos.10": "Alcance, engajamento, cliques no link, cupons resgatados, receita gerada, ticket médio.",
+    "feriasfabrine.0": "Verificar desempenho das campanhas, cliques, vendas, conversões, orçamento, Google Merchant Center e necessidade de ajustes urgentes.",
+    "feriasfabrine.1": "A EG recebeu o cronograma e ainda não respondeu. Também foi enviada uma mensagem privada sem retorno. Acompanhar novas respostas, necessidade de cobrança e atualização do cronograma. Não alterar o cronograma sem decisão definida.",
+    "feriasfabrine.2": "Revisar chamados abertos, demandas pendentes, itens aguardando terceiros e tarefas paradas.",
+    "feriasfabrine.3": "Pesquisar tendências, concorrentes, WhatsApp, Meta, IA, CRM, automação e oportunidades para Hotmobile, OTMO e 3DBGG. Registrar achados e oportunidades de ação.",
+    "feriasfabrine.4": "Não criar novos conteúdos nem reprogramar publicações. Apenas verificar se os posts foram publicados e se os e-mails foram disparados; registrar e comunicar falhas.",
+    "feriasfabrine.5": "Encaminhar imediatamente falhas em e-mails ou publicações, queda relevante no tráfego, problemas no Merchant Center, alteração de orçamento, retorno ou problema com a EG, solicitação urgente de cliente ou situação que exija aprovação."
   },
   "dailyTasks": [
     {
@@ -76,451 +88,61 @@
       "createdAt": "2026-08-10T12:29:45.477Z"
     },
     {
-      "id": "mtsqpxcyrop9n",
-      "text": "Fazer Seleção de Vagas SDR",
-      "dueDate": "2026-09-08",
-      "list": "today",
+      "id": "mta3xuz5ly24y",
+      "text": "organizar as novas apresentações na galeria do notion",
+      "dueDate": "2026-08-26",
+      "list": "progress",
       "done": true,
-      "createdAt": "2026-09-08T14:03:50.434Z",
-      "completedAt": "2026-09-08T15:12:44.404Z"
+      "createdAt": "2026-08-26T13:06:18.257Z",
+      "completedAt": "2026-09-02T13:15:05.939Z"
     },
     {
-      "id": "mtst6gpico8sh",
-      "text": "semana do cliente 3dbgg OK",
-      "dueDate": "2026-09-08",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-08T15:12:41.238Z",
-      "completedAt": "2026-09-08T15:12:46.709Z"
-    },
-    {
-      "id": "mtstapwfbvxmv",
-      "text": "reajuste nas palavras chave do tráfego 3dbgg e add crédito",
-      "dueDate": "2026-09-08",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-08T15:15:59.776Z",
-      "completedAt": "2026-09-08T15:16:03.094Z"
-    },
-    {
-      "id": "mtstdkhy0mrq6",
-      "text": "Dia do cliente da Hot, mudar mensagem e acrescentar mais dias",
-      "dueDate": "2026-09-08",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-08T15:18:12.742Z",
-      "completedAt": "2026-09-08T15:18:16.806Z"
-    },
-    {
-      "id": "mtube982m31mm",
-      "text": "Retorno dos chamados",
-      "dueDate": "2026-09-08",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-09T16:30:24.050Z",
-      "completedAt": "2026-09-09T19:19:48.538Z"
-    },
-    {
-      "id": "mtucsup1hhpjb",
-      "text": "Agendar post 3D e HOT",
-      "dueDate": "2026-09-08",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-09T17:09:44.677Z",
-      "completedAt": "2026-09-09T19:20:02.017Z"
-    },
-    {
-      "id": "mtucz0dxjpy1v",
-      "text": "finalizada o direcionamento do dia",
-      "dueDate": "2026-09-08",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-09T17:14:31.989Z",
-      "completedAt": "2026-09-09T19:19:50.588Z"
-    },
-    {
-      "id": "mtvkgkbdz7gfj",
-      "text": "Reunião comercial 'Dia do Cliente'",
-      "dueDate": "2026-09-10",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-10T13:31:54.458Z",
-      "completedAt": "2026-09-10T13:31:56.891Z"
-    },
-    {
-      "id": "mtvkhg2qrarzx",
-      "text": "Enviar a apresentação e mensagem p/ comercial",
-      "dueDate": "2026-09-10",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-10T13:32:35.618Z",
-      "completedAt": "2026-09-10T14:42:53.256Z"
-    },
-    {
-      "id": "mtx1zw4xbpjq1",
-      "text": "Reunião MKT x Comercial (manhã)",
-      "dueDate": "2026-09-11",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-11T14:30:35.889Z",
-      "completedAt": "2026-09-11T14:30:47.542Z"
-    },
-    {
-      "id": "mtx21d1w2hoxx",
-      "text": "Cancelar e-mail na tray",
-      "dueDate": "2026-09-11",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-11T14:31:44.468Z",
-      "completedAt": "2026-09-11T14:31:46.964Z"
-    },
-    {
-      "id": "mtxcy1bnh74e4",
-      "text": "ativar a campanha do dia do cliente 3dbgg",
-      "dueDate": "2026-09-11",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-11T19:37:05.075Z",
-      "completedAt": "2026-09-11T19:37:07.611Z"
-    },
-    {
-      "id": "mtxcyfjvcdlb3",
-      "text": "Responder aos chamados",
-      "dueDate": "2026-09-11",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-11T19:37:23.515Z",
-      "completedAt": "2026-09-15T14:12:19.718Z"
-    },
-    {
-      "id": "mu2r3325dnw8c",
-      "text": "Cadastro do produtos 3dbgg",
-      "dueDate": "2026-09-11",
-      "list": "pending",
-      "done": true,
-      "createdAt": "2026-09-15T14:11:46.109Z",
-      "completedAt": "2026-09-15T14:12:15.903Z"
-    },
-    {
-      "id": "mu2r3ec5yfdze",
-      "text": "post dos card, dia do cliente",
-      "dueDate": "2026-09-11",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-15T14:12:00.725Z",
-      "completedAt": "2026-09-15T14:12:04.285Z"
-    },
-    {
-      "id": "mu2rq42kowzqj",
-      "text": "Cobrar a EG o cronograma",
-      "dueDate": "2026-09-11",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-15T14:29:40.508Z",
-      "completedAt": "2026-09-15T14:37:42.511Z"
-    },
-    {
-      "id": "daily-otmo-card-20260915",
-      "text": "Criar e finalizar card de agradecimento do Dia do Cliente — Agência OTMO",
-      "dueDate": "2026-09-15",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-15T15:00:00.000Z",
-      "completedAt": "2026-09-15T15:00:00.000Z"
-    },
-    {
-      "id": "daily-otmo-email-20260915",
-      "text": "Preparar e-mail de agradecimento para acompanhar o card da Agência OTMO",
-      "dueDate": "2026-09-15",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-15T15:00:00.000Z",
-      "completedAt": "2026-09-15T15:00:00.000Z"
-    },
-    {
-      "id": "mu4go1q2js7mw",
-      "text": "Abrir chamado para Rebeca",
-      "dueDate": "2026-09-15",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-16T18:55:40.730Z",
-      "completedAt": "2026-09-16T19:29:36.077Z"
-    },
-    {
-      "id": "mu4goiobi0fvj",
-      "text": "Alinhamento MKT para novas pesquisas de mercado",
-      "dueDate": "2026-09-15",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-16T18:56:02.699Z",
-      "completedAt": "2026-09-16T18:58:10.296Z"
-    },
-    {
-      "id": "mu4gp9yhsghme",
-      "text": "Atualizar painel do dia, add botão para o novo painel de direcionamento",
-      "dueDate": "2026-09-15",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-16T18:56:38.057Z",
-      "completedAt": "2026-09-16T19:29:33.109Z"
-    },
-    {
-      "id": "mu4gpyohqlvle",
-      "text": "Criar vídeo na IA e fazer pesquisa sobre a nova cobrança da META",
-      "dueDate": "2026-09-15",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-16T18:57:10.097Z",
-      "completedAt": "2026-09-16T18:58:08.433Z"
-    },
-    {
-      "id": "mu4igdbgic79w",
-      "text": "Projeto \"Atualização da Meta\"",
-      "dueDate": "2026-09-16",
+      "id": "mth8oorolf1sn",
+      "text": "Planejamento do mês de Setembro",
+      "dueDate": "2026-08-31",
       "list": "progress",
       "done": false,
-      "createdAt": "2026-09-16T19:45:41.740Z",
-      "startedAt": "2026-09-21T12:08:10.897Z"
+      "createdAt": "2026-08-31T12:53:31.620Z",
+      "startedAt": "2026-09-02T12:28:45.240Z"
     },
     {
-      "id": "mu5lv8284pob6",
-      "text": "Demandas do calendário editorial",
-      "dueDate": "2026-09-16",
+      "id": "mtk2rr4i2ox3i",
+      "text": "Google Vids (Vídeo)",
+      "dueDate": "2026-08-31",
       "list": "today",
       "done": true,
-      "createdAt": "2026-09-17T14:08:59.792Z",
-      "completedAt": "2026-09-17T14:09:56.584Z"
+      "createdAt": "2026-09-02T12:31:15.474Z",
+      "completedAt": "2026-09-02T12:34:16.868Z"
     },
     {
-      "id": "mu5lwaz5aqixp",
-      "text": "Criar guia completo regras de cobrança da meta",
-      "dueDate": "2026-09-16",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-09-17T14:09:50.225Z",
-      "completedAt": "2026-09-18T17:06:16.436Z"
-    },
-    {
-      "id": "mu5lx1p9ezuvn",
-      "text": "Verificar o direcionamento",
-      "dueDate": "2026-09-16",
+      "id": "mtk2w46o5wwrk",
+      "text": "Fazer o aviso de feriado do dia 07 de Setembro",
+      "dueDate": "2026-08-31",
       "list": "today",
       "done": true,
-      "createdAt": "2026-09-17T14:10:24.861Z",
-      "completedAt": "2026-09-17T14:10:27.762Z"
+      "createdAt": "2026-09-02T12:34:39.024Z",
+      "completedAt": "2026-09-02T13:02:37.587Z"
     },
     {
-      "id": "mu77nhv6sxvi5",
-      "text": "Reunião MKT",
-      "dueDate": "2026-09-16",
+      "id": "mtk3vzftzjpe9",
+      "text": "Responder os direct da 3D",
+      "dueDate": "2026-08-31",
       "list": "today",
       "done": true,
-      "createdAt": "2026-09-18T17:06:36.978Z",
-      "completedAt": "2026-09-18T17:06:47.185Z"
+      "createdAt": "2026-09-02T13:02:32.489Z",
+      "completedAt": "2026-09-02T13:02:39.868Z"
     },
     {
-      "id": "mu79tuvmlmljl",
-      "text": "Cadastro de produto 3D",
-      "dueDate": "2026-09-16",
+      "id": "mtk3wuqy3ol56",
+      "text": "Enviar e-mail sobre o feriado",
+      "dueDate": "2026-08-31",
       "list": "today",
-      "done": true,
-      "createdAt": "2026-09-18T18:07:33.010Z",
-      "completedAt": "2026-09-18T18:07:40.146Z"
-    },
-    {
-      "id": "mu79uacfuukoq",
-      "text": "Adicionar sugestões dos produtos no site da 3D",
-      "dueDate": "2026-09-16",
-      "list": "progress",
       "done": false,
-      "createdAt": "2026-09-18T18:07:53.055Z",
-      "startedAt": "2026-09-18T18:07:57.424Z"
-    },
-    {
-      "id": "mu7b8jniflluv",
-      "text": "Gerar relatório de trafego da 3D e reajuste na  Merchant Center",
-      "dueDate": "2026-09-16",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-09-18T18:46:57.918Z",
-      "completedAt": "2026-09-21T12:07:38.297Z"
-    },
-    {
-      "id": "muba888zeolm6",
-      "text": "Agendar os post da semana",
-      "dueDate": "2026-09-21",
-      "list": "progress",
-      "done": false,
-      "createdAt": "2026-09-21T13:29:48.227Z",
-      "startedAt": "2026-09-21T13:30:06.353Z"
-    },
-    {
-      "id": "mubb2pz36zn54",
-      "text": "Análise do tráfego 3DBGG",
-      "dueDate": "2026-09-21",
-      "list": "progress",
-      "done": false,
-      "createdAt": "2026-09-21T13:53:30.879Z",
-      "startedAt": "2026-09-22T13:43:00.101Z"
-    },
-    {
-      "id": "mucq5zeamrsib",
-      "text": "fazer nova automação para responder comentário via direct (3DBGG ) no Luiz",
-      "dueDate": "2026-09-21",
-      "list": "progress",
-      "done": false,
-      "createdAt": "2026-09-22T13:43:43.474Z",
-      "startedAt": "2026-09-22T13:43:46.739Z"
-    },
-    {
-      "id": "mucq6tu1weoa1",
-      "text": "Fazer a solicitação do direcionamento",
-      "dueDate": "2026-09-21",
-      "list": "progress",
-      "done": false,
-      "createdAt": "2026-09-22T13:44:22.921Z",
-      "startedAt": "2026-09-22T13:44:27.041Z"
-    },
-    {
-      "id": "mucq7o8s8xnrv",
-      "text": "Entrar em contato com a página no Instagram para divulgar vaga de SDR",
-      "dueDate": "2026-09-21",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-22T13:45:02.332Z",
-      "completedAt": "2026-09-23T19:38:17.591Z"
-    },
-    {
-      "id": "mucq8j2yv8o7m",
-      "text": "Passar dados do forms antigo para Adri, reformular a pagina de vagas no novo site",
-      "dueDate": "2026-09-21",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-22T13:45:42.298Z",
-      "completedAt": "2026-09-22T13:46:00.185Z"
-    },
-    {
-      "id": "mucq9co04edbo",
-      "text": "Criar um novo card para vaga de SDR",
-      "dueDate": "2026-09-21",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-22T13:46:20.641Z",
-      "completedAt": "2026-09-22T14:03:11.601Z"
-    },
-    {
-      "id": "mucs3gjpnter1",
-      "text": "Fazer teste de envio de email no Hotos",
-      "dueDate": "2026-09-21",
-      "list": "progress",
-      "done": false,
-      "createdAt": "2026-09-22T14:37:44.965Z",
-      "startedAt": "2026-09-24T13:29:51.673Z"
-    },
-    {
-      "id": "mueia2990fgee",
-      "text": "Executado radar de ganchos dos últimos sete dias.",
-      "dueDate": "2026-09-21",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-23T19:38:29.229Z",
-      "completedAt": "2026-09-23T19:38:31.652Z"
-    },
-    {
-      "id": "mueia8zg8ws4t",
-      "text": "Selecionados cinco temas relevantes sobre WhatsApp, Meta, IA, CRM, automação e concorrentes.",
-      "dueDate": "2026-09-21",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-23T19:38:37.948Z",
-      "completedAt": "2026-09-23T19:41:51.631Z"
-    },
-    {
-      "id": "mueib05x69zfz",
-      "text": "Feito o planejamento editorial",
-      "dueDate": "2026-09-21",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-23T19:39:13.173Z",
-      "completedAt": "2026-09-23T19:41:53.325Z"
-    },
-    {
-      "id": "mueif30lnmmrr",
-      "text": "ajustar o Google Merchant Center da 3dbgg",
-      "dueDate": "2026-09-21",
-      "list": "progress",
-      "done": false,
-      "createdAt": "2026-09-23T19:42:23.493Z",
-      "startedAt": "2026-09-23T19:42:25.309Z"
-    },
-    {
-      "id": "daily-radar-banco-temas-20260923",
-      "text": "Atualizar e publicar o Banco de Temas com o radar organizado por data",
-      "dueDate": "2026-09-23",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-23T20:00:00.000Z",
-      "completedAt": "2026-09-23T20:00:00.000Z"
-    },
-    {
-      "id": "daily-analise-yup-instagram-20260923",
-      "text": "Analisar o Instagram da Yup Chat e identificar temas, formatos e oportunidades",
-      "dueDate": "2026-09-23",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-23T20:01:00.000Z",
-      "completedAt": "2026-09-23T20:01:00.000Z"
-    },
-    {
-      "id": "daily-referencia-yup-planejamento-20260923",
-      "text": "Salvar a análise da Yup Chat como referência do squad de planejamento editorial",
-      "dueDate": "2026-09-23",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-23T20:02:00.000Z",
-      "completedAt": "2026-09-23T20:02:00.000Z"
-    },
-    {
-      "id": "daily-conteudo-custo-conversa-20260923",
-      "text": "Definir o conteúdo Hotmobile sobre custo por conversa resolvida em dois slides",
-      "dueDate": "2026-09-23",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-23T20:03:00.000Z",
-      "completedAt": "2026-09-23T20:03:00.000Z"
-    },
-    {
-      "id": "daily-carrossel-whatsapp-v3-20260923",
-      "text": "Criar e revisar o carrossel Hotmobile com mockups de conversa do WhatsApp — versão 3",
-      "dueDate": "2026-09-23",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-23T20:04:00.000Z",
-      "completedAt": "2026-09-23T20:04:00.000Z"
-    },
-    {
-      "id": "daily-qa-carrossel-whatsapp-20260923",
-      "text": "Concluir o QA visual dos dois slides e preservar os arquivos editáveis",
-      "dueDate": "2026-09-23",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-23T20:05:00.000Z",
-      "completedAt": "2026-09-23T20:05:00.000Z"
-    },
-    {
-      "id": "mufjmgdkhemth",
-      "text": "Elaborar vídeo do Case Atend Já",
-      "dueDate": "2026-09-21",
-      "list": "progress",
-      "done": false,
-      "createdAt": "2026-09-24T13:03:53.192Z",
-      "startedAt": "2026-09-24T13:29:49.446Z"
+      "createdAt": "2026-09-02T13:03:13.066Z"
     }
   ],
   "completionHistory": {
-    "brandkit.0": "2026-08-10T14:52:23.033Z",
-    "diacliente3dbgg.0": "2026-09-11T19:37:24.765Z",
-    "diacliente3dbgg.1": "2026-09-15T14:52:18.851Z"
+    "brandkit.0": "2026-08-10T14:52:23.033Z"
   },
   "dailyActivityHistory": [
     {
@@ -647,7 +269,7 @@
       "id": "daily:msnkokn1ey8gq:done",
       "text": "Testar o nova pág do BLOG https://hotmobile.com.br/admin/blog",
       "source": "Painel do dia · Concluída",
-      "completedAt": "2026-08-11T12:48:56.02Z"
+      "completedAt": "2026-08-11T12:48:56.020Z"
     },
     {
       "id": "daily:msnl8snuzo2qc:done",
@@ -665,7 +287,7 @@
       "id": "daily:msooxo83ra4dx:done",
       "text": "Alinhamento/ Ideias com Closer e SDR",
       "source": "Painel do dia · Concluída",
-      "completedAt": "2026-08-11T13:51:27.06Z"
+      "completedAt": "2026-08-11T13:51:27.060Z"
     },
     {
       "id": "daily:msq3ipp1mbjd9:done",
@@ -683,7 +305,7 @@
       "id": "daily:msqes8xq3ozyt:done",
       "text": "concluir os chamados do MKT",
       "source": "Painel do dia · Concluída",
-      "completedAt": "2026-08-12T18:14:58.45Z"
+      "completedAt": "2026-08-12T18:14:58.450Z"
     },
     {
       "id": "daily:msqhqym6h09og:done",
@@ -869,7 +491,7 @@
       "id": "daily:mseyrhuade5og:done",
       "text": "Editar os vídeos da central de ajuda",
       "source": "Painel do dia · Concluída",
-      "completedAt": "2026-09-01T14:04:44.88Z"
+      "completedAt": "2026-09-01T14:04:44.880Z"
     },
     {
       "id": "daily:msn7p0o64dru5:done",
@@ -894,78 +516,6 @@
       "text": "retirar o banner de dia do gamer da 3dbgg e colocar banner com os inserts mais procurados",
       "source": "Painel do dia · Concluída",
       "completedAt": "2026-09-01T14:04:31.096Z"
-    },
-    {
-      "id": "daily:mta3xuz5ly24y:done",
-      "text": "organizar as novas apresentações na galeria do notion",
-      "source": "Painel do dia · Concluída",
-      "completedAt": "2026-09-02T13:15:05.939Z"
-    },
-    {
-      "id": "daily:mtk2rr4i2ox3i:done",
-      "text": "Google Vids (Vídeo)",
-      "source": "Painel do dia · Concluída",
-      "completedAt": "2026-09-02T12:34:16.868Z"
-    },
-    {
-      "id": "daily:mtk2w46o5wwrk:done",
-      "text": "Fazer o aviso de feriado do dia 07 de Setembro",
-      "source": "Painel do dia · Concluída",
-      "completedAt": "2026-09-02T13:02:37.587Z"
-    },
-    {
-      "id": "daily:mtk3vzftzjpe9:done",
-      "text": "Responder os direct da 3D",
-      "source": "Painel do dia · Concluída",
-      "completedAt": "2026-09-02T13:02:39.868Z"
-    },
-    {
-      "id": "daily:mth8oorolf1sn:done",
-      "text": "Planejamento do mês de Setembro",
-      "source": "Painel do dia · Concluída",
-      "completedAt": "2026-09-03T12:42:45.751Z"
-    },
-    {
-      "id": "daily:mtk3wuqy3ol56:done",
-      "text": "Enviar e-mail sobre o feriado",
-      "source": "Painel do dia · Concluída",
-      "completedAt": "2026-09-03T12:41:04.447Z"
-    },
-    {
-      "id": "daily:mtkhg4rbab2ih:done",
-      "text": "Planejamento dia do cliente 3dbgg",
-      "source": "Painel do dia · Concluída",
-      "completedAt": "2026-09-02T19:47:19.861Z"
-    },
-    {
-      "id": "daily:fix-validacao-squads-20260902:done",
-      "text": "Corrigir validação do repositório: criar ou ajustar as referências dos agentes aline-arte e celia-coesao",
-      "source": "Painel do dia · Concluída",
-      "completedAt": "2026-09-03T13:38:37.670Z"
-    },
-    {
-      "id": "daily:mtlhr5y93dr6l:done",
-      "text": "Elaborar o direcionamento do dia 03/09",
-      "source": "Painel do dia · Concluída",
-      "completedAt": "2026-09-04T18:59:01.258Z"
-    },
-    {
-      "id": "daily:mtljz9jr2ri3q:done",
-      "text": "Criar as landing page: URL após indicação de amigo, após inscrição, indicação de amigo",
-      "source": "Painel do dia · Concluída",
-      "completedAt": "2026-09-03T13:38:35.982Z"
-    },
-    {
-      "id": "daily:mtn11psf7p1b9:done",
-      "text": "Fazer o direcionamento do dia 04/09",
-      "source": "Painel do dia · Concluída",
-      "completedAt": "2026-09-04T18:58:49.584Z"
-    },
-    {
-      "id": "daily:mtn2fzfhdjm52:done",
-      "text": "Retorno dos chamados",
-      "source": "Painel do dia · Concluída",
-      "completedAt": "2026-09-04T18:58:47.786Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z"
