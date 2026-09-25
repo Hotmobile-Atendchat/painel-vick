@@ -220,6 +220,15 @@
   .day-task.celebrate{animation:dayCelebrate .75s ease;border-color:#b98aff}
   .day-spark{position:absolute;left:32px;top:-12px;color:var(--mint-d);font-size:13px;letter-spacing:4px;pointer-events:none;animation:daySpark .8s ease-out both}
   .day-clear{display:block;margin:15px auto 0;border:0;background:none;color:var(--muted2);font:inherit;font-size:10.5px;text-decoration:underline;cursor:pointer}
+  .vacation-direction{margin-top:18px;padding:15px;background:linear-gradient(145deg,#2d1d3d,#563477);border:1px solid #80619d;border-radius:16px;color:#fff;box-shadow:0 14px 30px rgba(65,42,84,.2);position:relative;overflow:hidden}
+  .vacation-direction::after{content:'✦';position:absolute;right:15px;top:10px;color:#ddc4ff;font-size:24px;opacity:.7;animation:dayGlow 3s ease-in-out infinite}
+  .vacation-kicker{font-size:9.5px;letter-spacing:1.4px;text-transform:uppercase;color:#ddc4ff;font-weight:800}
+  .vacation-direction h3{font-size:16px;margin:3px 0 8px;color:#fff}
+  .vacation-direction p{font-size:10.5px;line-height:1.4;color:#eadff4;margin-bottom:10px}
+  .vacation-list{display:grid;gap:7px;list-style:none}
+  .vacation-list li{display:flex;gap:7px;align-items:flex-start;padding:7px 8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);border-radius:9px;font-size:10.5px;line-height:1.35;color:#fff}
+  .vacation-list li::before{content:'✓';color:#d9b8ff;font-weight:900;flex:0 0 auto}
+  .vacation-note{margin-top:9px!important;margin-bottom:0!important;color:#d6c4e5!important;font-size:9.5px!important}
   @keyframes dayTaskIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
   @keyframes dayCelebrate{0%{transform:scale(1)}35%{transform:scale(1.025);box-shadow:0 0 22px rgba(173,121,255,.28)}100%{transform:scale(1)}}
   @keyframes daySpark{0%{opacity:0;transform:translateY(8px) scale(.7)}30%{opacity:1}100%{opacity:0;transform:translateY(-18px) scale(1.15)}}
@@ -337,6 +346,20 @@
     <div class="day-list" id="doneList"></div>
   </section>
   <button class="day-clear" type="button" onclick="clearDailyDone()">limpar tarefas concluídas</button>
+  <section class="vacation-direction" aria-label="Direcionamento de férias para Adriana">
+    <span class="vacation-kicker">Cobertura da Fabrine · 15 dias</span>
+    <h3>🧭 Direcionamento para Adriana</h3>
+    <p>Use o Painel do Dia como fonte principal durante as férias.</p>
+    <ul class="vacation-list">
+      <li>Monitorar o tráfego da 3DBGG e o Google Merchant Center.</li>
+      <li>Acompanhar o retorno da EG sobre o cronograma e a mensagem privada.</li>
+      <li>Revisar semanalmente chamados, demandas abertas e tarefas paradas.</li>
+      <li>Realizar as pesquisas semanais e registrar oportunidades.</li>
+      <li>Conferir os posts e e-mails já agendados, sem criar ou reprogramar conteúdo.</li>
+      <li>Encaminhar imediatamente falhas, problemas, retornos de clientes ou decisões necessárias.</li>
+    </ul>
+    <p class="vacation-note">Não alterar cronogramas, orçamento ou estratégia sem decisão definida.</p>
+  </section>
 </aside>
 </div>
 
@@ -414,18 +437,6 @@ const DATA=[
      {t:'11/09 — Início oficial: banner no site + e-mail + WhatsApp',done:0},
      {t:'15/09 — Destaque do Dia do Cliente e reforço da oferta',done:0},
      {t:'30/09 — Última chamada e encerramento do Dia do Cliente',done:0},
-   ]},
-
-  {key:'feriasfabrine', cat:'otmo', emoji:'🧭', nome:'Direcionamento de férias — Adriana', meta:'Cobertura operacional · 15 dias',
-   badge:['b-hot','Acompanhar'],
-   narr:'Acompanhamento da operação durante as férias da Fabrine. O Painel do Dia é a fonte principal; e-mails e posts já estão agendados.',
-   itens:[
-     {t:'Monitorar o tráfego da 3DBGG',done:0,note:'Verificar desempenho das campanhas, cliques, vendas, conversões, orçamento, Google Merchant Center e necessidade de ajustes urgentes.'},
-     {t:'Acompanhar a resposta da EG Construções',done:0,note:'A EG recebeu o cronograma e ainda não respondeu. Também foi enviada uma mensagem privada sem retorno. Acompanhar novas respostas, necessidade de cobrança e atualização do cronograma. Não alterar o cronograma sem decisão definida.'},
-     {t:'Revisar chamados e demandas abertas — semanalmente',done:0,note:'Revisar chamados abertos, demandas pendentes, itens aguardando terceiros e tarefas paradas.'},
-     {t:'Realizar as pesquisas semanais',done:0,note:'Pesquisar tendências, concorrentes, WhatsApp, Meta, IA, CRM, automação e oportunidades para Hotmobile, OTMO e 3DBGG. Registrar achados e oportunidades de ação.'},
-     {t:'Monitorar posts e e-mails já agendados',done:0,note:'Não criar novos conteúdos nem reprogramar publicações. Apenas verificar se os posts foram publicados e se os e-mails foram disparados; registrar e comunicar falhas.'},
-     {t:'Encaminhar falhas, retornos e decisões necessárias',done:0,note:'Encaminhar imediatamente falhas em e-mails ou publicações, queda relevante no tráfego, problemas no Merchant Center, alteração de orçamento, retorno ou problema com a EG, solicitação urgente de cliente ou situação que exija aprovação.'},
    ]},
 
   {key:'blog', cat:'hotmobile', emoji:'🛡️', nome:'Blog Hotmobile', meta:'Conteúdo educativo',
