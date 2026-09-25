@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-25T19:25:59.975Z",
+  "updatedAt": "2026-09-25T19:26:03.249Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -137,8 +137,9 @@
       "text": "Enviar e-mail sobre o feriado",
       "dueDate": "2026-08-31",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-09-02T13:03:13.066Z"
+      "done": true,
+      "createdAt": "2026-09-02T13:03:13.066Z",
+      "completedAt": "2026-09-25T19:26:01.552Z"
     }
   ],
   "completionHistory": {
