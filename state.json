@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-25T19:10:01.282Z",
+  "updatedAt": "2026-09-25T19:25:46.397Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -53,8 +53,8 @@
     "diaamigos.10": true,
     "diaamigos.11": true,
     "brandkit.0": true,
-    "diacliente3dbgg.0": false,
-    "diacliente3dbgg.1": false,
+    "diacliente3dbgg.0": true,
+    "diacliente3dbgg.1": true,
     "diacliente3dbgg.2": false,
     "feriasfabrine.0": false,
     "feriasfabrine.1": false,
@@ -142,7 +142,9 @@
     }
   ],
   "completionHistory": {
-    "brandkit.0": "2026-08-10T14:52:23.033Z"
+    "brandkit.0": "2026-08-10T14:52:23.033Z",
+    "diacliente3dbgg.1": "2026-09-25T19:25:43.957Z",
+    "diacliente3dbgg.0": "2026-09-25T19:25:44.400Z"
   },
   "dailyActivityHistory": [
     {
