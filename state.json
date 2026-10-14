@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T12:01:11.913Z",
+  "updatedAt": "2026-10-14T12:01:24.827Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -157,6 +157,14 @@
       "list": "today",
       "done": false,
       "createdAt": "2026-10-14T12:01:10.258Z"
+    },
+    {
+      "id": "mv827460nwtau",
+      "text": "Agendamento dos post",
+      "dueDate": "2026-10-14",
+      "list": "today",
+      "done": false,
+      "createdAt": "2026-10-14T12:01:23.160Z"
     }
   ],
   "completionHistory": {
