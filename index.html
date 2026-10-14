@@ -327,16 +327,12 @@
     </div>
     <small class="day-file-note">Imagem ou documento de até 8 MB. O anexo ficará visível no painel público.</small>
     <div class="day-form-row">
-      <select id="dayType" aria-label="Status inicial da tarefa"><option value="today">Hoje</option><option value="progress">Em andamento</option><option value="pending">Pendência</option></select>
+      <select id="dayType" aria-label="Status inicial da tarefa"><option value="pending">Pendência</option><option value="progress">Em andamento</option></select>
       <input id="dayDueDate" type="date" aria-label="Data da tarefa" required>
       <button class="day-add" type="submit">Adicionar</button>
     </div>
   </form>
   <input class="day-file-input" id="existingTaskAttachment" type="file" accept="image/*,.pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.txt,.csv" onchange="attachFileToDailyTask(this)">
-  <section class="day-section" data-day-section="pending">
-    <div class="day-section-head"><span>☀️ Hoje</span><span class="day-count" id="todayCount">0</span></div>
-    <div class="day-list" id="todayList"></div>
-  </section>
   <section class="day-section" data-day-section="progress" hidden>
     <div class="day-section-head"><span>◐ Em andamento</span><span class="day-count" id="progressCount">0</span></div>
     <div class="day-list" id="progressList"></div>
@@ -693,25 +689,24 @@ function clearDailyDone(){
   saveHistory();
 }
 function renderDaily(celebrateId){
-  const groups={today:document.getElementById('todayList'),progress:document.getElementById('progressList'),pending:document.getElementById('pendingList'),done:document.getElementById('doneList')};
+  const groups={progress:document.getElementById('progressList'),pending:document.getElementById('pendingList'),done:document.getElementById('doneList')};
   Object.entries(groups).forEach(([type,root])=>{
-    const items=dailyTasks.filter(t=>type==='done'?t.done:!t.done&&t.list===type).sort((a,b)=>type==='done'?new Date(b.completedAt||0)-new Date(a.completedAt||0):(a.dueDate||'9999-12-31').localeCompare(b.dueDate||'9999-12-31'));
+    const items=dailyTasks.filter(t=>type==='done'?t.done:!t.done&&(type==='pending'?(t.list==='pending'||t.list==='today'):t.list===type)).sort((a,b)=>type==='done'?new Date(b.completedAt||0)-new Date(a.completedAt||0):(a.dueDate||'9999-12-31').localeCompare(b.dueDate||'9999-12-31'));
     root.innerHTML=items.length?items.map(t=>`<div class="day-task ${t.done?'done':''} ${!t.done&&type==='progress'?'in-progress':''} ${t.id===celebrateId?'celebrate':''}">
       <label><input type="checkbox" ${t.done?'checked':''} ${isEditor?'':'disabled'} onchange="toggleDailyTask('${t.id}')"><span class="day-check">✓</span><span class="day-text">${safeText(t.text)}</span></label>
       ${renderDailyAttachment(t.attachment)}
-      <div class="day-actions"><input class="day-task-date" type="date" value="${safeText(t.dueDate||'')}" aria-label="Data de ${safeText(t.text)}" onchange="setDailyDate('${t.id}',this.value)"><select class="day-status" aria-label="Status de ${safeText(t.text)}" onchange="setDailyStatus('${t.id}',this.value)"><option value="today" ${!t.done&&type==='today'?'selected':''}>Hoje</option><option value="progress" ${!t.done&&type==='progress'?'selected':''}>Em andamento</option><option value="pending" ${!t.done&&type==='pending'?'selected':''}>Pendente</option><option value="done" ${t.done?'selected':''}>Concluída</option></select><button class="attach-existing ${t.attachment?'has-attachment':''}" data-attach-task="${t.id}" type="button" aria-label="${t.attachment?'Substituir':'Adicionar'} anexo em ${safeText(t.text)}" title="${t.attachment?'Substituir':'Adicionar'} anexo" onclick="chooseDailyAttachment('${t.id}')">📎 <span>${t.attachment?'Trocar':'Anexar'}</span></button><button class="day-edit" type="button" title="Editar tarefa" aria-label="Editar ${safeText(t.text)}" onclick="editDailyTask('${t.id}')">✎</button><button class="day-delete" type="button" title="Excluir" aria-label="Excluir ${safeText(t.text)}" onclick="deleteDailyTask('${t.id}')">×</button></div>
+      <div class="day-actions"><input class="day-task-date" type="date" value="${safeText(t.dueDate||'')}" aria-label="Data de ${safeText(t.text)}" onchange="setDailyDate('${t.id}',this.value)"><select class="day-status" aria-label="Status de ${safeText(t.text)}" onchange="setDailyStatus('${t.id}',this.value)"><option value="progress" ${!t.done&&type==='progress'?'selected':''}>Em andamento</option><option value="pending" ${!t.done&&(type==='pending'||t.list==='today')?'selected':''}>Pendente</option><option value="done" ${t.done?'selected':''}>Concluída</option></select><button class="attach-existing ${t.attachment?'has-attachment':''}" data-attach-task="${t.id}" type="button" aria-label="${t.attachment?'Substituir':'Adicionar'} anexo em ${safeText(t.text)}" title="${t.attachment?'Substituir':'Adicionar'} anexo" onclick="chooseDailyAttachment('${t.id}')">📎 <span>${t.attachment?'Trocar':'Anexar'}</span></button><button class="day-edit" type="button" title="Editar tarefa" aria-label="Editar ${safeText(t.text)}" onclick="editDailyTask('${t.id}')">✎</button><button class="day-delete" type="button" title="Excluir" aria-label="Excluir ${safeText(t.text)}" onclick="deleteDailyTask('${t.id}')">×</button></div>
       ${t.id===celebrateId?'<span class="day-spark">✦ ✧ ✦</span>':''}</div>`).join(''):'<div class="day-empty">Nada por aqui.</div>';
   });
   document.querySelectorAll('[data-day-section]').forEach(section=>section.hidden=section.dataset.daySection!==dailyFilter);
   const done=dailyTasks.filter(t=>t.done).length,total=dailyTasks.length,pct=total?Math.round(done/total*100):0;
-  const today=dailyTasks.filter(t=>t.list==='today'&&!t.done).length,inProgress=dailyTasks.filter(t=>t.list==='progress'&&!t.done).length,pending=dailyTasks.filter(t=>t.list==='pending'&&!t.done).length;
-  document.getElementById('todayCount').textContent=today;
+  const inProgress=dailyTasks.filter(t=>t.list==='progress'&&!t.done).length,pending=dailyTasks.filter(t=>(t.list==='pending'||t.list==='today')&&!t.done).length;
   document.getElementById('progressCount').textContent=inProgress;
   document.getElementById('pendingCount').textContent=pending;
   document.getElementById('doneCount').textContent=done;
   document.getElementById('doneFilterCount').textContent=done;
   document.getElementById('progressFilterCount').textContent=inProgress;
-  document.getElementById('pendingFilterCount').textContent=today+pending;
+  document.getElementById('pendingFilterCount').textContent=pending;
   document.getElementById('daySummary').textContent=`${done} concluídas · ${inProgress} em andamento`;
   document.getElementById('dayPct').textContent=pct+'%';document.getElementById('dayBar').style.width=pct+'%';
 }
