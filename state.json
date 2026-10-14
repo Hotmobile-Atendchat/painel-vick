@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T18:44:24.357Z",
+  "updatedAt": "2026-10-14T18:45:55.012Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -555,6 +555,21 @@
       "source": "Fechamento do dia",
       "date": "2026-10-14",
       "completedAt": "2026-10-14T18:44:22.670Z"
+    },
+    {
+      "text": "Pesquisa - Radar de ganchos de mercado de 14/10. realizada a pesquisa de mercado e a análise dos conteúdos publicados nas redes sociais, identificando o tema sobre o \"Uso da IA no atendimento e o momento certo de transferir a conversa para uma pessoa.\" Com base nessa pesquisa, foi criado o conteúdo da Hotmobile para Instagram e LinkedIn. Depois, o material final foi organizado no projeto, o card foi publicado",
+      "narrative": "Pesquisa - Radar de ganchos de mercado de 14/10. realizada a pesquisa de mercado e a análise dos conteúdos publicados nas redes sociais, identificando o tema sobre o \"Uso da IA no atendimento e o momento certo de transferir a conversa para uma pessoa.\" Com base nessa pesquisa, foi criado o conteúdo da Hotmobile para Instagram e LinkedIn. Depois, o material final foi organizado no projeto, o card foi publicado",
+      "bullets": [
+        "Pesquisa de mercado e redes sociais realizada.",
+        "Tema identificado: IA sabe quando chamar uma pessoa.",
+        "Conteúdo criado com base na pesquisa.",
+        "Card adaptado à identidade visual da Hotmobile.",
+        "Logo original aplicada sem alterações.",
+        "Card publicado no Instagram e LinkedIn."
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-10-14",
+      "completedAt": "2026-10-14T18:45:53.173Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
