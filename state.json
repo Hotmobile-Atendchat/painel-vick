@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T18:57:55.950Z",
+  "updatedAt": "2026-10-14T18:59:52.275Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -156,6 +156,14 @@
       "list": "today",
       "done": false,
       "createdAt": "2026-10-14T12:01:29.402Z"
+    },
+    {
+      "id": "mv8h594b884qo",
+      "text": "Chamados da Raissa - Missão SDR - entrega da apresentação completa e certificado com previsão de entrega dia 15/10",
+      "dueDate": "2026-10-14",
+      "list": "progress",
+      "done": false,
+      "createdAt": "2026-10-14T18:59:50.508Z"
     }
   ],
   "completionHistory": {
