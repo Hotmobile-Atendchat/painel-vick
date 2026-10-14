@@ -48,7 +48,7 @@
   .activity-filter input{width:100%;min-width:0;height:30px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--txt);font:600 10.5px 'Segoe UI',system-ui,sans-serif;padding:0 5px;outline:none}
   .activity-filter input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(123,66,178,.08)}
   .activity-list{display:grid;gap:7px;max-height:230px;overflow:auto;padding-right:3px}
-  .activity-item{display:grid;grid-template-columns:auto 1fr;gap:9px;align-items:start;padding:9px 10px;background:var(--panel2);border:1px solid var(--line2);border-radius:10px}
+  .activity-item{display:grid;grid-template-columns:auto 1fr;gap:9px;align-items:start;padding:9px 10px;background:var(--panel2);border:1px solid var(--line2);border-radius:10px}.activity-summary-points{margin:6px 0 0;padding-left:18px;display:grid;gap:3px;color:var(--muted);font-size:10.5px;line-height:1.35}
   .activity-check{width:20px;height:20px;border-radius:7px;display:grid;place-items:center;background:var(--mint-d);color:#fff;font-size:11px;font-weight:900}
   .activity-text{font-size:12.5px;font-weight:700;color:var(--txt);line-height:1.35}
   .activity-meta{font-size:10.5px;color:var(--muted);margin-top:2px}
@@ -592,7 +592,7 @@ function saveDailyBrief(){
   dailyBrief={date:localISODate(),narrative,bullets};
   const summary=[narrative,...bullets].filter(Boolean).join(' — ');
   dailyActivityHistory=dailyActivityHistory.filter(item=>!(item&&item.source==='Fechamento do dia'&&item.completedAt&&saoPauloDateKey(item.completedAt)===dailyBrief.date));
-  if(summary)dailyActivityHistory.push({text:summary,source:'Fechamento do dia',completedAt:new Date().toISOString()});
+  if(summary)dailyActivityHistory.push({text:narrative||summary,narrative,bullets,source:'Fechamento do dia',completedAt:new Date().toISOString()});
   localStorage.setItem(BKEY,JSON.stringify(dailyBrief));saveHistory();renderDailyBrief();renderActivity();showStatus('✓ fechamento salvo e registrado em Feito hoje');
 }
 function renderDailyBrief(){
@@ -729,7 +729,7 @@ function saoPauloDateKey(value){const parts=new Intl.DateTimeFormat('en-CA',{tim
 function weekStartKey(){const today=localISODate(),date=new Date(today+'T12:00:00'),offset=(date.getDay()+6)%7;date.setDate(date.getDate()-offset);return `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;}
 function activityDate(value){return new Intl.DateTimeFormat('pt-BR',{timeZone:'America/Sao_Paulo',day:'2-digit',month:'2-digit',year:'numeric'}).format(new Date(value));}
 function renderActivity(){
-  const entries=dailyActivityHistory.filter(item=>item&&item.text&&item.completedAt).map(item=>({text:item.text,source:item.source||'Painel do dia · Concluída',completedAt:item.completedAt}));
+  const entries=dailyActivityHistory.filter(item=>item&&item.text&&item.completedAt).map(item=>{const source=item.source||'Painel do dia · Concluída',isBrief=source==='Fechamento do dia'&&saoPauloDateKey(item.completedAt)===dailyBrief.date;return {text:item.text,narrative:item.narrative||(isBrief?dailyBrief.narrative:''),bullets:Array.isArray(item.bullets)&&item.bullets.length?item.bullets:(isBrief?dailyBrief.bullets:[]),source,completedAt:item.completedAt};});
   DATA.forEach(d=>d.itens.forEach((it,i)=>{const k=id(d.key,i),completedAt=completionHistory[k];if(checks[k]&&completedAt)entries.push({text:it.t,source:d.nome,completedAt});}));
   dailyTasks.forEach(t=>{
     if(t.done&&t.completedAt)entries.push({text:t.text,source:'Painel do dia · Concluída',completedAt:t.completedAt});
@@ -743,7 +743,7 @@ function renderActivity(){
   const groups={today:entries.filter(e=>between(e,todayFrom,todayTo)),week:entries.filter(e=>between(e,weekFrom,weekTo))};
   [['today','todayDoneList','todayDoneCount'],['week','weekDoneList','weekDoneCount']].forEach(([group,listId,countId])=>{
     const items=groups[group];document.getElementById(countId).textContent=items.length;
-    document.getElementById(listId).innerHTML=items.length?items.map(item=>`<div class="activity-item"><span class="activity-check">✓</span><div><div class="activity-text">${safeText(item.text)}</div><div class="activity-meta">${safeText(item.source)} · ${activityDate(item.completedAt)}</div></div></div>`).join(''):'<div class="activity-empty">Nada concluído neste período.</div>';
+    document.getElementById(listId).innerHTML=items.length?items.map(item=>`<div class="activity-item"><span class="activity-check">✓</span><div>${item.source==='Fechamento do dia'&&item.narrative?`<div class="activity-text">${safeText(item.narrative).replace(/\r?\n/g,'<br>')}</div>${item.bullets.length?`<ul class="activity-summary-points">${item.bullets.map(point=>`<li>${safeText(point)}</li>`).join('')}</ul>`:''}`:`<div class="activity-text">${safeText(item.text)}</div>`}<div class="activity-meta">${safeText(item.source)} · ${activityDate(item.completedAt)}</div></div></div>`).join(''):'<div class="activity-empty">Nada concluído neste período.</div>';
   });
 }
 
