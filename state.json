@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T17:48:07.315Z",
+  "updatedAt": "2026-10-14T17:48:47.469Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -542,17 +542,5 @@
       "completedAt": "2026-10-14T17:25:55.264Z"
     }
   ],
-  "todayClearedBefore": "2026-08-10T13:00:37.458Z",
-  "dailyBrief": {
-    "date": "2026-10-14",
-    "narrative": "Tráfego da 3dbgg: Em 14/10, analisado o desempenho do tráfego da 3DBGG no Google Ads para o período de 28/09 a 12/10. Nesse intervalo, a campanha PMax registrou 4,96 conversões, com R$ 208,14 de custo e R$ 1.603,75 em valor de conversão. A partir das oportunidades de busca enviadas, criei e ativei a campanha de Pesquisa “Jogos em Alta”, com orçamento de R$ 5 por dia. Incluí palavras-chave ligadas a jogos de tabuleiro e seus acessórios: “jogo de tabuleiro”, “board games”, “jogos e tabuleiro”, “jogo abstratus”, “jogo de tabuleiro war batalhas mitológicas”, “jogos de tabuleiro tipos”, “board game insert”, “acessórios para jogos de tabuleiro”, “peças para jogo de tabuleiro” e “peça de jogo de tabuleiro”. Também foi adicionada à campanha a frase promocional “5% off na 1ª compra”. Como a campanha foi ativada em 14/10, ela ainda não faz parte dos resultados do período analisado.",
-    "bullets": [
-      "- Período analisado: 28/09 a 12/10.",
-      "- Campanha criada e ativada: “Jogos em Alta”.",
-      "- Orçamento da campanha: R$ 5 por dia.",
-      "- Foram adicionadas 10 palavras-chave sobre jogos e acessórios de tabuleiro.",
-      "- Frase promocional: “5% off na 1ª compra”.",
-      "- Resultados da PMax no período: 4,96 conversões, R$ 208,14 de custo e R$ 1.603,75 em valor de conversão."
-    ]
-  }
+  "todayClearedBefore": "2026-08-10T13:00:37.458Z"
 }
