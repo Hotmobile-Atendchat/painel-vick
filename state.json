@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T19:12:08.571Z",
+  "updatedAt": "2026-10-14T19:35:56.189Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -568,6 +568,17 @@
       "text": "Enviar e-mail sobre o feriado",
       "source": "Painel do dia · Concluída",
       "completedAt": "2026-09-25T19:26:01.552Z"
+    },
+    {
+      "text": "Identifiquei que a automação de comentários e envio de Direct do Instagram da 3DBGG (@3dbgg.oficial) não estava respondendo aos novos comentários. Acionei o Luiz, que realizou a auditoria técnica, corrigiu a trava do agendador e restabeleceu o fluxo completo de atendimento.",
+      "narrative": "Identifiquei que a automação de comentários e envio de Direct do Instagram da 3DBGG (@3dbgg.oficial) não estava respondendo aos novos comentários. Acionei o Luiz, que realizou a auditoria técnica, corrigiu a trava do agendador e restabeleceu o fluxo completo de atendimento.",
+      "bullets": [
+        "Identificou que o agendador havia pausado a rotina preventivamente devido a uma trava de segurança após a atualização da rota de IA.",
+        "Reconfiguração da rotina"
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-10-14",
+      "completedAt": "2026-10-14T19:35:54.404Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
