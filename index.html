@@ -590,7 +590,10 @@ function saveDailyBrief(){
   const narrative=document.getElementById('briefNarrative').value.trim();
   const bullets=document.getElementById('briefBullets').value.split(/\r?\n/).map(item=>item.trim()).filter(Boolean);
   dailyBrief={date:localISODate(),narrative,bullets};
-  localStorage.setItem(BKEY,JSON.stringify(dailyBrief));queueSharedSave();renderDailyBrief();showStatus('✓ fechamento salvo');
+  const summary=[narrative,...bullets].filter(Boolean).join(' — ');
+  dailyActivityHistory=dailyActivityHistory.filter(item=>!(item&&item.source==='Fechamento do dia'&&item.completedAt&&saoPauloDateKey(item.completedAt)===dailyBrief.date));
+  if(summary)dailyActivityHistory.push({text:summary,source:'Fechamento do dia',completedAt:new Date().toISOString()});
+  localStorage.setItem(BKEY,JSON.stringify(dailyBrief));saveHistory();renderDailyBrief();renderActivity();showStatus('✓ fechamento salvo e registrado em Feito hoje');
 }
 function renderDailyBrief(){
   const view=document.getElementById('briefView'),editor=document.getElementById('briefEditor'),date=document.getElementById('briefDate');
