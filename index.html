@@ -589,11 +589,11 @@ function saveDailyBrief(){
   if(!isEditor){openAuth();return;}
   const narrative=document.getElementById('briefNarrative').value.trim();
   const bullets=document.getElementById('briefBullets').value.split(/\r?\n/).map(item=>item.trim()).filter(Boolean);
-  dailyBrief={date:localISODate(),narrative,bullets};
-  const summary=[narrative,...bullets].filter(Boolean).join(' — ');
-  dailyActivityHistory=dailyActivityHistory.filter(item=>!(item&&item.source==='Fechamento do dia'&&item.completedAt&&saoPauloDateKey(item.completedAt)===dailyBrief.date));
-  if(summary)dailyActivityHistory.push({text:narrative||summary,narrative,bullets,source:'Fechamento do dia',completedAt:new Date().toISOString()});
-  localStorage.setItem(BKEY,JSON.stringify(dailyBrief));saveHistory();renderDailyBrief();renderActivity();showStatus('✓ fechamento salvo e registrado em Feito hoje');
+  const savedDate=localISODate(),summary=[narrative,...bullets].filter(Boolean).join(' — ');
+  if(!summary){showStatus('Escreva o fechamento antes de salvar');return;}
+  dailyActivityHistory.push({text:narrative||summary,narrative,bullets,source:'Fechamento do dia',date:savedDate,completedAt:new Date().toISOString()});
+  dailyBrief={date:'',narrative:'',bullets:[]};
+  localStorage.setItem(BKEY,JSON.stringify(dailyBrief));saveHistory();renderDailyBrief();renderActivity();showStatus('✓ fechamento enviado para Feito hoje');
 }
 function renderDailyBrief(){
   const view=document.getElementById('briefView'),editor=document.getElementById('briefEditor'),date=document.getElementById('briefDate');
@@ -729,7 +729,7 @@ function saoPauloDateKey(value){const parts=new Intl.DateTimeFormat('en-CA',{tim
 function weekStartKey(){const today=localISODate(),date=new Date(today+'T12:00:00'),offset=(date.getDay()+6)%7;date.setDate(date.getDate()-offset);return `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;}
 function activityDate(value){return new Intl.DateTimeFormat('pt-BR',{timeZone:'America/Sao_Paulo',day:'2-digit',month:'2-digit',year:'numeric'}).format(new Date(value));}
 function renderActivity(){
-  const entries=dailyActivityHistory.filter(item=>item&&item.text&&item.completedAt).map(item=>{const source=item.source||'Painel do dia · Concluída',isBrief=source==='Fechamento do dia'&&saoPauloDateKey(item.completedAt)===dailyBrief.date;return {text:item.text,narrative:item.narrative||(isBrief?dailyBrief.narrative:''),bullets:Array.isArray(item.bullets)&&item.bullets.length?item.bullets:(isBrief?dailyBrief.bullets:[]),source,completedAt:item.completedAt};});
+  const entries=dailyActivityHistory.filter(item=>item&&item.text&&item.completedAt).map(item=>({text:item.text,narrative:item.narrative||'',bullets:Array.isArray(item.bullets)?item.bullets:[],source:item.source||'Painel do dia · Concluída',completedAt:item.completedAt}));
   DATA.forEach(d=>d.itens.forEach((it,i)=>{const k=id(d.key,i),completedAt=completionHistory[k];if(checks[k]&&completedAt)entries.push({text:it.t,source:d.nome,completedAt});}));
   dailyTasks.forEach(t=>{
     if(t.done&&t.completedAt)entries.push({text:t.text,source:'Painel do dia · Concluída',completedAt:t.completedAt});
