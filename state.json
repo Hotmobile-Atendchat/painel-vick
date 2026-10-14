@@ -540,6 +540,15 @@
       "text": "teste — teste",
       "source": "Fechamento do dia",
       "completedAt": "2026-10-14T17:25:55.264Z"
+    },
+    {
+      "id": "daily:card-ia-hotmobile-20261014:done",
+      "text": "Criar e publicar card da Hotmobile sobre IA saber quando chamar uma pessoa",
+      "dueDate": "2026-10-14",
+      "list": "today",
+      "done": true,
+      "createdAt": "2026-10-14T12:00:00.000Z",
+      "completedAt": "2026-10-14T12:00:00.000Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
