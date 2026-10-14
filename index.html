@@ -304,6 +304,15 @@
     <div class="day-progress-top"><span id="daySummary">0 de 0 concluídas</span><b id="dayPct">0%</b></div>
     <div class="day-track"><span id="dayBar"></span></div>
   </div>
+  <section class="daily-brief" aria-label="Fechamento do dia">
+    <div class="daily-brief-head"><span class="daily-brief-kicker">Fechamento do dia</span><span class="daily-brief-date" id="briefDate"></span></div>
+    <div id="briefView"></div>
+    <div class="daily-brief-editor" id="briefEditor" hidden>
+      <textarea id="briefNarrative" maxlength="2400" placeholder="Escreva o texto corrido: o que foi feito e como foi feito."></textarea>
+      <textarea id="briefBullets" maxlength="1600" placeholder="Resumo em tópicos — um tópico por linha."></textarea>
+      <button class="daily-brief-save" type="button" onclick="saveDailyBrief()">Salvar fechamento</button>
+    </div>
+  </section>
   <div class="day-filters" role="group" aria-label="Filtrar atividades por status">
     <button class="day-filter" type="button" data-day-filter="done" aria-pressed="false" onclick="setDailyFilter(this)">Concluídas <b id="doneFilterCount">0</b></button>
     <button class="day-filter" type="button" data-day-filter="progress" aria-pressed="false" onclick="setDailyFilter(this)">Em andamento <b id="progressFilterCount">0</b></button>
@@ -341,15 +350,6 @@
     <div class="day-list" id="doneList"></div>
   </section>
   <button class="day-clear" type="button" onclick="clearDailyDone()">limpar tarefas concluídas</button>
-  <section class="daily-brief" aria-label="Fechamento do dia">
-    <div class="daily-brief-head"><span class="daily-brief-kicker">Fechamento do dia</span><span class="daily-brief-date" id="briefDate"></span></div>
-    <div id="briefView"></div>
-    <div class="daily-brief-editor" id="briefEditor" hidden>
-      <textarea id="briefNarrative" maxlength="2400" placeholder="Escreva o texto corrido: o que foi feito e como foi feito."></textarea>
-      <textarea id="briefBullets" maxlength="1600" placeholder="Resumo em tópicos — um tópico por linha."></textarea>
-      <button class="daily-brief-save" type="button" onclick="saveDailyBrief()">Salvar fechamento</button>
-    </div>
-  </section>
 </aside>
 </div>
 
