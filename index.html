@@ -220,6 +220,10 @@
   .day-task.celebrate{animation:dayCelebrate .75s ease;border-color:#b98aff}
   .day-spark{position:absolute;left:32px;top:-12px;color:var(--mint-d);font-size:13px;letter-spacing:4px;pointer-events:none;animation:daySpark .8s ease-out both}
   .day-clear{display:block;margin:15px auto 0;border:0;background:none;color:var(--muted2);font:inherit;font-size:10.5px;text-decoration:underline;cursor:pointer}
+  .daily-brief{margin-top:18px;padding:15px;background:#fff;border:1px solid #d8cce5;border-radius:16px;box-shadow:0 9px 22px rgba(65,42,84,.08)}
+  .daily-brief-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}.daily-brief-kicker{font-size:9.5px;letter-spacing:1.3px;text-transform:uppercase;color:var(--accent);font-weight:800}.daily-brief-date{font-size:9.5px;color:var(--muted2)}
+  .daily-brief-text{font-size:11.5px;line-height:1.5;color:var(--txt);margin:0 0 10px}.daily-brief-points{margin:0;padding-left:18px;display:grid;gap:4px;color:var(--muted);font-size:10.5px;line-height:1.35}.daily-brief-empty{padding:10px;border:1px dashed var(--line);border-radius:9px;color:var(--muted2);font-size:10.5px}
+  .daily-brief-editor{display:grid;gap:8px}.daily-brief-editor textarea{width:100%;min-height:76px;resize:vertical;border:1px solid var(--line);border-radius:9px;padding:9px;background:#fff;color:var(--txt);font:11px/1.45 'Segoe UI',system-ui,sans-serif;outline:none}.daily-brief-editor textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(139,92,246,.1)}.daily-brief-editor textarea#briefBullets{min-height:86px}.daily-brief-save{justify-self:end;border:0;border-radius:9px;padding:8px 11px;background:linear-gradient(135deg,var(--lilac),var(--accent));color:#fff;font:800 10.5px 'Segoe UI',system-ui,sans-serif;cursor:pointer}.daily-brief-save:hover{filter:brightness(1.06);transform:translateY(-1px)}
   @keyframes dayTaskIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
   @keyframes dayCelebrate{0%{transform:scale(1)}35%{transform:scale(1.025);box-shadow:0 0 22px rgba(173,121,255,.28)}100%{transform:scale(1)}}
   @keyframes daySpark{0%{opacity:0;transform:translateY(8px) scale(.7)}30%{opacity:1}100%{opacity:0;transform:translateY(-18px) scale(1.15)}}
@@ -337,6 +341,15 @@
     <div class="day-list" id="doneList"></div>
   </section>
   <button class="day-clear" type="button" onclick="clearDailyDone()">limpar tarefas concluídas</button>
+  <section class="daily-brief" aria-label="Fechamento do dia">
+    <div class="daily-brief-head"><span class="daily-brief-kicker">Fechamento do dia</span><span class="daily-brief-date" id="briefDate"></span></div>
+    <div id="briefView"></div>
+    <div class="daily-brief-editor" id="briefEditor" hidden>
+      <textarea id="briefNarrative" maxlength="2400" placeholder="Escreva o texto corrido: o que foi feito e como foi feito."></textarea>
+      <textarea id="briefBullets" maxlength="1600" placeholder="Resumo em tópicos — um tópico por linha."></textarea>
+      <button class="daily-brief-save" type="button" onclick="saveDailyBrief()">Salvar fechamento</button>
+    </div>
+  </section>
 </aside>
 </div>
 
@@ -473,7 +486,7 @@ const DATA=[
 
 /* ================= ESTADO ================= */
 const CKEY='painel-fabrine-v2-checks', NKEY='painel-fabrine-v2-notes', OKEY='painel-fabrine-v2-open';
-const DKEY='painel-fabrine-v3-daily', HKEY='painel-fabrine-v1-completion-history', AHKEY='painel-fabrine-v1-daily-activity-history', TCKEY='painel-fabrine-v1-today-cleared-before';
+const DKEY='painel-fabrine-v3-daily', HKEY='painel-fabrine-v1-completion-history', AHKEY='painel-fabrine-v1-daily-activity-history', TCKEY='painel-fabrine-v1-today-cleared-before', BKEY='painel-fabrine-v1-daily-brief';
 function id(k,i){return k+'.'+i;}
 let checks=JSON.parse(localStorage.getItem(CKEY)||'null')||{};
 DATA.forEach(d=>d.itens.forEach((it,i)=>{const k=id(d.key,i);if(!(k in checks))checks[k]=!!it.done;}));
@@ -487,6 +500,7 @@ let openState=JSON.parse(localStorage.getItem(OKEY)||'{}');
 let dailyTasks=JSON.parse(localStorage.getItem(DKEY)||'[]');
 let completionHistory=JSON.parse(localStorage.getItem(HKEY)||'{}');
 let dailyActivityHistory=JSON.parse(localStorage.getItem(AHKEY)||'[]');
+let dailyBrief=JSON.parse(localStorage.getItem(BKEY)||'null')||{date:'',narrative:'',bullets:[]};
 let todayClearedBefore=localStorage.getItem(TCKEY);if(!todayClearedBefore){todayClearedBefore=new Date().toISOString();localStorage.setItem(TCKEY,todayClearedBefore);}
 let migratedDailyHistory=false;dailyTasks.forEach(task=>{if(task.done&&!task.completedAt){task.completedAt=new Date().toISOString();migratedDailyHistory=true;}if(!task.done&&task.list==='progress'&&!task.startedAt){task.startedAt=new Date().toISOString();migratedDailyHistory=true;}});if(migratedDailyHistory)localStorage.setItem(DKEY,JSON.stringify(dailyTasks));
 let curTab='all', dailyFilter='pending', allOpen=false, celebrateKey=null,attachmentTargetId='';
@@ -495,11 +509,11 @@ const REMOTE_REPO='Hotmobile-Atendchat/painel-vick',REMOTE_BRANCH='main',REMOTE_
 const REMOTE_API=`https://api.github.com/repos/${REMOTE_REPO}/contents/${REMOTE_FILE}`;
 let githubToken=sessionStorage.getItem('painel-vick-github-token')||'',isEditor=false,remoteSaveTimer=null,remoteSaveBusy=false,remoteSavePending=false,lastRemoteUpdate='';
 
-function stateSnapshot(){return {version:1,updatedAt:new Date().toISOString(),checks,notes,dailyTasks,completionHistory,dailyActivityHistory,todayClearedBefore};}
+function stateSnapshot(){return {version:1,updatedAt:new Date().toISOString(),checks,notes,dailyTasks,completionHistory,dailyActivityHistory,todayClearedBefore,dailyBrief};}
 function saveStateLocally(){
   localStorage.setItem(CKEY,JSON.stringify(checks));localStorage.setItem(NKEY,JSON.stringify(notes));
   localStorage.setItem(DKEY,JSON.stringify(dailyTasks));localStorage.setItem(HKEY,JSON.stringify(completionHistory));localStorage.setItem(AHKEY,JSON.stringify(dailyActivityHistory));
-  localStorage.setItem(TCKEY,todayClearedBefore);
+  localStorage.setItem(TCKEY,todayClearedBefore);localStorage.setItem(BKEY,JSON.stringify(dailyBrief));
 }
 function applySharedState(state){
   if(!state||typeof state!=='object')return;
@@ -508,8 +522,9 @@ function applySharedState(state){
   if(Array.isArray(state.dailyTasks))dailyTasks=state.dailyTasks;
   if(state.completionHistory&&typeof state.completionHistory==='object')completionHistory=state.completionHistory;
   if(Array.isArray(state.dailyActivityHistory))dailyActivityHistory=state.dailyActivityHistory;
+  if(state.dailyBrief&&typeof state.dailyBrief==='object')dailyBrief={date:state.dailyBrief.date||'',narrative:state.dailyBrief.narrative||'',bullets:Array.isArray(state.dailyBrief.bullets)?state.dailyBrief.bullets:[]};
   if(state.todayClearedBefore)todayClearedBefore=state.todayClearedBefore;
-  lastRemoteUpdate=state.updatedAt||lastRemoteUpdate;saveStateLocally();render();renderDaily();renderActivity();
+  lastRemoteUpdate=state.updatedAt||lastRemoteUpdate;saveStateLocally();render();renderDaily();renderDailyBrief();renderActivity();
 }
 async function loadSharedState(silent=false){
   try{
@@ -526,7 +541,7 @@ function setEditorMode(enabled){
   const status=document.getElementById('accessStatus'),button=document.getElementById('authBtn');
   status.textContent=enabled?'Modo edição':'Visualização pública';status.classList.toggle('editor',enabled);
   button.textContent=enabled?'Sair da edição':'Entrar para editar';document.getElementById('resetLink').style.display=enabled?'inline':'none';
-  render();renderDaily();
+  render();renderDaily();renderDailyBrief();
 }
 function openAuth(){if(isEditor){sessionStorage.removeItem('painel-vick-github-token');githubToken='';setEditorMode(false);showStatus('Edição encerrada');return;}document.getElementById('authModal').classList.add('show');document.getElementById('authError').textContent='';setTimeout(()=>document.getElementById('tokenInput').focus(),50);}
 function closeAuth(){document.getElementById('authModal').classList.remove('show');document.getElementById('tokenInput').value='';}
@@ -574,6 +589,23 @@ function flash(){showStatus(isEditor?'✓ salvo · sincronizando':'✓ salvo nes
 
 function saveDaily(){localStorage.setItem(DKEY,JSON.stringify(dailyTasks));flash();queueSharedSave();}
 function saveHistory(){localStorage.setItem(HKEY,JSON.stringify(completionHistory));localStorage.setItem(AHKEY,JSON.stringify(dailyActivityHistory));queueSharedSave();}
+function saveDailyBrief(){
+  if(!isEditor){openAuth();return;}
+  const narrative=document.getElementById('briefNarrative').value.trim();
+  const bullets=document.getElementById('briefBullets').value.split(/\r?\n/).map(item=>item.trim()).filter(Boolean);
+  dailyBrief={date:localISODate(),narrative,bullets};
+  localStorage.setItem(BKEY,JSON.stringify(dailyBrief));queueSharedSave();renderDailyBrief();showStatus('✓ fechamento salvo');
+}
+function renderDailyBrief(){
+  const view=document.getElementById('briefView'),editor=document.getElementById('briefEditor'),date=document.getElementById('briefDate');
+  if(!view||!editor)return;
+  const hasText=Boolean(dailyBrief.narrative||dailyBrief.bullets?.length);
+  date.textContent=dailyBrief.date?`Atualizado em ${new Intl.DateTimeFormat('pt-BR',{day:'2-digit',month:'2-digit',year:'numeric'}).format(new Date(dailyBrief.date+'T12:00:00'))}`:'';
+  view.innerHTML=hasText?`${dailyBrief.narrative?`<p class="daily-brief-text">${safeText(dailyBrief.narrative).replace(/\r?\n/g,'<br>')}</p>`:''}${dailyBrief.bullets?.length?`<ul class="daily-brief-points">${dailyBrief.bullets.map(item=>`<li>${safeText(item)}</li>`).join('')}</ul>`:''}`:'<div class="daily-brief-empty">Nenhum fechamento registrado ainda.</div>';
+  document.getElementById('briefNarrative').value=dailyBrief.narrative||'';
+  document.getElementById('briefBullets').value=(dailyBrief.bullets||[]).join('\n');
+  editor.hidden=!isEditor;view.hidden=isEditor;
+}
 function safeText(v){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function updateAttachmentName(input){document.getElementById('dayAttachmentName').textContent=input.files[0]?.name||'Nenhum arquivo selecionado';}
 function attachmentFileName(name){
@@ -840,7 +872,7 @@ async function initializePanel(){
   document.getElementById('dayDueDate').value=localISODate();
   document.getElementById('todayDoneFrom').value=localISODate();document.getElementById('todayDoneTo').value=localISODate();
   document.getElementById('weekDoneFrom').value=weekStartKey();document.getElementById('weekDoneTo').value=localISODate();
-  render();renderDaily();renderActivity();
+  render();renderDaily();renderDailyBrief();renderActivity();
   if(location.protocol!=='file:')await loadSharedState(true);
   await restoreEditorSession();
   if(location.protocol!=='file:')setInterval(()=>{if(!isEditor)loadSharedState(true);},120000);
