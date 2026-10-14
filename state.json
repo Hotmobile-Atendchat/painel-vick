@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T18:59:52.275Z",
+  "updatedAt": "2026-10-14T19:05:18.000Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -88,51 +88,6 @@
       "createdAt": "2026-08-10T12:29:45.477Z"
     },
     {
-      "id": "mta3xuz5ly24y",
-      "text": "organizar as novas apresentações na galeria do notion",
-      "dueDate": "2026-08-26",
-      "list": "progress",
-      "done": true,
-      "createdAt": "2026-08-26T13:06:18.257Z",
-      "completedAt": "2026-09-02T13:15:05.939Z"
-    },
-    {
-      "id": "mtk2rr4i2ox3i",
-      "text": "Google Vids (Vídeo)",
-      "dueDate": "2026-08-31",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-02T12:31:15.474Z",
-      "completedAt": "2026-09-02T12:34:16.868Z"
-    },
-    {
-      "id": "mtk2w46o5wwrk",
-      "text": "Fazer o aviso de feriado do dia 07 de Setembro",
-      "dueDate": "2026-08-31",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-02T12:34:39.024Z",
-      "completedAt": "2026-09-02T13:02:37.587Z"
-    },
-    {
-      "id": "mtk3vzftzjpe9",
-      "text": "Responder os direct da 3D",
-      "dueDate": "2026-08-31",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-02T13:02:32.489Z",
-      "completedAt": "2026-09-02T13:02:39.868Z"
-    },
-    {
-      "id": "mtk3wuqy3ol56",
-      "text": "Enviar e-mail sobre o feriado",
-      "dueDate": "2026-08-31",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-09-02T13:03:13.066Z",
-      "completedAt": "2026-09-25T19:26:01.552Z"
-    },
-    {
       "id": "mv8264dsq2ym5",
       "text": "Chamados da Raissa - Missão SDR",
       "dueDate": "2026-10-14",
@@ -163,7 +118,8 @@
       "dueDate": "2026-10-14",
       "list": "progress",
       "done": false,
-      "createdAt": "2026-10-14T18:59:50.508Z"
+      "createdAt": "2026-10-14T18:59:50.508Z",
+      "startedAt": "2026-10-14T19:00:00.983Z"
     }
   ],
   "completionHistory": {
@@ -591,6 +547,36 @@
       "source": "Fechamento do dia",
       "date": "2026-10-14",
       "completedAt": "2026-10-14T18:57:54.292Z"
+    },
+    {
+      "id": "daily:mta3xuz5ly24y:done",
+      "text": "organizar as novas apresentações na galeria do notion",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-09-02T13:15:05.939Z"
+    },
+    {
+      "id": "daily:mtk2rr4i2ox3i:done",
+      "text": "Google Vids (Vídeo)",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-09-02T12:34:16.868Z"
+    },
+    {
+      "id": "daily:mtk2w46o5wwrk:done",
+      "text": "Fazer o aviso de feriado do dia 07 de Setembro",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-09-02T13:02:37.587Z"
+    },
+    {
+      "id": "daily:mtk3vzftzjpe9:done",
+      "text": "Responder os direct da 3D",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-09-02T13:02:39.868Z"
+    },
+    {
+      "id": "daily:mtk3wuqy3ol56:done",
+      "text": "Enviar e-mail sobre o feriado",
+      "source": "Painel do dia · Concluída",
+      "completedAt": "2026-09-25T19:26:01.552Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
