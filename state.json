@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T18:57:44.167Z",
+  "updatedAt": "2026-10-14T18:57:55.950Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -570,17 +570,25 @@
       "source": "Fechamento do dia",
       "date": "2026-10-14",
       "completedAt": "2026-10-14T18:45:53.173Z"
+    },
+    {
+      "text": "Chamados da Raissa - Missão SDR\nFeito em 14/10/2026: painel de pontuação, bingo de objeções em PDF, materiais de identidade visual e adesivos, certificados e páginas da apresentação com dinâmicas e cronogramas. Também foi criada uma página de introdução com o objetivo, os cinco focos diários, horários, supervisora e participantes.",
+      "narrative": "Chamados da Raissa - Missão SDR\nFeito em 14/10/2026: painel de pontuação, bingo de objeções em PDF, materiais de identidade visual e adesivos, certificados e páginas da apresentação com dinâmicas e cronogramas. Também foi criada uma página de introdução com o objetivo, os cinco focos diários, horários, supervisora e participantes.",
+      "bullets": [
+        "Painel de pontuação: criado e ajustado",
+        "Bingo de objeções: preparado em PDF, separado das dores",
+        "Painel das dores: previsto com base nas dores da tabela.",
+        "Adesivos e identidade visual: direção ajustada com foguete e elementos da Hotmobile."
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-10-14",
+      "completedAt": "2026-10-14T18:57:54.292Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
   "dailyBrief": {
-    "date": "2026-10-14",
-    "narrative": "Feito em 14/10/2026: painel de pontuação, bingo de objeções em PDF, materiais de identidade visual e adesivos, certificados e páginas da apresentação com dinâmicas e cronogramas. Também foi criada uma página de introdução com o objetivo, os cinco focos diários, horários, supervisora e participantes.",
-    "bullets": [
-      "Painel de pontuação: criado e ajustado",
-      "Bingo de objeções: preparado em PDF, separado das dores",
-      "Painel das dores: previsto com base nas dores da tabela.",
-      "Adesivos e identidade visual: direção ajustada com foguete e elementos da Hotmobile."
-    ]
+    "date": "",
+    "narrative": "",
+    "bullets": []
   }
 }
