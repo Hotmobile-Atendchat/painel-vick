@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T17:21:46.537Z",
+  "updatedAt": "2026-10-14T17:23:20.009Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -557,7 +557,7 @@
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
   "dailyBrief": {
-    "date": "",
+    "date": "2026-10-14",
     "narrative": "",
     "bullets": []
   }
