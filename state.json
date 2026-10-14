@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T17:25:57.031Z",
+  "updatedAt": "2026-10-14T17:28:33.075Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -149,15 +149,6 @@
       "done": false,
       "createdAt": "2026-10-14T12:00:36.784Z",
       "startedAt": "2026-10-14T12:00:58.203Z"
-    },
-    {
-      "id": "mv826u7m6dya3",
-      "text": "Analise do trafego 3DBBG",
-      "dueDate": "2026-10-14",
-      "list": "today",
-      "done": true,
-      "createdAt": "2026-10-14T12:01:10.258Z",
-      "completedAt": "2026-10-14T17:21:44.886Z"
     },
     {
       "id": "mv827460nwtau",
