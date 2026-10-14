@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T14:54:44.130Z",
+  "updatedAt": "2026-10-14T17:05:16.000Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -155,8 +155,9 @@
       "text": "Analise do trafego 3DBBG",
       "dueDate": "2026-10-14",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-10-14T12:01:10.258Z"
+      "done": true,
+      "createdAt": "2026-10-14T12:01:10.258Z",
+      "completedAt": "2026-10-14T17:05:16.000Z"
     },
     {
       "id": "mv827460nwtau",
@@ -556,8 +557,14 @@
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
   "dailyBrief": {
-    "date": "",
-    "narrative": "",
-    "bullets": []
+    "date": "2026-10-14",
+    "narrative": "Hoje foi analisado o tráfego da 3DBGG no Google Ads para 28/09 a 12/10. Também foi criada e ativada a campanha de Pesquisa Search - Jogos em Alta - 3DBGG - 20261014, com R$ 5 por dia, palavras-chave de jogos de tabuleiro e a frase promocional da primeira compra. Como a campanha começou em 14/10, ela não aparece no período analisado.",
+    "bullets": [
+      "Campanha Search criada e ativada com orçamento de R$ 5/dia; orçamento diário total da conta: R$ 25/dia.",
+      "Palavras-chave: jogo de tabuleiro; board games; jogos e tabuleiro; jogo abstratus; jogo de tabuleiro war batalhas mitológicas; jogos de tabuleiro tipos; board game insert; acessórios para jogos de tabuleiro; peças para jogo de tabuleiro; peça de jogo de tabuleiro.",
+      "Frase de destaque adicionada: 5% off na 1ª compra.",
+      "No período 28/09 a 12/10, a PMax registrou 4,96 conversões, R$ 208,14 de custo e R$ 1.603,75 em valor de conversão; esses dados não medem a campanha Search.",
+      "Recomendação: manter o orçamento de teste e acompanhar aprovações, termos de pesquisa e conversões antes de reajustar."
+    ]
   }
 }
