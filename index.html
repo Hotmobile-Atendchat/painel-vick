@@ -48,7 +48,7 @@
   .activity-filter input{width:100%;min-width:0;height:30px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--txt);font:600 10.5px 'Segoe UI',system-ui,sans-serif;padding:0 5px;outline:none}
   .activity-filter input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(123,66,178,.08)}
   .activity-list{display:grid;gap:7px;max-height:230px;overflow:auto;padding-right:3px}
-  .activity-item{display:grid;grid-template-columns:auto 1fr;gap:9px;align-items:start;padding:9px 10px;background:var(--panel2);border:1px solid var(--line2);border-radius:10px}.activity-summary-points{margin:6px 0 0;padding-left:18px;display:grid;gap:3px;color:var(--muted);font-size:10.5px;line-height:1.35}
+  .activity-item{display:grid;grid-template-columns:auto 1fr;gap:9px;align-items:start;padding:9px 10px;background:var(--panel2);border:1px solid var(--line2);border-radius:10px}.activity-summary-points{margin:6px 0 0;padding-left:18px;display:grid;gap:3px;color:var(--muted);font-size:10.5px;line-height:1.35}.activity-edit{margin-top:6px;border:1px solid var(--line);border-radius:7px;background:#fff;color:var(--accent);font:700 10px 'Segoe UI',system-ui,sans-serif;padding:4px 8px;cursor:pointer}.activity-edit:hover{background:var(--lilac)}
   .activity-check{width:20px;height:20px;border-radius:7px;display:grid;place-items:center;background:var(--mint-d);color:#fff;font-size:11px;font-weight:900}
   .activity-text{font-size:12.5px;font-weight:700;color:var(--txt);line-height:1.35}
   .activity-meta{font-size:10.5px;color:var(--muted);margin-top:2px}
@@ -595,6 +595,14 @@ function saveDailyBrief(){
   dailyBrief={date:'',narrative:'',bullets:[]};
   localStorage.setItem(BKEY,JSON.stringify(dailyBrief));saveHistory();renderDailyBrief();renderActivity();showStatus('✓ fechamento enviado para Feito hoje');
 }
+function editDailyBriefEntry(completedAt){
+  if(!isEditor){openAuth();return;}
+  const index=dailyActivityHistory.findIndex(item=>item&&item.source==='Fechamento do dia'&&item.completedAt===completedAt);
+  if(index<0)return;
+  const entry=dailyActivityHistory[index];
+  dailyBrief={date:entry.date||saoPauloDateKey(entry.completedAt),narrative:entry.narrative||entry.text||'',bullets:Array.isArray(entry.bullets)?entry.bullets:[]};
+  dailyActivityHistory.splice(index,1);saveHistory();renderDailyBrief();renderActivity();document.getElementById('briefNarrative').focus();showStatus('✓ fechamento carregado para edição');
+}
 function renderDailyBrief(){
   const view=document.getElementById('briefView'),editor=document.getElementById('briefEditor'),date=document.getElementById('briefDate');
   if(!view||!editor)return;
@@ -743,7 +751,7 @@ function renderActivity(){
   const groups={today:entries.filter(e=>between(e,todayFrom,todayTo)),week:entries.filter(e=>between(e,weekFrom,weekTo))};
   [['today','todayDoneList','todayDoneCount'],['week','weekDoneList','weekDoneCount']].forEach(([group,listId,countId])=>{
     const items=groups[group];document.getElementById(countId).textContent=items.length;
-    document.getElementById(listId).innerHTML=items.length?items.map(item=>`<div class="activity-item"><span class="activity-check">✓</span><div>${item.source==='Fechamento do dia'&&item.narrative?`<div class="activity-text">${safeText(item.narrative).replace(/\r?\n/g,'<br>')}</div>${item.bullets.length?`<ul class="activity-summary-points">${item.bullets.map(point=>`<li>${safeText(point)}</li>`).join('')}</ul>`:''}`:`<div class="activity-text">${safeText(item.text)}</div>`}<div class="activity-meta">${safeText(item.source)} · ${activityDate(item.completedAt)}</div></div></div>`).join(''):'<div class="activity-empty">Nada concluído neste período.</div>';
+    document.getElementById(listId).innerHTML=items.length?items.map(item=>`<div class="activity-item"><span class="activity-check">✓</span><div>${item.source==='Fechamento do dia'&&item.narrative?`<div class="activity-text">${safeText(item.narrative).replace(/\r?\n/g,'<br>')}</div>${item.bullets.length?`<ul class="activity-summary-points">${item.bullets.map(point=>`<li>${safeText(point)}</li>`).join('')}</ul>`:''}`:`<div class="activity-text">${safeText(item.text)}</div>`}<div class="activity-meta">${safeText(item.source)} · ${activityDate(item.completedAt)}</div>${isEditor&&item.source==='Fechamento do dia'?`<button class="activity-edit" type="button" onclick="editDailyBriefEntry('${safeText(item.completedAt)}')">✎ Editar fechamento</button>`:''}</div></div>`).join(''):'<div class="activity-empty">Nada concluído neste período.</div>';
   });
 }
 
