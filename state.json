@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T12:00:38.603Z",
+  "updatedAt": "2026-10-14T12:00:59.908Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -145,9 +145,10 @@
       "id": "mv8264dsq2ym5",
       "text": "Chamados da Raissa - Missão SDR",
       "dueDate": "2026-10-14",
-      "list": "today",
+      "list": "progress",
       "done": false,
-      "createdAt": "2026-10-14T12:00:36.784Z"
+      "createdAt": "2026-10-14T12:00:36.784Z",
+      "startedAt": "2026-10-14T12:00:58.203Z"
     }
   ],
   "completionHistory": {
