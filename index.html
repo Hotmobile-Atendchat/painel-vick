@@ -257,12 +257,12 @@
 <section class="activity-summary" aria-label="Resumo do que foi concluído">
   <article class="activity-card">
     <div class="activity-head"><h2 class="activity-title">✅ Feito hoje</h2><span class="activity-count" id="todayDoneCount">0</span></div>
-    <div class="activity-filter"><span class="activity-filter-title">Data entre</span><label>De <input id="todayDoneFrom" type="date" aria-label="Feito hoje: data inicial" onchange="renderActivity()"></label><label>Até <input id="todayDoneTo" type="date" aria-label="Feito hoje: data final" onchange="renderActivity()"></label></div>
+    <div class="activity-filter"><span class="activity-filter-title">Data entre</span><label>De <input id="todayDoneFrom" type="date" aria-label="Feito hoje: data inicial" onchange="renderActivity()" oninput="renderActivity()"></label><label>Até <input id="todayDoneTo" type="date" aria-label="Feito hoje: data final" onchange="renderActivity()" oninput="renderActivity()"></label></div>
     <div class="activity-list" id="todayDoneList"></div>
   </article>
   <article class="activity-card">
     <div class="activity-head"><h2 class="activity-title">📅 Feito na semana</h2><span class="activity-count" id="weekDoneCount">0</span></div>
-    <div class="activity-filter"><span class="activity-filter-title">Data entre</span><label>De <input id="weekDoneFrom" type="date" aria-label="Feito na semana: data inicial" onchange="renderActivity()"></label><label>Até <input id="weekDoneTo" type="date" aria-label="Feito na semana: data final" onchange="renderActivity()"></label></div>
+    <div class="activity-filter"><span class="activity-filter-title">Data entre</span><label>De <input id="weekDoneFrom" type="date" aria-label="Feito na semana: data inicial" onchange="renderActivity()" oninput="renderActivity()"></label><label>Até <input id="weekDoneTo" type="date" aria-label="Feito na semana: data final" onchange="renderActivity()" oninput="renderActivity()"></label></div>
     <div class="activity-list" id="weekDoneList"></div>
   </article>
 </section>
@@ -704,11 +704,11 @@ function renderDaily(celebrateId){
   const groups={progress:document.getElementById('progressList'),pending:document.getElementById('pendingList'),done:document.getElementById('doneList')};
   Object.entries(groups).forEach(([type,root])=>{
     const items=dailyTasks.filter(t=>type==='done'?t.done:!t.done&&(type==='pending'?(t.list==='pending'||t.list==='today'):t.list===type)).sort((a,b)=>type==='done'?new Date(b.completedAt||0)-new Date(a.completedAt||0):(a.dueDate||'9999-12-31').localeCompare(b.dueDate||'9999-12-31'));
-    root.innerHTML=items.length?items.map(t=>`<div class="day-task ${t.done?'done':type==='progress'?'in-progress':'pending'} ${t.id===celebrateId?'celebrate':''}">
+    root.innerHTML=type===dailyFilter?(items.length?items.map(t=>`<div class="day-task ${t.done?'done':type==='progress'?'in-progress':'pending'} ${t.id===celebrateId?'celebrate':''}">
       <label><input type="checkbox" ${t.done?'checked':''} ${isEditor?'':'disabled'} onchange="toggleDailyTask('${t.id}')"><span class="day-check">✓</span><span class="day-text">${safeText(t.text)}</span></label>
       ${renderDailyAttachment(t.attachment)}
       <div class="day-actions"><input class="day-task-date" type="date" value="${safeText(t.dueDate||'')}" aria-label="Data de ${safeText(t.text)}" onchange="setDailyDate('${t.id}',this.value)"><select class="day-status" aria-label="Status de ${safeText(t.text)}" onchange="setDailyStatus('${t.id}',this.value)"><option value="progress" ${!t.done&&type==='progress'?'selected':''}>Em andamento</option><option value="pending" ${!t.done&&(type==='pending'||t.list==='today')?'selected':''}>Pendente</option><option value="done" ${t.done?'selected':''}>Concluída</option></select><button class="attach-existing ${t.attachment?'has-attachment':''}" data-attach-task="${t.id}" type="button" aria-label="${t.attachment?'Substituir':'Adicionar'} anexo em ${safeText(t.text)}" title="${t.attachment?'Substituir':'Adicionar'} anexo" onclick="chooseDailyAttachment('${t.id}')">📎 <span>${t.attachment?'Trocar':'Anexar'}</span></button><button class="day-edit" type="button" title="Editar tarefa" aria-label="Editar ${safeText(t.text)}" onclick="editDailyTask('${t.id}')">✎</button><button class="day-delete" type="button" title="Excluir" aria-label="Excluir ${safeText(t.text)}" onclick="deleteDailyTask('${t.id}')">×</button></div>
-      ${t.id===celebrateId?'<span class="day-spark">✦ ✧ ✦</span>':''}</div>`).join(''):'<div class="day-empty">Nada por aqui.</div>';
+      ${t.id===celebrateId?'<span class="day-spark">✦ ✧ ✦</span>':''}</div>`).join(''):'<div class="day-empty">Nada por aqui.</div>'):'';
   });
   document.querySelectorAll('[data-day-section]').forEach(section=>{const visible=section.dataset.daySection===dailyFilter;section.hidden=!visible;section.style.display=visible?'block':'none';});
   const done=dailyTasks.filter(t=>t.done).length,total=dailyTasks.length,pct=total?Math.round(done/total*100):0;
