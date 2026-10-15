@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-15T13:31:31.891Z",
+  "updatedAt": "2026-10-15T13:31:41.592Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -590,14 +590,22 @@
       "source": "Fechamento do dia",
       "date": "2026-10-15",
       "completedAt": "2026-10-15T13:12:21.918Z"
+    },
+    {
+      "text": "E-mails em HTML: Refiz o e-mail em html sobre a atualização da tabela de SMS e outro material para a preparação da campanha de Black Friday, com seus respectivos textos, layouts, imagens e arquivos HTML.",
+      "narrative": "E-mails em HTML: Refiz o e-mail em html sobre a atualização da tabela de SMS e outro material para a preparação da campanha de Black Friday, com seus respectivos textos, layouts, imagens e arquivos HTML.",
+      "bullets": [
+        "- Refazer os emails em HTML, deixando pronto para enviar aos contatos quando a lista que Adriana está fazendo tiver pronta."
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-10-15",
+      "completedAt": "2026-10-15T13:31:39.506Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
   "dailyBrief": {
-    "date": "2026-10-15",
-    "narrative": "E-mails em HTML: Refiz o e-mail em html sobre a atualização da tabela de SMS e outro material para a preparação da campanha de Black Friday, com seus respectivos textos, layouts, imagens e arquivos HTML.",
-    "bullets": [
-      "- Refazer os emails em HTML, deixando pronto para enviar aos contatos quando a lista que Adriana está fazendo tiver pronta."
-    ]
+    "date": "",
+    "narrative": "",
+    "bullets": []
   }
 }
