@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-15T13:32:20.420Z",
+  "updatedAt": "2026-10-15T17:08:41.002Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -601,6 +601,18 @@
       "source": "Fechamento do dia",
       "date": "2026-10-15",
       "completedAt": "2026-10-15T13:32:18.577Z"
+    },
+    {
+      "text": "E-mail tema em alta: 3DBGG",
+      "narrative": "E-mail tema em alta: 3DBGG",
+      "bullets": [
+        "Criado um banner de 500 × 300 para o e-mail da 3DBGG.",
+        "Abordar a escala 5x2 de forma indireta e descontraída, sem falar de política.",
+        "Usar a identidade visual da 3DBGG e deixar espaço para sugestões de jogos."
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-10-15",
+      "completedAt": "2026-10-15T17:08:39.176Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
