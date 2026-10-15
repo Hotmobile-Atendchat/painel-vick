@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-15T13:31:44.790Z",
+  "updatedAt": "2026-10-15T13:32:20.420Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -589,15 +589,24 @@
       "source": "Fechamento do dia",
       "date": "2026-10-15",
       "completedAt": "2026-10-15T13:31:39.506Z"
+    },
+    {
+      "text": "Conteúdo, tema em alta: Realizei uma pesquisa sobre o fim da escala 6x1 e a aprovação da jornada 5x2 para entender os impactos no atendimento das empresas. Com base nessa pesquisa, criei e revisei um artigo para o blog da Hotmobile, conteúdo para o Linkdin e Instagram.",
+      "narrative": "Conteúdo, tema em alta: Realizei uma pesquisa sobre o fim da escala 6x1 e a aprovação da jornada 5x2 para entender os impactos no atendimento das empresas. Com base nessa pesquisa, criei e revisei um artigo para o blog da Hotmobile, conteúdo para o Linkdin e Instagram.",
+      "bullets": [
+        "Pesquisar o fim da escala 6x1 e a aprovação da jornada 5x2.",
+        "Criar um artigo para o blog da Hotmobile, e post para redes sociais com base nessa pesquisa.",
+        "enviado email para leads frios atraves do mailchimp"
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-10-15",
+      "completedAt": "2026-10-15T13:32:18.577Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
   "dailyBrief": {
-    "date": "2026-10-15",
-    "narrative": "Conteúdo, tema em alta: Realizei uma pesquisa sobre o fim da escala 6x1 e a aprovação da jornada 5x2 para entender os impactos no atendimento das empresas. Com base nessa pesquisa, criei e revisei um artigo para o blog da Hotmobile, conteúdo para o Linkdin e Instagram.",
-    "bullets": [
-      "Pesquisar o fim da escala 6x1 e a aprovação da jornada 5x2.",
-      "Criar um artigo para o blog da Hotmobile, e post para redes sociais com base nessa pesquisa."
-    ]
+    "date": "",
+    "narrative": "",
+    "bullets": []
   }
 }
