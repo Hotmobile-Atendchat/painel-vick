@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-16T17:38:03.216Z",
+  "updatedAt": "2026-10-16T17:50:05.836Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -624,6 +624,19 @@
       "source": "Fechamento do dia",
       "date": "2026-10-16",
       "completedAt": "2026-10-16T17:38:01.403Z"
+    },
+    {
+      "text": "Reajuste no chamado de Raissa - Missão SDR",
+      "narrative": "Reajuste no chamado de Raissa - Missão SDR",
+      "bullets": [
+        "No slide trocar algumas palavras, adicionar frase no final",
+        "Certificado colocar os nomes completo e retirar o espaço de assinatura de quem vai receber",
+        "Redimensionar a folha de impressão do DTF",
+        "Ajustar o layout do site"
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-10-16",
+      "completedAt": "2026-10-16T17:50:03.974Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
