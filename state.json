@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-16T17:50:05.836Z",
+  "updatedAt": "2026-10-16T19:30:13.985Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -637,6 +637,16 @@
       "source": "Fechamento do dia",
       "date": "2026-10-16",
       "completedAt": "2026-10-16T17:50:03.974Z"
+    },
+    {
+      "text": "Criei e ajustei o HTML do e-mail alguma vezes para testar a personalização no HotOS, mas a variável de nome não funcionou por lá. Depois, testei o envio pelo Mailchimp e confirmei que a tag `*|FNAME|*` funciona. Como o e-mail seria compartilhado no HotOS, finalizei e compartilhei uma versão sem variável de nome.",
+      "narrative": "Criei e ajustei o HTML do e-mail alguma vezes para testar a personalização no HotOS, mas a variável de nome não funcionou por lá. Depois, testei o envio pelo Mailchimp e confirmei que a tag `*|FNAME|*` funciona. Como o e-mail seria compartilhado no HotOS, finalizei e compartilhei uma versão sem variável de nome.",
+      "bullets": [
+        "Teste de variável no Hotos e mailchimp"
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-10-16",
+      "completedAt": "2026-10-16T19:30:11.878Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
