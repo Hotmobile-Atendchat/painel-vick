@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-16T17:36:10.148Z",
+  "updatedAt": "2026-10-16T17:38:03.216Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -613,6 +613,17 @@
       "source": "Fechamento do dia",
       "date": "2026-10-15",
       "completedAt": "2026-10-15T17:08:39.176Z"
+    },
+    {
+      "text": "Vídeo - Pesquisar temas que estão em alta para criação de novos vídeos para o instagram da hotmobile",
+      "narrative": "Vídeo - Pesquisar temas que estão em alta para criação de novos vídeos para o instagram da hotmobile",
+      "bullets": [
+        "Pesquisar os temas e fazer roteiro para equipe comercial gravar",
+        "lembrar de fazer um roteiro de no máximo 1 minuto"
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-10-16",
+      "completedAt": "2026-10-16T17:38:01.403Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
