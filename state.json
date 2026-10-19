@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-19T14:08:01.341Z",
+  "updatedAt": "2026-10-19T14:08:07.714Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -691,17 +691,6 @@
       "completedAt": "2026-10-19T12:16:48.266Z"
     },
     {
-      "text": "Foi realizado um reajuste no site de Missão SDR após Raíssa relatar que não estava conseguindo zerar a contagem das missões. Após identificar a necessidade de correção, foi feita a edição da página para ajustar essa funcionalidade e permitir que todas as contagens sejam zeradas corretamente.",
-      "narrative": "Foi realizado um reajuste no site de Missão SDR após Raíssa relatar que não estava conseguindo zerar a contagem das missões. Após identificar a necessidade de correção, foi feita a edição da página para ajustar essa funcionalidade e permitir que todas as contagens sejam zeradas corretamente.",
-      "bullets": [
-        "- Corrigido o problema que impedia Raíssa de zerar a contagem.",
-        "- Realizada a edição da página, permitindo zerar todas as contagens."
-      ],
-      "source": "Fechamento do dia",
-      "date": "2026-10-19",
-      "completedAt": "2026-10-19T14:04:31.660Z"
-    },
-    {
       "text": "Foi realizada uma tentativa de remover a marca-d’água do vídeo de Sidney, porém a edição causou desconfigurações em algumas partes. Por isso, Sidney foi orientado a regravar o vídeo sem utilizar o aplicativo que adiciona a marca-d’água.",
       "narrative": "Foi realizada uma tentativa de remover a marca-d’água do vídeo de Sidney, porém a edição causou desconfigurações em algumas partes. Por isso, Sidney foi orientado a regravar o vídeo sem utilizar o aplicativo que adiciona a marca-d’água.",
       "bullets": [
@@ -716,8 +705,11 @@
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
   "dailyBrief": {
-    "date": "",
-    "narrative": "",
-    "bullets": []
+    "date": "2026-10-19",
+    "narrative": "Foi realizado um reajuste no site de Missão SDR após Raíssa relatar que não estava conseguindo zerar a contagem das missões. Após identificar a necessidade de correção, foi feita a edição da página para ajustar essa funcionalidade e permitir que todas as contagens sejam zeradas corretamente.",
+    "bullets": [
+      "- Corrigido o problema que impedia Raíssa de zerar a contagem.",
+      "- Realizada a edição da página, permitindo zerar todas as contagens."
+    ]
   }
 }
