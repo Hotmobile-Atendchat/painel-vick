@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-19T12:14:34.834Z",
+  "updatedAt": "2026-10-19T12:16:50.112Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -668,6 +668,18 @@
       "source": "Fechamento do dia",
       "date": "2026-10-19",
       "completedAt": "2026-10-19T12:14:33.173Z"
+    },
+    {
+      "text": "EG Construções: aguardando aprovação do card do Outubro Rosa, retorno sobre posts enviados há dois meses e envio das novas fotos pendentes.",
+      "narrative": "EG Construções: aguardando aprovação do card do Outubro Rosa, retorno sobre posts enviados há dois meses e envio das novas fotos pendentes.",
+      "bullets": [
+        "Envio do card do Outubro Rosa no grupo da EG Construções, aguardando aprovação para publicação.",
+        "Cobrança dos posts enviados há dois meses.",
+        "Solicitação das novas fotos que ficaram pendentes de envio."
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-10-19",
+      "completedAt": "2026-10-19T12:16:48.266Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
