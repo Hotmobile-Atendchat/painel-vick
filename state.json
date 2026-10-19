@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-19T14:08:13.706Z",
+  "updatedAt": "2026-10-19T14:42:56.574Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -712,6 +712,16 @@
       "source": "Fechamento do dia",
       "date": "2026-10-19",
       "completedAt": "2026-10-19T14:08:12.005Z"
+    },
+    {
+      "text": "Criar uma página no site com os manuais doa jogos",
+      "narrative": "Criar uma página no site com os manuais doa jogos",
+      "bullets": [
+        "manuais dos jogos da 3Dbgg e rever os manuais que já estão prontos"
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-10-19",
+      "completedAt": "2026-10-19T14:42:54.672Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
