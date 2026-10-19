@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-19T15:01:41.804Z",
+  "updatedAt": "2026-10-19T15:02:02.555Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -722,18 +722,26 @@
       "source": "Fechamento do dia",
       "date": "2026-10-19",
       "completedAt": "2026-10-19T14:42:54.672Z"
+    },
+    {
+      "text": "Hoje, no tráfego, foi **revisada a campanha de Pesquisa no Google Ads**, sem novas alterações. As palavras-chave e o anúncio seguem em análise; uma delas também aparece com baixo volume de buscas. A orientação foi aguardar a revisão e depois conferir o diagnóstico da campanha.\n\nTambém conversamos sobre o aviso do Search Console: **a URL bloqueada pelo `robots.txt` é uma página de login**, aparentemente não destinada à busca. As páginas de produto “rastreada, mas não indexada” foram separadas para análise — nenhuma correção foi feita nelas hoje.",
+      "narrative": "Hoje, no tráfego, foi **revisada a campanha de Pesquisa no Google Ads**, sem novas alterações. As palavras-chave e o anúncio seguem em análise; uma delas também aparece com baixo volume de buscas. A orientação foi aguardar a revisão e depois conferir o diagnóstico da campanha.\n\nTambém conversamos sobre o aviso do Search Console: **a URL bloqueada pelo `robots.txt` é uma página de login**, aparentemente não destinada à busca. As páginas de produto “rastreada, mas não indexada” foram separadas para análise — nenhuma correção foi feita nelas hoje.",
+      "bullets": [
+        "Google Ads: revisamos a campanha de Pesquisa. Não fizemos novas alterações; anúncio e palavras-chave continuam em análise.",
+        "Palavra-chave: uma aparece com baixo volume de buscas.",
+        "Próximo passo: aguardar a revisão e depois conferir o diagnóstico da campanha.",
+        "-Search Console: avaliamos o aviso de `robots.txt`; a URL bloqueada é de login e parece não precisar aparecer na busca.",
+        "Indexação: identificamos páginas de produto “rastreadas, mas não indexadas” para análise. Nenhuma correção foi feita nelas hoje."
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-10-19",
+      "completedAt": "2026-10-19T15:02:00.279Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
   "dailyBrief": {
-    "date": "2026-10-19",
-    "narrative": "Hoje, no tráfego, foi **revisada a campanha de Pesquisa no Google Ads**, sem novas alterações. As palavras-chave e o anúncio seguem em análise; uma delas também aparece com baixo volume de buscas. A orientação foi aguardar a revisão e depois conferir o diagnóstico da campanha.\n\nTambém conversamos sobre o aviso do Search Console: **a URL bloqueada pelo `robots.txt` é uma página de login**, aparentemente não destinada à busca. As páginas de produto “rastreada, mas não indexada” foram separadas para análise — nenhuma correção foi feita nelas hoje.",
-    "bullets": [
-      "**Google Ads:** revisamos a campanha de Pesquisa. Não fizemos novas alterações; anúncio e palavras-chave continuam em análise.",
-      "- **Palavra-chave:** uma aparece com baixo volume de buscas.",
-      "- **Próximo passo:** aguardar a revisão e depois conferir o diagnóstico da campanha.",
-      "- **Search Console:** avaliamos o aviso de `robots.txt`; a URL bloqueada é de login e parece não precisar aparecer na busca.",
-      "- **Indexação:** identificamos páginas de produto “rastreadas, mas não indexadas” para análise. Nenhuma correção foi feita nelas hoje."
-    ]
+    "date": "",
+    "narrative": "",
+    "bullets": []
   }
 }
