@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-19T12:16:50.112Z",
+  "updatedAt": "2026-10-19T12:17:10.619Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -111,6 +111,14 @@
       "done": true,
       "createdAt": "2026-10-14T18:59:50.508Z",
       "completedAt": "2026-10-15T19:23:29.597Z"
+    },
+    {
+      "id": "mvf7yn1x1g5ok",
+      "text": "Envio do card do Outubro Rosa no grupo da EG Construções, aguardando aprovação para publicação.",
+      "dueDate": "2026-10-15",
+      "list": "progress",
+      "done": false,
+      "createdAt": "2026-10-19T12:17:08.661Z"
     }
   ],
   "completionHistory": {
