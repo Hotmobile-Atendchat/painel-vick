@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-19T12:17:10.619Z",
+  "updatedAt": "2026-10-19T14:04:33.554Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -118,7 +118,8 @@
       "dueDate": "2026-10-15",
       "list": "progress",
       "done": false,
-      "createdAt": "2026-10-19T12:17:08.661Z"
+      "createdAt": "2026-10-19T12:17:08.661Z",
+      "startedAt": "2026-10-19T12:17:16.447Z"
     }
   ],
   "completionHistory": {
@@ -688,6 +689,17 @@
       "source": "Fechamento do dia",
       "date": "2026-10-19",
       "completedAt": "2026-10-19T12:16:48.266Z"
+    },
+    {
+      "text": "Foi realizado um reajuste no site de Missão SDR após Raíssa relatar que não estava conseguindo zerar a contagem das missões. Após identificar a necessidade de correção, foi feita a edição da página para ajustar essa funcionalidade e permitir que todas as contagens sejam zeradas corretamente.",
+      "narrative": "Foi realizado um reajuste no site de Missão SDR após Raíssa relatar que não estava conseguindo zerar a contagem das missões. Após identificar a necessidade de correção, foi feita a edição da página para ajustar essa funcionalidade e permitir que todas as contagens sejam zeradas corretamente.",
+      "bullets": [
+        "- Corrigido o problema que impedia Raíssa de zerar a contagem.",
+        "- Realizada a edição da página, permitindo zerar todas as contagens."
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-10-19",
+      "completedAt": "2026-10-19T14:04:31.660Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
