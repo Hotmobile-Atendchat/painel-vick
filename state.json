@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-19T14:04:33.554Z",
+  "updatedAt": "2026-10-19T14:08:01.341Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -700,6 +700,18 @@
       "source": "Fechamento do dia",
       "date": "2026-10-19",
       "completedAt": "2026-10-19T14:04:31.660Z"
+    },
+    {
+      "text": "Foi realizada uma tentativa de remover a marca-d’água do vídeo de Sidney, porém a edição causou desconfigurações em algumas partes. Por isso, Sidney foi orientado a regravar o vídeo sem utilizar o aplicativo que adiciona a marca-d’água.",
+      "narrative": "Foi realizada uma tentativa de remover a marca-d’água do vídeo de Sidney, porém a edição causou desconfigurações em algumas partes. Por isso, Sidney foi orientado a regravar o vídeo sem utilizar o aplicativo que adiciona a marca-d’água.",
+      "bullets": [
+        "- Tentativa de remoção da marca-d’água do vídeo de Sidney.",
+        "- Sidney foi orientado a regravar o vídeo sem utilizar o aplicativo que adiciona a marca-d’água.",
+        "o mesmo ficou de gravar no mesmo dia"
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-10-19",
+      "completedAt": "2026-10-19T14:07:59.242Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
