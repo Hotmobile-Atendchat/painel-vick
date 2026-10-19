@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-19T12:14:15.781Z",
+  "updatedAt": "2026-10-19T12:14:34.834Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -657,6 +657,17 @@
       "source": "Fechamento do dia",
       "date": "2026-10-16",
       "completedAt": "2026-10-16T19:30:36.312Z"
+    },
+    {
+      "text": "Criação e divulgação de card de conscientização sobre o Outubro Rosa, com foco no Dia Mundial de Combate ao Câncer de Mama. O material foi publicado nos stories e compartilhado no grupo da Hotmobile.",
+      "narrative": "Criação e divulgação de card de conscientização sobre o Outubro Rosa, com foco no Dia Mundial de Combate ao Câncer de Mama. O material foi publicado nos stories e compartilhado no grupo da Hotmobile.",
+      "bullets": [
+        "Criação de card sobre o Outubro Rosa.",
+        "Divulgação nos stories e no grupo da Hotmobile."
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-10-19",
+      "completedAt": "2026-10-19T12:14:33.173Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
