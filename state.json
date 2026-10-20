@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-20T12:44:58.170Z",
+  "updatedAt": "2026-10-20T12:47:43.389Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -736,6 +736,14 @@
       "source": "Fechamento do dia",
       "date": "2026-10-19",
       "completedAt": "2026-10-19T15:02:00.279Z"
+    },
+    {
+      "text": "refazer os email da \"Campanha de migração\" retirando a variável de nome e agendar no HotOs",
+      "narrative": "refazer os email da \"Campanha de migração\" retirando a variável de nome e agendar no HotOs",
+      "bullets": [],
+      "source": "Fechamento do dia",
+      "date": "2026-10-20",
+      "completedAt": "2026-10-20T12:47:41.470Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
