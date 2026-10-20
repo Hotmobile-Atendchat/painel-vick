@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-20T13:39:24.862Z",
+  "updatedAt": "2026-10-20T13:39:30.623Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -744,14 +744,22 @@
       "source": "Fechamento do dia",
       "date": "2026-10-20",
       "completedAt": "2026-10-20T12:47:41.470Z"
+    },
+    {
+      "text": "Realizar pesquisa de mercado dos concorrentes do Hotmenu, analisando e comparando as funcionalidades e os diferenciais oferecidos pelas plataformas, com foco em inteligência artificial (IA), rastreamento, vitrine personalizada, criação de cardápios com IA e ferramentas de marketing.",
+      "narrative": "Realizar pesquisa de mercado dos concorrentes do Hotmenu, analisando e comparando as funcionalidades e os diferenciais oferecidos pelas plataformas, com foco em inteligência artificial (IA), rastreamento, vitrine personalizada, criação de cardápios com IA e ferramentas de marketing.",
+      "bullets": [
+        "Pesquisar os concorrentes do Hotmenu e comparar suas funcionalidades de IA, rastreamento, vitrine personalizada, criação de cardápios com IA e ferramentas de marketing."
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-10-20",
+      "completedAt": "2026-10-20T13:39:28.912Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
   "dailyBrief": {
-    "date": "2026-10-20",
-    "narrative": "Realizar pesquisa de mercado dos concorrentes do Hotmenu, analisando e comparando as funcionalidades e os diferenciais oferecidos pelas plataformas, com foco em inteligência artificial (IA), rastreamento, vitrine personalizada, criação de cardápios com IA e ferramentas de marketing.",
-    "bullets": [
-      "\\- Pesquisar os concorrentes do Hotmenu e comparar suas funcionalidades de IA, rastreamento, vitrine personalizada, criação de cardápios com IA e ferramentas de marketing."
-    ]
+    "date": "",
+    "narrative": "",
+    "bullets": []
   }
 }
