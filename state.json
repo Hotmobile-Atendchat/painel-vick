@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T14:07:34.499Z",
+  "updatedAt": "2026-10-21T19:08:21.918Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -788,6 +788,25 @@
       "source": "Fechamento do dia",
       "date": "2026-10-21",
       "completedAt": "2026-10-21T14:07:32.772Z"
+    },
+    {
+      "text": "O trabalho começou com uma pesquisa dos principais concorrentes do Hotmenu, comparando funcionalidades, recursos de inteligência artificial, campanhas de marketing, fidelização e preços. Depois, consultamos a Central de Ajuda do novo Hotmenu e resumimos seus módulos para apoiar a comunicação do lançamento. Também editamos o vídeo enviado, retirando a marca-d’água, acelerando o ritmo e aplicando a logo transparente. Por fim, criamos o card de expectativa “Vem aí além da legenda para o Instagram.",
+      "narrative": "O trabalho começou com uma pesquisa dos principais concorrentes do Hotmenu, comparando funcionalidades, recursos de inteligência artificial, campanhas de marketing, fidelização e preços. Depois, consultamos a Central de Ajuda do novo Hotmenu e resumimos seus módulos para apoiar a comunicação do lançamento. Também editamos o vídeo enviado, retirando a marca-d’água, acelerando o ritmo e aplicando a logo transparente. Por fim, criamos o card de expectativa “Vem aí além da legenda para o Instagram.",
+      "bullets": [
+        "Acionamos o squad de pesquisa de mercado para analisar os concorrentes do Hotmenu.",
+        "Comparamos Anota AI, Goomer, Brendi, OlaClick, Cardápio Web e InstaDelivery, considerando funcionalidades, IA, personalização do cardápio, campanhas, fidelização e preços.",
+        "Aprofundamos como cada plataforma trabalha com divulgação, WhatsApp, cashback e recuperação de clientes.",
+        "Criamos o relatório com fontes oficiais, salvamos em Downloads e fizemos commit e push.",
+        "Consultamos a Central de Ajuda do novo Hotmenu e resumimos seus 11 módulos.",
+        "Acionamos a Rute Roteirista e desenvolvemos o roteiro de lançamento, ajustado para três cenas de 10 segundos.",
+        "Refinamos falas, pronúncia, sincronização, animações, destaque do valor de R$ 39,90 e chamada para criar uma conta teste.",
+        "Editamos o vídeo enviado: removemos a marca-d’água, aceleramos em 10% e aplicamos a logo branca com fundo transparente.",
+        "Criamos o card “Vem aí”, usando a paleta do Hotmenu, a mulher segurando o celular e a imagem real do cardápio na tela.",
+        "Produzimos a legenda e fizemos commit e push da arte e do texto."
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-10-21",
+      "completedAt": "2026-10-21T19:08:19.763Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
