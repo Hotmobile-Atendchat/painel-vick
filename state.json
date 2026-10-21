@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T13:05:32.060Z",
+  "updatedAt": "2026-10-21T13:41:42.889Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -775,6 +775,17 @@
       "source": "Fechamento do dia",
       "date": "2026-10-21",
       "completedAt": "2026-10-21T13:05:30.039Z"
+    },
+    {
+      "text": "Planejamento da Campanha: Esquenta Black Friday & Halloween 3DBGG - Elaborado  o projeto da campanha comercial da 3DBGG para o final de outubro e novembro, conectando o Esquenta Black Friday à temática de Halloween e virando o foco 100% para a Black Friday oficial a partir de 01/11, com identidade visual própria.",
+      "narrative": "Planejamento da Campanha: Esquenta Black Friday & Halloween 3DBGG - Elaborado  o projeto da campanha comercial da 3DBGG para o final de outubro e novembro, conectando o Esquenta Black Friday à temática de Halloween e virando o foco 100% para a Black Friday oficial a partir de 01/11, com identidade visual própria.",
+      "bullets": [
+        "Fase 1 (22 a 31/10) — Esquenta Black Friday & Halloween",
+        "Fase 2 (A partir de 01/11) — Black Friday Oficial"
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-10-21",
+      "completedAt": "2026-10-21T13:41:40.889Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
