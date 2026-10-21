@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T14:07:05.840Z",
+  "updatedAt": "2026-10-21T14:07:25.538Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -778,12 +778,22 @@
       "source": "Fechamento do dia",
       "date": "2026-10-21",
       "completedAt": "2026-10-21T13:41:40.889Z"
+    },
+    {
+      "text": "Confirmar o agendamento dos e-mails da \"campanha de migração.\" no Hotos",
+      "narrative": "Confirmar o agendamento dos e-mails da \"campanha de migração.\" no Hotos",
+      "bullets": [
+        "- Envio realizado, mas com 4 erros"
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-10-21",
+      "completedAt": "2026-10-21T14:07:22.895Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
   "dailyBrief": {
-    "date": "2026-10-21",
-    "narrative": "-Confirmar o agendamento dos e-mails da \"campanha de migração.\" no Hotos",
+    "date": "",
+    "narrative": "",
     "bullets": []
   }
 }
