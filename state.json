@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T13:41:42.889Z",
+  "updatedAt": "2026-10-21T14:07:05.840Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -756,14 +756,6 @@
       "completedAt": "2026-10-20T13:39:28.912Z"
     },
     {
-      "text": "-Confirmar o agendamento dos e-mails da \"campanha de migração.\" no Hotos",
-      "narrative": "-Confirmar o agendamento dos e-mails da \"campanha de migração.\" no Hotos",
-      "bullets": [],
-      "source": "Fechamento do dia",
-      "date": "2026-10-21",
-      "completedAt": "2026-10-21T12:17:40.826Z"
-    },
-    {
       "text": "Foi realizada a pesquisa do Radar de Ganchos, conforme o direcionamento semanal, e o conteúdo foi adicionado ao banco de temas. Durante a pesquisa, foi identificado o tema “Autenticação e bloqueio de chamadas e mensagens”, que merece acompanhamento para avaliar possíveis impactos na Hotmobile, especialmente em relação às comunicações por telefonia e SMS, conforme as futuras regulamentações da Anatel.",
       "narrative": "Foi realizada a pesquisa do Radar de Ganchos, conforme o direcionamento semanal, e o conteúdo foi adicionado ao banco de temas. Durante a pesquisa, foi identificado o tema “Autenticação e bloqueio de chamadas e mensagens”, que merece acompanhamento para avaliar possíveis impactos na Hotmobile, especialmente em relação às comunicações por telefonia e SMS, conforme as futuras regulamentações da Anatel.",
       "bullets": [
@@ -790,8 +782,8 @@
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
   "dailyBrief": {
-    "date": "",
-    "narrative": "",
+    "date": "2026-10-21",
+    "narrative": "-Confirmar o agendamento dos e-mails da \"campanha de migração.\" no Hotos",
     "bullets": []
   }
 }
