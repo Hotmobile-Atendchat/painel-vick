@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-23T18:36:55.329Z",
+  "updatedAt": "2026-10-23T18:52:23.105Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -822,23 +822,27 @@
       "source": "Fechamento do dia",
       "date": "2026-10-23",
       "completedAt": "2026-10-23T18:36:47.571Z"
+    },
+    {
+      "text": "Hoje preparei os materiais da campanha de Black Friday do novo Hotmenu. Finalizei os e-mails em HTML para clientes ativos e ex-clientes, com mensagens específicas para migração e apresentação da nova versão, e testei os envios. Preparei os textos de WhatsApp e SMS, o banner de WhatsApp em 590 × 340 e o post para Instagram com elementos neon e legenda. As listas estão separadas, e validei o site, o acesso ao painel, o cadastro, a migração dos dados e a URL do guia nos materiais. Também organizei a documentação no squad de lançamento e fiz o commit e o push dos arquivos.",
+      "narrative": "Hoje preparei os materiais da campanha de Black Friday do novo Hotmenu. Finalizei os e-mails em HTML para clientes ativos e ex-clientes, com mensagens específicas para migração e apresentação da nova versão, e testei os envios. Preparei os textos de WhatsApp e SMS, o banner de WhatsApp em 590 × 340 e o post para Instagram com elementos neon e legenda. As listas estão separadas, e validei o site, o acesso ao painel, o cadastro, a migração dos dados e a URL do guia nos materiais. Também organizei a documentação no squad de lançamento e fiz o commit e o push dos arquivos.",
+      "bullets": [
+        "Concluído",
+        "- E-mails HTML preparados e testados.",
+        "- Mensagens de WhatsApp e SMS prontas.",
+        "- Banner, post e legenda finalizados.",
+        "- Listas separadas e principais fluxos validados.",
+        "- Documentação organizada, commit e push feitos."
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-10-23",
+      "completedAt": "2026-10-23T18:52:21.197Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
   "dailyBrief": {
-    "date": "2026-10-21",
-    "narrative": "O trabalho começou com uma pesquisa dos principais concorrentes do Hotmenu, comparando funcionalidades, recursos de inteligência artificial, campanhas de marketing, fidelização e preços. Depois, consultamos a Central de Ajuda do novo Hotmenu e resumimos seus módulos para apoiar a comunicação do lançamento. Também editamos o vídeo enviado, retirando a marca-d’água, acelerando o ritmo e aplicando a logo transparente. Por fim, criamos o card de expectativa “Vem aí além da legenda para o Instagram.",
-    "bullets": [
-      "Acionamos o squad de pesquisa de mercado para analisar os concorrentes do Hotmenu.",
-      "Comparamos Anota AI, Goomer, Brendi, OlaClick, Cardápio Web e InstaDelivery, considerando funcionalidades, IA, personalização do cardápio, campanhas, fidelização e preços.",
-      "Aprofundamos como cada plataforma trabalha com divulgação, WhatsApp, cashback e recuperação de clientes.",
-      "Criamos o relatório com fontes oficiais, salvamos em Downloads e fizemos commit e push.",
-      "Consultamos a Central de Ajuda do novo Hotmenu e resumimos seus 11 módulos.",
-      "Acionamos a Rute Roteirista e desenvolvemos o roteiro de lançamento, ajustado para três cenas de 10 segundos.",
-      "Refinamos falas, pronúncia, sincronização, animações, destaque do valor de R$ 39,90 e chamada para criar uma conta teste.",
-      "Editamos o vídeo enviado: removemos a marca-d’água, aceleramos em 10% e aplicamos a logo branca com fundo transparente.",
-      "Criamos o card “Vem aí”, usando a paleta do Hotmenu, a mulher segurando o celular e a imagem real do cardápio na tela.",
-      "Produzimos a legenda e fizemos commit e push da arte e do texto."
-    ]
+    "date": "",
+    "narrative": "",
+    "bullets": []
   }
 }
