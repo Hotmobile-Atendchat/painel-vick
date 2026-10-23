@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-23T18:52:23.105Z",
+  "updatedAt": "2026-10-23T18:52:47.011Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -92,8 +92,9 @@
       "text": "Agendamento dos post",
       "dueDate": "2026-10-14",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-10-14T12:01:23.160Z"
+      "done": true,
+      "createdAt": "2026-10-14T12:01:23.160Z",
+      "completedAt": "2026-10-23T18:52:45.142Z"
     },
     {
       "id": "mv8278ze0plaw",
