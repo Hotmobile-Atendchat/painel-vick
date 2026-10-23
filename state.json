@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-23T18:53:02.605Z",
+  "updatedAt": "2026-10-23T18:53:12.552Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -125,7 +125,7 @@
     },
     {
       "id": "mvlbv53e15k77",
-      "text": "Pendente - Conferir link da bio. - Configurar os disparos. - Confirmar saldo e programação do vídeo. - Caique finalizar e validar o pagamento. - Confirmar nome e configuração do ag",
+      "text": "Pendente HOTMENU - Conferir link da bio. - Configurar os disparos. - Confirmar saldo e programação do vídeo. - Caique finalizar e validar o pagamento. - Confirmar nome e configuração do ag",
       "dueDate": "2026-10-21",
       "list": "pending",
       "done": false,
