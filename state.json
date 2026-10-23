@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-23T18:52:47.011Z",
+  "updatedAt": "2026-10-23T18:52:50.965Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -101,8 +101,9 @@
       "text": "Rotinas",
       "dueDate": "2026-10-14",
       "list": "today",
-      "done": false,
-      "createdAt": "2026-10-14T12:01:29.402Z"
+      "done": true,
+      "createdAt": "2026-10-14T12:01:29.402Z",
+      "completedAt": "2026-10-23T18:52:47.282Z"
     },
     {
       "id": "mv8h594b884qo",
