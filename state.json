@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-27T15:07:17.981Z",
+  "updatedAt": "2026-10-27T15:07:59.859Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -127,9 +127,10 @@
       "id": "mvlbv53e15k77",
       "text": "Pendente HOTMENU - Conferir link da bio. - Configurar os disparos. - Confirmar saldo e programação do vídeo. - Caique finalizar e validar o pagamento. - Confirmar nome e configuração do ag",
       "dueDate": "2026-10-21",
-      "list": "pending",
+      "list": "progress",
       "done": false,
-      "createdAt": "2026-10-23T18:53:00.938Z"
+      "createdAt": "2026-10-23T18:53:00.938Z",
+      "startedAt": "2026-10-27T15:07:58.121Z"
     }
   ],
   "completionHistory": {
@@ -874,5 +875,10 @@
       "completedAt": "2026-10-23T19:39:56.044Z"
     }
   ],
-  "todayClearedBefore": "2026-08-10T13:00:37.458Z"
+  "todayClearedBefore": "2026-08-10T13:00:37.458Z",
+  "dailyBrief": {
+    "date": "",
+    "narrative": "",
+    "bullets": []
+  }
 }
