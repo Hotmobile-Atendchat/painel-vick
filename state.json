@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-27T15:09:27.631Z",
+  "updatedAt": "2026-10-27T15:09:53.783Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -131,6 +131,14 @@
       "done": false,
       "createdAt": "2026-10-23T18:53:00.938Z",
       "startedAt": "2026-10-27T15:07:58.121Z"
+    },
+    {
+      "id": "mvqtnkuvq0rdc",
+      "text": "Postar o vídeo e foto da imersão do SDR",
+      "dueDate": "2026-10-27",
+      "list": "pending",
+      "done": false,
+      "createdAt": "2026-10-27T15:09:52.087Z"
     }
   ],
   "completionHistory": {
