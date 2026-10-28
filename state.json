@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-27T15:09:53.783Z",
+  "updatedAt": "2026-10-28T19:21:35.359Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -128,9 +128,9 @@
       "text": "Pendente HOTMENU - Conferir link da bio. - Configurar os disparos. - Confirmar saldo e programação do vídeo. - Caique finalizar e validar o pagamento. - Confirmar nome e configuração do ag",
       "dueDate": "2026-10-21",
       "list": "progress",
-      "done": false,
+      "done": true,
       "createdAt": "2026-10-23T18:53:00.938Z",
-      "startedAt": "2026-10-27T15:07:58.121Z"
+      "completedAt": "2026-10-28T19:21:33.589Z"
     },
     {
       "id": "mvqtnkuvq0rdc",
