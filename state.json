@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-28T19:26:24.240Z",
+  "updatedAt": "2026-10-28T19:27:50.771Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -111,6 +111,14 @@
       "list": "pending",
       "done": false,
       "createdAt": "2026-10-28T19:22:09.607Z"
+    },
+    {
+      "id": "mvsib5j83vjam",
+      "text": "Fazer relatório da 3D e campanha da BF",
+      "dueDate": "2026-10-28",
+      "list": "pending",
+      "done": false,
+      "createdAt": "2026-10-28T19:27:48.932Z"
     }
   ],
   "completionHistory": {
