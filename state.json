@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-28T19:22:11.320Z",
+  "updatedAt": "2026-10-28T19:26:24.240Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -885,6 +885,20 @@
       "text": "Pendente HOTMENU - Conferir link da bio. - Configurar os disparos. - Confirmar saldo e programação do vídeo. - Caique finalizar e validar o pagamento. - Confirmar nome e configuração do ag",
       "source": "Painel do dia · Concluída",
       "completedAt": "2026-10-28T19:21:33.589Z"
+    },
+    {
+      "text": "Reajuste das cadências de e-mail e WhatsApp do Hotmenu: Ajuste das cadências de comunicação por e-mail do Hotmenu, considerando o intervalo de 7 dias entre os envios, conforme o planejamento definido com Caique.\n\nReunião de Marketing: Participação em reunião com a equipe do comercial sobre alinhamento da BF\n\nOrganização dos arquivos da imersão SDR: Upload dos vídeos e das fotos da imersão do setor de SDR para o Drive da agência, utilizando a conta agencia@hotmobilecom.br, centralizando os materiais para facilitar o acesso e a utilização pela equipe.\n\nConclusão dos chamados: Emails solicitado pelo comercial sobre CDL\n\nCriação da grid de conteúdo do HOTMENU: Desenvolvimento da grid de publicações para organizar visualmente os conteúdos e estruturar o planejamento das postagens nas redes sociais.\n\nPublicação da grid e do vídeo na página do HOTMENU:  Durante a tentativa de impulsionar o vídeo, foi identificado que a conta de anúncios estava desativada devido a um débito antigo. A situação foi comunicada ao Bruno para conhecimento e providências.",
+      "narrative": "Reajuste das cadências de e-mail e WhatsApp do Hotmenu: Ajuste das cadências de comunicação por e-mail do Hotmenu, considerando o intervalo de 7 dias entre os envios, conforme o planejamento definido com Caique.\n\nReunião de Marketing: Participação em reunião com a equipe do comercial sobre alinhamento da BF\n\nOrganização dos arquivos da imersão SDR: Upload dos vídeos e das fotos da imersão do setor de SDR para o Drive da agência, utilizando a conta agencia@hotmobilecom.br, centralizando os materiais para facilitar o acesso e a utilização pela equipe.\n\nConclusão dos chamados: Emails solicitado pelo comercial sobre CDL\n\nCriação da grid de conteúdo do HOTMENU: Desenvolvimento da grid de publicações para organizar visualmente os conteúdos e estruturar o planejamento das postagens nas redes sociais.\n\nPublicação da grid e do vídeo na página do HOTMENU:  Durante a tentativa de impulsionar o vídeo, foi identificado que a conta de anúncios estava desativada devido a um débito antigo. A situação foi comunicada ao Bruno para conhecimento e providências.",
+      "bullets": [
+        "Reajuste das cadências de e-mail e WhatsApp do Hotmenu",
+        "Reunião de Marketin",
+        "Organização dos arquivos da imersão SDR:",
+        "Conclusão dos chamados",
+        "Criação e publicação do grid de conteúdo e vídeo do Hotmenu"
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-10-28",
+      "completedAt": "2026-10-28T19:26:22.395Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
