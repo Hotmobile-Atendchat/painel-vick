@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-23T14:53:04.099Z",
+  "updatedAt": "2026-11-23T14:53:20.035Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -911,15 +911,24 @@
       "source": "Fechamento do dia",
       "date": "2026-10-28",
       "completedAt": "2026-10-28T19:26:22.395Z"
+    },
+    {
+      "text": "Recebi e analisei o dossiê da 3DBGG e comecei a executar as ações indicadas para melhorar o site, as campanhas e o relacionamento com os clientes. Foi criado um painel onde estou organizando e acompanhando todos os afazeres separadamente, incluindo catálogo, conteúdo, e-mail, mensagens, tráfego e SEO.",
+      "narrative": "Recebi e analisei o dossiê da 3DBGG e comecei a executar as ações indicadas para melhorar o site, as campanhas e o relacionamento com os clientes. Foi criado um painel onde estou organizando e acompanhando todos os afazeres separadamente, incluindo catálogo, conteúdo, e-mail, mensagens, tráfego e SEO.",
+      "bullets": [
+        "Analisei o dossiê da 3DBGG",
+        "iniciei os ajustes de cupons e catálogo e organizei uma checklist em html para acompanhar as ações concluídas e pendentes de marketing, site e tráfego.",
+        "dei uma pausa"
+      ],
+      "source": "Fechamento do dia",
+      "date": "2026-11-23",
+      "completedAt": "2026-11-23T14:53:18.230Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
   "dailyBrief": {
-    "date": "2026-11-23",
-    "narrative": "Recebi e analisei o dossiê da 3DBGG e comecei a executar as ações indicadas para melhorar o site, as campanhas e o relacionamento com os clientes. Foi criado um painel onde estou organizando e acompanhando todos os afazeres separadamente, incluindo catálogo, conteúdo, e-mail, mensagens, tráfego e SEO.",
-    "bullets": [
-      "Analisei o dossiê da 3DBGG",
-      "iniciei os ajustes de cupons e catálogo e organizei uma checklist em html para acompanhar as ações concluídas e pendentes de marketing, site e tráfego."
-    ]
+    "date": "",
+    "narrative": "",
+    "bullets": []
   }
 }
