@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-28T19:27:50.771Z",
+  "updatedAt": "2026-11-23T12:31:37.961Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -109,8 +109,9 @@
       "text": "Criação de conta da 3DBGG na Nuvemshop",
       "dueDate": "2026-10-28",
       "list": "pending",
-      "done": false,
-      "createdAt": "2026-10-28T19:22:09.607Z"
+      "done": true,
+      "createdAt": "2026-10-28T19:22:09.607Z",
+      "completedAt": "2026-11-23T12:31:36.225Z"
     },
     {
       "id": "mvsib5j83vjam",
