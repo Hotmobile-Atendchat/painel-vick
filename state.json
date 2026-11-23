@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-23T14:53:20.035Z",
+  "updatedAt": "2026-11-23T14:53:39.664Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -923,6 +923,14 @@
       "source": "Fechamento do dia",
       "date": "2026-11-23",
       "completedAt": "2026-11-23T14:53:18.230Z"
+    },
+    {
+      "text": "Criar avatar dos AGENTES da Hotmobile",
+      "narrative": "Criar avatar dos AGENTES da Hotmobile",
+      "bullets": [],
+      "source": "Fechamento do dia",
+      "date": "2026-11-23",
+      "completedAt": "2026-11-23T14:53:36.967Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
