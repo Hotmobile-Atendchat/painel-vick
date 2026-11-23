@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-23T14:53:39.664Z",
+  "updatedAt": "2026-11-23T15:18:07.759Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -931,6 +931,14 @@
       "source": "Fechamento do dia",
       "date": "2026-11-23",
       "completedAt": "2026-11-23T14:53:36.967Z"
+    },
+    {
+      "text": "automação a agente o information.md para pesquisar os últimos 7 dias de assunto sobre o hotmenu e passa para o agente de",
+      "narrative": "automação a agente o information.md para pesquisar os últimos 7 dias de assunto sobre o hotmenu e passa para o agente de",
+      "bullets": [],
+      "source": "Fechamento do dia",
+      "date": "2026-11-23",
+      "completedAt": "2026-11-23T15:17:56.263Z"
     }
   ],
   "todayClearedBefore": "2026-08-10T13:00:37.458Z",
