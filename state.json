@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T14:39:22.673Z",
+  "updatedAt": "2026-11-24T14:39:55.856Z",
   "checks": {
     "3dbgg.0": true,
     "3dbgg.1": true,
@@ -121,6 +121,14 @@
       "list": "pending",
       "done": false,
       "createdAt": "2026-10-28T19:27:48.932Z"
+    },
+    {
+      "id": "mwusww0tkxqie",
+      "text": "Entrar em contato com a EG para saber dos pedidos do final de ano",
+      "dueDate": "2026-11-24",
+      "list": "pending",
+      "done": false,
+      "createdAt": "2026-11-24T14:39:53.885Z"
     }
   ],
   "completionHistory": {
